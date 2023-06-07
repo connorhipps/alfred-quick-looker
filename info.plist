@@ -64,7 +64,7 @@
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
-	<string>HC Looker Data</string>
+	<string>HC Looker Data - Dev</string>
 	<key>objects</key>
 	<array>
 		<dict>
@@ -300,27 +300,6 @@ set the clipboard to urlList</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>lastpathcomponent</key>
-				<false/>
-				<key>onlyshowifquerypopulated</key>
-				<false/>
-				<key>removeextension</key>
-				<false/>
-				<key>text</key>
-				<string></string>
-				<key>title</key>
-				<string>test</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.notification</string>
-			<key>uid</key>
-			<string>31A5B6A1-5EAA-4509-A102-EB6275E0B6AD</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
 	</array>
 	<key>readme</key>
 	<string>Read More</string>
@@ -332,13 +311,6 @@ set the clipboard to urlList</string>
 			<real>720</real>
 			<key>ypos</key>
 			<real>300</real>
-		</dict>
-		<key>31A5B6A1-5EAA-4509-A102-EB6275E0B6AD</key>
-		<dict>
-			<key>xpos</key>
-			<real>535</real>
-			<key>ypos</key>
-			<real>580</real>
 		</dict>
 		<key>38662F8A-D08A-41C2-864B-0574B8A875F1</key>
 		<dict>
