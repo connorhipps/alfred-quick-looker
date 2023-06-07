@@ -6,21 +6,6 @@
 	<string>HC</string>
 	<key>connections</key>
 	<dict>
-		<key>09782FC6-2CBC-42D1-AC10-F79D45FFA7AA</key>
-		<array/>
-		<key>38662F8A-D08A-41C2-864B-0574B8A875F1</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>09782FC6-2CBC-42D1-AC10-F79D45FFA7AA</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>60C40BFF-80E8-4C71-8564-F4A786C74492</key>
 		<array/>
 		<key>69AA3203-CF0A-42E7-8072-117C9DEDAB4B</key>
@@ -64,7 +49,7 @@
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
-	<string>HC Looker Data - Dev</string>
+	<string>HC Looker Data - Dev ⭐</string>
 	<key>objects</key>
 	<array>
 		<dict>
@@ -192,67 +177,6 @@ echo -n $query</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>#!/bin/bash
-
-# Get the selected item from the argument passed by Alfred
-selected_item="$1"
-
-# Replace "test" in the URL with the selected item
-url="https://mc.a8c.com/team-activity/?member=${selected_item// /%20}&amp;weeks=4"
-
-# Open the URL in the user's default browser
-open "$url"</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>09782FC6-2CBC-42D1-AC10-F79D45FFA7AA</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttrimmode</key>
-				<integer>0</integer>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>fixedorder</key>
-				<false/>
-				<key>items</key>
-				<string>[{"imagefile":"29b0b131f6c8b0f4c1bd9146d7f48ed25fed6497.png","title":"Kudakwashe Zafevere","arg":"kudakwasheza"},{"imagefile":"4ac5a7a5635b8e1c4c296ca3a8dc99c292a294ad.png","title":"Anjana Vijayan","arg":"anjanav93"},{"imagefile":"7ae39608fc96708fbb98d18e2c3f0c961b6d7ede.png","title":"Nazilya Gismatullina","arg":"nazilya06"},{"imagefile":"007f0b6be47d44de5e2f93f512eb3413f6a7cd60.png","title":"Paulina Fraser","arg":"paufraser"},{"imagefile":"9d902bc8277cd62fe4bf277b3a2f7a10afaf579d.png","title":"Neha Sharma","arg":"neha93517"},{"imagefile":"c4d4d864a155e6f353d8bbfa53ad78c4a3f71c04.png","title":"Lara Gatchalian","arg":"lalaigee89f2ff8c08"},{"imagefile":"53456790786f7e6818dc475aca78ee1cfb964fbb.png","title":"Jhonatan Correa","arg":"tbelt2"},{"imagefile":"0a3d99a21158ddc6b8cbbf5a177d04e0f1b6ff5d.png","title":"Samod Kareem","arg":"samodkareem","subtitle":""},{"imagefile":"0a3d99a21158ddc6b8cbbf5a177d04e0f1b6ff5d.png","title":"Master Rafique","arg":"master2087"}]</string>
-				<key>matchmode</key>
-				<integer>3</integer>
-				<key>runningsubtext</key>
-				<string></string>
-				<key>subtext</key>
-				<string></string>
-				<key>title</key>
-				<string></string>
-				<key>withspace</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.listfilter</string>
-			<key>uid</key>
-			<string>38662F8A-D08A-41C2-864B-0574B8A875F1</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>availableviaurlhandler</key>
 				<false/>
 				<key>triggerid</key>
@@ -302,25 +226,13 @@ set the clipboard to urlList</string>
 		</dict>
 	</array>
 	<key>readme</key>
-	<string>Read More</string>
+	<string># HC Looker Data: Meow-nificent Data Analysis and Visualization for your HCs 🐾
+
+![Cat Image](cat.png)
+
+Looker is a purr-fectly delightful business intelligence tool that helps organizations gain insights from their data, just like a curious cat uncovering hidden treasures. With its intuitive interface and powerful analytics capabilities, Looker empowers users to explore data like a feline, making informed decisions with agility and grace. Say goodbye to data hairballs and embrace the elegance of Looker's whisker-sharp visualizations and data-driven discoveries.</string>
 	<key>uidata</key>
 	<dict>
-		<key>09782FC6-2CBC-42D1-AC10-F79D45FFA7AA</key>
-		<dict>
-			<key>xpos</key>
-			<real>720</real>
-			<key>ypos</key>
-			<real>300</real>
-		</dict>
-		<key>38662F8A-D08A-41C2-864B-0574B8A875F1</key>
-		<dict>
-			<key>note</key>
-			<string>Enter HC Names/Usernames</string>
-			<key>xpos</key>
-			<real>540</real>
-			<key>ypos</key>
-			<real>300</real>
-		</dict>
 		<key>60C40BFF-80E8-4C71-8564-F4A786C74492</key>
 		<dict>
 			<key>colorindex</key>
