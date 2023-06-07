@@ -102,9 +102,9 @@ echo -n $query</string>
 				<key>keyword</key>
 				<string>hc</string>
 				<key>subtext</key>
-				<string></string>
+				<string>Opens All Looker Reports for HCs 📊</string>
 				<key>text</key>
-				<string>HC Team Activity</string>
+				<string>HC Looker Data</string>
 				<key>withspace</key>
 				<false/>
 			</dict>
