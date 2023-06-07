@@ -93,64 +93,6 @@ open "https://looker.a8c.com/dashboards/477?Report+Date+Start=2023%2F04%2F01+to+
 
 open "https://looker.a8c.com/dashboards/477?Report+Date+Start=2023%2F04%2F01+to+2023%2F04%2F30&amp;Upwork+team=English+Language+Support+Team%2CSpanish+Localized+Team&amp;Upwork+name=Lara+Gatchalian"
 
-open "https://looker.a8c.com/dashboards/477?Report+Date+Start=2023%2F05%2F08+to+2023%2F05%2F15&amp;Upwork+team=English+Language+Support+Team%2CSpanish+Localized+Team&amp;Upwork+name=Master+Rafique"
-
-open "https://looker.a8c.com/dashboards/477?Report+Date+Start=2023%2F05%2F08+to+2023%2F05%2F15&amp;Upwork+team=English+Language+Support+Team%2CSpanish+Localized+Team&amp;Upwork+name=Samod+Kareem"
-
-open "https://looker.a8c.com/dashboards/477?Report+Date+Start=2023%2F05%2F08+to+2023%2F05%2F15&amp;Upwork+team=English+Language+Support+Team%2CSpanish+Localized+Team&amp;Upwork+name=Briam+Rojas"
-
-open "https://looker.a8c.com/dashboards/477?Report+Date+Start=2023%2F05%2F08+to+2023%2F05%2F15&amp;Upwork+team=English+Language+Support+Team%2CSpanish+Localized+Team&amp;Upwork+name=Korede+Osunlalu"
-
-
-echo -n $query</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>2145459F-ED15-4AD8-929D-D7BC268EB30D</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>query=$1
-
-/usr/bin/open -na "Brave Browser"
-
-sleep 2
-
-open "https://looker.a8c.com/dashboards/477?Report+Date+Start=2023%2F04%2F01+to+2023%2F04%2F30&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Kudakwashe+Zafevere"
-
-open "https://looker.a8c.com/dashboards/477?Report+Date+Start=2023%2F04%2F01+to+2023%2F04%2F30&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Nazilya+Gismatullina"
-
-open "https://looker.a8c.com/dashboards/477?Report+Date+Start=2023%2F04%2F01+to+2023%2F04%2F30&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Anjana+Vijayan"
-
-open "https://looker.a8c.com/dashboards/477?Report+Date+Start=2023%2F04%2F01+to+2023%2F04%2F30&amp;Upwork+team=English+Language+Support+Team%2CSpanish+Localized+Team&amp;Upwork+name=Paulina+Fraser"
-
-open "https://looker.a8c.com/dashboards/477?Report+Date+Start=2023%2F04%2F01+to+2023%2F04%2F30&amp;Upwork+team=English+Language+Support+Team%2CSpanish+Localized+Team&amp;Upwork+name=Neha+Sharma"
-
-open "https://looker.a8c.com/dashboards/477?Report+Date+Start=2023%2F04%2F01+to+2023%2F04%2F30&amp;Upwork+team=English+Language+Support+Team%2CSpanish+Localized+Team&amp;Upwork+name=Lara+Gatchalian"
-
-open "https://looker.a8c.com/dashboards/477?Report+Date+Start=2023%2F05%2F08+to+2023%2F05%2F15&amp;Upwork+team=English+Language+Support+Team%2CSpanish+Localized+Team&amp;Upwork+name=Master+Rafique"
-
-open "https://looker.a8c.com/dashboards/477?Report+Date+Start=2023%2F05%2F08+to+2023%2F05%2F15&amp;Upwork+team=English+Language+Support+Team%2CSpanish+Localized+Team&amp;Upwork+name=Samod+Kareem"
-
-open "https://looker.a8c.com/dashboards/477?Report+Date+Start=2023%2F05%2F08+to+2023%2F05%2F15&amp;Upwork+team=English+Language+Support+Team%2CSpanish+Localized+Team&amp;Upwork+name=Briam+Rojas"
-
-open "https://looker.a8c.com/dashboards/477?Report+Date+Start=2023%2F05%2F08+to+2023%2F05%2F15&amp;Upwork+team=English+Language+Support+Team%2CSpanish+Localized+Team&amp;Upwork+name=Korede+Osunlalu"
-
 
 echo -n $query</string>
 				<key>scriptargtype</key>
@@ -166,35 +108,6 @@ echo -n $query</string>
 			<string>7F0DE48A-E977-4EF8-9E26-E247B7A1764D</string>
 			<key>version</key>
 			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttrimmode</key>
-				<integer>0</integer>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>fixedorder</key>
-				<false/>
-				<key>items</key>
-				<string>[{"imagefile":"29b0b131f6c8b0f4c1bd9146d7f48ed25fed6497.png","title":"Kudakwashe Zafevere","arg":"kudakwasheza"},{"imagefile":"4ac5a7a5635b8e1c4c296ca3a8dc99c292a294ad.png","title":"Anjana Vijayan","arg":"anjanav93"},{"imagefile":"7ae39608fc96708fbb98d18e2c3f0c961b6d7ede.png","title":"Nazilya Gismatullina","arg":"nazilya06"},{"imagefile":"007f0b6be47d44de5e2f93f512eb3413f6a7cd60.png","title":"Paulina Fraser","arg":"paufraser"},{"imagefile":"9d902bc8277cd62fe4bf277b3a2f7a10afaf579d.png","title":"Neha Sharma","arg":"neha93517"},{"imagefile":"c4d4d864a155e6f353d8bbfa53ad78c4a3f71c04.png","title":"Lara Gatchalian","arg":"lalaigee89f2ff8c08"},{"imagefile":"53456790786f7e6818dc475aca78ee1cfb964fbb.png","title":"Jhonatan Correa","arg":"tbelt2"},{"imagefile":"0a3d99a21158ddc6b8cbbf5a177d04e0f1b6ff5d.png","title":"Samod Kareem","arg":"samodkareem","subtitle":""},{"imagefile":"0a3d99a21158ddc6b8cbbf5a177d04e0f1b6ff5d.png","title":"Master Rafique","arg":"master2087"}]</string>
-				<key>matchmode</key>
-				<integer>3</integer>
-				<key>runningsubtext</key>
-				<string></string>
-				<key>subtext</key>
-				<string></string>
-				<key>title</key>
-				<string></string>
-				<key>withspace</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.listfilter</string>
-			<key>uid</key>
-			<string>38662F8A-D08A-41C2-864B-0574B8A875F1</string>
-			<key>version</key>
-			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -311,6 +224,50 @@ open "$url"</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>fixedorder</key>
+				<false/>
+				<key>items</key>
+				<string>[{"imagefile":"29b0b131f6c8b0f4c1bd9146d7f48ed25fed6497.png","title":"Kudakwashe Zafevere","arg":"kudakwasheza"},{"imagefile":"4ac5a7a5635b8e1c4c296ca3a8dc99c292a294ad.png","title":"Anjana Vijayan","arg":"anjanav93"},{"imagefile":"7ae39608fc96708fbb98d18e2c3f0c961b6d7ede.png","title":"Nazilya Gismatullina","arg":"nazilya06"},{"imagefile":"007f0b6be47d44de5e2f93f512eb3413f6a7cd60.png","title":"Paulina Fraser","arg":"paufraser"},{"imagefile":"9d902bc8277cd62fe4bf277b3a2f7a10afaf579d.png","title":"Neha Sharma","arg":"neha93517"},{"imagefile":"c4d4d864a155e6f353d8bbfa53ad78c4a3f71c04.png","title":"Lara Gatchalian","arg":"lalaigee89f2ff8c08"},{"imagefile":"53456790786f7e6818dc475aca78ee1cfb964fbb.png","title":"Jhonatan Correa","arg":"tbelt2"},{"imagefile":"0a3d99a21158ddc6b8cbbf5a177d04e0f1b6ff5d.png","title":"Samod Kareem","arg":"samodkareem","subtitle":""},{"imagefile":"0a3d99a21158ddc6b8cbbf5a177d04e0f1b6ff5d.png","title":"Master Rafique","arg":"master2087"}]</string>
+				<key>matchmode</key>
+				<integer>3</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string></string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.listfilter</string>
+			<key>uid</key>
+			<string>38662F8A-D08A-41C2-864B-0574B8A875F1</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>availableviaurlhandler</key>
+				<false/>
+				<key>triggerid</key>
+				<string>hclookerdata</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.external</string>
+			<key>uid</key>
+			<string>60C40BFF-80E8-4C71-8564-F4A786C74492</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
@@ -343,21 +300,6 @@ set the clipboard to urlList</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>availableviaurlhandler</key>
-				<false/>
-				<key>triggerid</key>
-				<string>hclookerdata</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.external</string>
-			<key>uid</key>
-			<string>60C40BFF-80E8-4C71-8564-F4A786C74492</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
 	</array>
 	<key>readme</key>
 	<string>Read More</string>
@@ -369,19 +311,6 @@ set the clipboard to urlList</string>
 			<real>720</real>
 			<key>ypos</key>
 			<real>300</real>
-		</dict>
-		<key>2145459F-ED15-4AD8-929D-D7BC268EB30D</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>5</integer>
-			<key>note</key>
-			<string>Open the HC Looker URL for the previous two weeks, but with a 2-second delay.
-
-Requires Updating Monthly</string>
-			<key>xpos</key>
-			<real>425</real>
-			<key>ypos</key>
-			<real>80</real>
 		</dict>
 		<key>38662F8A-D08A-41C2-864B-0574B8A875F1</key>
 		<dict>
