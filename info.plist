@@ -6,23 +6,39 @@
 	<string>HC</string>
 	<key>connections</key>
 	<dict>
-		<key>60C40BFF-80E8-4C71-8564-F4A786C74492</key>
-		<array/>
-		<key>69AA3203-CF0A-42E7-8072-117C9DEDAB4B</key>
+		<key>05A365D0-32DC-4781-8E53-542E65578560</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>7F0DE48A-E977-4EF8-9E26-E247B7A1764D</string>
+				<string>5FC7E336-3000-4CFE-B2C7-F4E050909449</string>
 				<key>modifiers</key>
-				<integer>131072</integer>
+				<integer>0</integer>
 				<key>modifiersubtext</key>
-				<string>Open Monthly Reports (Previous Month)</string>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>DC591F63-D68C-4FA2-8FAA-74ABBD5B6529</string>
 				<key>vitoclose</key>
 				<false/>
 			</dict>
+		</array>
+		<key>49B9BD28-2350-4642-A08E-5DBFCBF7421A</key>
+		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>D13A40B4-DD92-491B-AA37-E194E0C8ABC3</string>
+				<string>5200BBFB-DFDB-4267-8E3D-EB2416AAADD6</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>5200BBFB-DFDB-4267-8E3D-EB2416AAADD6</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>C24C4243-97B5-4760-83CC-5315D18E83AA</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -32,11 +48,55 @@
 			</dict>
 			<dict>
 				<key>destinationuid</key>
-				<string>BD8523FD-7625-4E47-A197-E1034538CA1E</string>
+				<string>B0E024E9-9E5A-48D2-A937-93F690448ED4</string>
 				<key>modifiers</key>
-				<integer>1048576</integer>
+				<integer>0</integer>
 				<key>modifiersubtext</key>
-				<string>Capture active Browser URLs</string>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>05A365D0-32DC-4781-8E53-542E65578560</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>60C40BFF-80E8-4C71-8564-F4A786C74492</key>
+		<array/>
+		<key>69AA3203-CF0A-42E7-8072-117C9DEDAB4B</key>
+		<array/>
+		<key>B0E024E9-9E5A-48D2-A937-93F690448ED4</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>D13A40B4-DD92-491B-AA37-E194E0C8ABC3</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>DC591F63-D68C-4FA2-8FAA-74ABBD5B6529</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>C24C4243-97B5-4760-83CC-5315D18E83AA</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>7F0DE48A-E977-4EF8-9E26-E247B7A1764D</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>DC591F63-D68C-4FA2-8FAA-74ABBD5B6529</string>
 				<key>vitoclose</key>
 				<false/>
 			</dict>
@@ -49,7 +109,7 @@
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
-	<string>HC Looker Data - Dev ⭐</string>
+	<string>HC Looker Data - Filter ⭐</string>
 	<key>objects</key>
 	<array>
 		<dict>
@@ -105,21 +165,32 @@ echo -n $query</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>keyword</key>
-				<string>hc</string>
-				<key>subtext</key>
-				<string>Opens All Looker Reports for HCs 📊</string>
-				<key>text</key>
-				<string>HC Looker Data</string>
-				<key>withspace</key>
+				<key>conditions</key>
+				<array>
+					<dict>
+						<key>inputstring</key>
+						<string></string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>0</integer>
+						<key>matchstring</key>
+						<string>lastmonth</string>
+						<key>outputlabel</key>
+						<string></string>
+						<key>uid</key>
+						<string>DC591F63-D68C-4FA2-8FAA-74ABBD5B6529</string>
+					</dict>
+				</array>
+				<key>elselabel</key>
+				<string>else</string>
+				<key>hideelse</key>
 				<false/>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
+			<string>alfred.workflow.utility.conditional</string>
 			<key>uid</key>
-			<string>69AA3203-CF0A-42E7-8072-117C9DEDAB4B</string>
+			<string>C24C4243-97B5-4760-83CC-5315D18E83AA</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -185,6 +256,180 @@ echo -n $query</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>fixedorder</key>
+				<false/>
+				<key>items</key>
+				<string>[{"title":"Last Month","arg":"lastmonth"},{"title":"Last Week","arg":"lastweek"},{"title":"Last 2 Weeks","arg":"lasttwoweeks"},{"title":"Capture URLs"}]</string>
+				<key>keyword</key>
+				<string>hc</string>
+				<key>matchmode</key>
+				<integer>0</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>subtext</key>
+				<string>Opens All Looker Reports for HCs 📊</string>
+				<key>title</key>
+				<string>HC Looker Data</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.listfilter</string>
+			<key>uid</key>
+			<string>49B9BD28-2350-4642-A08E-5DBFCBF7421A</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>conditions</key>
+				<array>
+					<dict>
+						<key>inputstring</key>
+						<string></string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>0</integer>
+						<key>matchstring</key>
+						<string>lastweek</string>
+						<key>outputlabel</key>
+						<string></string>
+						<key>uid</key>
+						<string>DC591F63-D68C-4FA2-8FAA-74ABBD5B6529</string>
+					</dict>
+				</array>
+				<key>elselabel</key>
+				<string>else</string>
+				<key>hideelse</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.conditional</string>
+			<key>uid</key>
+			<string>B0E024E9-9E5A-48D2-A937-93F690448ED4</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>hc</string>
+				<key>subtext</key>
+				<string>Opens All Looker Reports for HCs 📊</string>
+				<key>text</key>
+				<string>HC Looker Data</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>69AA3203-CF0A-42E7-8072-117C9DEDAB4B</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.junction</string>
+			<key>uid</key>
+			<string>5200BBFB-DFDB-4267-8E3D-EB2416AAADD6</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>conditions</key>
+				<array>
+					<dict>
+						<key>inputstring</key>
+						<string></string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>0</integer>
+						<key>matchstring</key>
+						<string>lasttwoweeks</string>
+						<key>outputlabel</key>
+						<string></string>
+						<key>uid</key>
+						<string>DC591F63-D68C-4FA2-8FAA-74ABBD5B6529</string>
+					</dict>
+				</array>
+				<key>elselabel</key>
+				<string>else</string>
+				<key>hideelse</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.conditional</string>
+			<key>uid</key>
+			<string>05A365D0-32DC-4781-8E53-542E65578560</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>query=$1
+
+/usr/bin/open -na "Brave Browser"
+
+sleep 2
+
+open "https://looker.a8c.com/dashboards/477?Report+Date+Start=2+week&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Kudakwashe+Zafevere"
+
+open "https://looker.a8c.com/dashboards/477?Report+Date+Start=2+week&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Nazilya+Gismatullina"
+
+open "https://looker.a8c.com/dashboards/477?Report+Date+Start=2+week&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Anjana+Vijayan"
+
+open "https://looker.a8c.com/dashboards/477?Report+Date+Start=2+week&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Paulina+Fraser"
+
+open "https://looker.a8c.com/dashboards/477?Report+Date+Start=2+week&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Neha+Sharma"
+
+open "https://looker.a8c.com/dashboards/477?Report+Date+Start=2+week&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Lara+Gatchalian"
+
+open "https://looker.a8c.com/dashboards/477?Report+Date+Start=2+week&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Master+Rafique"
+
+open "https://looker.a8c.com/dashboards/477?Report+Date+Start=2+week&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Samod+Kareem"
+
+open "https://looker.a8c.com/dashboards/477?Report+Date+Start=2+week&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Briam+Rojas"
+
+open "https://looker.a8c.com/dashboards/477?Report+Date+Start=2+week&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Korede+Osunlalu"
+
+
+echo -n $query</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>5FC7E336-3000-4CFE-B2C7-F4E050909449</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>availableviaurlhandler</key>
 				<false/>
 				<key>triggerid</key>
@@ -241,6 +486,38 @@ set the clipboard to urlList</string>
 Looker is a purr-fectly delightful business intelligence tool that helps organizations gain insights from their data, just like a curious cat uncovering hidden treasures. With its intuitive interface and powerful analytics capabilities, Looker empowers users to explore data like a feline, making informed decisions with agility and grace. Say goodbye to data hairballs and embrace the elegance of Looker's whisker-sharp visualizations and data-driven discoveries.</string>
 	<key>uidata</key>
 	<dict>
+		<key>05A365D0-32DC-4781-8E53-542E65578560</key>
+		<dict>
+			<key>xpos</key>
+			<real>560</real>
+			<key>ypos</key>
+			<real>375</real>
+		</dict>
+		<key>49B9BD28-2350-4642-A08E-5DBFCBF7421A</key>
+		<dict>
+			<key>xpos</key>
+			<real>280</real>
+			<key>ypos</key>
+			<real>275</real>
+		</dict>
+		<key>5200BBFB-DFDB-4267-8E3D-EB2416AAADD6</key>
+		<dict>
+			<key>xpos</key>
+			<real>445</real>
+			<key>ypos</key>
+			<real>305</real>
+		</dict>
+		<key>5FC7E336-3000-4CFE-B2C7-F4E050909449</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>1</integer>
+			<key>note</key>
+			<string>Opens HC Looker URL for the last two weeks, but with a 2-second delay.</string>
+			<key>xpos</key>
+			<real>705</real>
+			<key>ypos</key>
+			<real>425</real>
+		</dict>
 		<key>60C40BFF-80E8-4C71-8564-F4A786C74492</key>
 		<dict>
 			<key>colorindex</key>
@@ -264,31 +541,43 @@ Looker is a purr-fectly delightful business intelligence tool that helps organiz
 			<key>colorindex</key>
 			<integer>5</integer>
 			<key>note</key>
-			<string>Open the HC Looker URL for the previous month, but with a 2-second delay.
-
-Requires Updating Monthly</string>
+			<string>Opens HC Looker URL for the previous month, but with a 2-second delay.</string>
 			<key>xpos</key>
-			<real>265</real>
+			<real>705</real>
 			<key>ypos</key>
 			<real>80</real>
+		</dict>
+		<key>B0E024E9-9E5A-48D2-A937-93F690448ED4</key>
+		<dict>
+			<key>xpos</key>
+			<real>560</real>
+			<key>ypos</key>
+			<real>295</real>
 		</dict>
 		<key>BD8523FD-7625-4E47-A197-E1034538CA1E</key>
 		<dict>
 			<key>note</key>
 			<string>Capture URLs from Active Window</string>
 			<key>xpos</key>
-			<real>265</real>
+			<real>450</real>
 			<key>ypos</key>
-			<real>485</real>
+			<real>530</real>
+		</dict>
+		<key>C24C4243-97B5-4760-83CC-5315D18E83AA</key>
+		<dict>
+			<key>xpos</key>
+			<real>560</real>
+			<key>ypos</key>
+			<real>215</real>
 		</dict>
 		<key>D13A40B4-DD92-491B-AA37-E194E0C8ABC3</key>
 		<dict>
 			<key>note</key>
-			<string>Open the HC Looker URL from the previous week in a new Brave browser window, but with a 2-second delay.</string>
+			<string>Opens HC Looker URL for the last week, but with a 2-second delay.</string>
 			<key>xpos</key>
-			<real>265</real>
+			<real>705</real>
 			<key>ypos</key>
-			<real>300</real>
+			<real>260</real>
 		</dict>
 	</dict>
 	<key>userconfigurationconfig</key>
