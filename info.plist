@@ -66,17 +66,25 @@
 
 sleep 2
 
-open "https://looker.a8c.com/dashboards/477?Report+Date+Start=2023%2F04%2F01+to+2023%2F04%2F30&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Kudakwashe+Zafevere"
+open "https://looker.a8c.com/dashboards/477?Report+Date+Start=last+month&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Kudakwashe+Zafevere"
 
-open "https://looker.a8c.com/dashboards/477?Report+Date+Start=2023%2F04%2F01+to+2023%2F04%2F30&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Nazilya+Gismatullina"
+open "https://looker.a8c.com/dashboards/477?Report+Date+Start=last+month&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Nazilya+Gismatullina"
 
-open "https://looker.a8c.com/dashboards/477?Report+Date+Start=2023%2F04%2F01+to+2023%2F04%2F30&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Anjana+Vijayan"
+open "https://looker.a8c.com/dashboards/477?Report+Date+Start=last+month&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Anjana+Vijayan"
 
-open "https://looker.a8c.com/dashboards/477?Report+Date+Start=2023%2F04%2F01+to+2023%2F04%2F30&amp;Upwork+team=English+Language+Support+Team%2CSpanish+Localized+Team&amp;Upwork+name=Paulina+Fraser"
+open "https://looker.a8c.com/dashboards/477?Report+Date+Start=last+month&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Paulina+Fraser"
 
-open "https://looker.a8c.com/dashboards/477?Report+Date+Start=2023%2F04%2F01+to+2023%2F04%2F30&amp;Upwork+team=English+Language+Support+Team%2CSpanish+Localized+Team&amp;Upwork+name=Neha+Sharma"
+open "https://looker.a8c.com/dashboards/477?Report+Date+Start=last+month&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Neha+Sharma"
 
-open "https://looker.a8c.com/dashboards/477?Report+Date+Start=2023%2F04%2F01+to+2023%2F04%2F30&amp;Upwork+team=English+Language+Support+Team%2CSpanish+Localized+Team&amp;Upwork+name=Lara+Gatchalian"
+open "https://looker.a8c.com/dashboards/477?Report+Date+Start=last+month&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Lara+Gatchalian"
+
+open "https://looker.a8c.com/dashboards/477?Report+Date+Start=last+month&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Master+Rafique"
+
+open "https://looker.a8c.com/dashboards/477?Report+Date+Start=last+month&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Samod+Kareem"
+
+open "https://looker.a8c.com/dashboards/477?Report+Date+Start=last+month&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Briam+Rojas"
+
+open "https://looker.a8c.com/dashboards/477?Report+Date+Start=last+month&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Korede+Osunlalu"
 
 
 echo -n $query</string>
