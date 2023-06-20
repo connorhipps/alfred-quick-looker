@@ -49,7 +49,7 @@
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
-	<string>HC Looker Data - Dev ⭐</string>
+	<string>HC Looker Data - Main</string>
 	<key>objects</key>
 	<array>
 		<dict>
@@ -185,21 +185,6 @@ echo -n $query</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>availableviaurlhandler</key>
-				<false/>
-				<key>triggerid</key>
-				<string>hclookerdata</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.external</string>
-			<key>uid</key>
-			<string>60C40BFF-80E8-4C71-8564-F4A786C74492</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
@@ -231,6 +216,21 @@ set the clipboard to urlList</string>
 			<string>BD8523FD-7625-4E47-A197-E1034538CA1E</string>
 			<key>version</key>
 			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>availableviaurlhandler</key>
+				<false/>
+				<key>triggerid</key>
+				<string>hclookerdata</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.external</string>
+			<key>uid</key>
+			<string>60C40BFF-80E8-4C71-8564-F4A786C74492</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 	</array>
 	<key>readme</key>
