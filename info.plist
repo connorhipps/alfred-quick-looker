@@ -66,11 +66,32 @@
 				<key>vitoclose</key>
 				<false/>
 			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>AE86398B-BBA7-45B0-9E8D-EDB8F50096F6</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
 		</array>
-		<key>60C40BFF-80E8-4C71-8564-F4A786C74492</key>
-		<array/>
-		<key>69AA3203-CF0A-42E7-8072-117C9DEDAB4B</key>
-		<array/>
+		<key>AE86398B-BBA7-45B0-9E8D-EDB8F50096F6</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>BD8523FD-7625-4E47-A197-E1034538CA1E</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>DC591F63-D68C-4FA2-8FAA-74ABBD5B6529</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>B0E024E9-9E5A-48D2-A937-93F690448ED4</key>
 		<array>
 			<dict>
@@ -105,11 +126,11 @@
 	<key>createdby</key>
 	<string>Connor Hipps</string>
 	<key>description</key>
-	<string>Search by list filter for HC Team Activity.</string>
+	<string>Search by list filter for HC Looker data. 📊</string>
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
-	<string>HC Looker Data - Filter ⭐</string>
+	<string>HC Looker Data - Share 🦈</string>
 	<key>objects</key>
 	<array>
 		<dict>
@@ -256,37 +277,6 @@ echo -n $query</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>argumenttrimmode</key>
-				<integer>0</integer>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>fixedorder</key>
-				<false/>
-				<key>items</key>
-				<string>[{"title":"Last Month","arg":"lastmonth"},{"title":"Last Week","arg":"lastweek"},{"title":"Last 2 Weeks","arg":"lasttwoweeks"},{"title":"Capture URLs"}]</string>
-				<key>keyword</key>
-				<string>hc</string>
-				<key>matchmode</key>
-				<integer>0</integer>
-				<key>runningsubtext</key>
-				<string></string>
-				<key>subtext</key>
-				<string>Opens All Looker Reports for HCs 📊</string>
-				<key>title</key>
-				<string>HC Looker Data</string>
-				<key>withspace</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.listfilter</string>
-			<key>uid</key>
-			<string>49B9BD28-2350-4642-A08E-5DBFCBF7421A</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>conditions</key>
 				<array>
 					<dict>
@@ -317,42 +307,41 @@ echo -n $query</string>
 			<integer>1</integer>
 		</dict>
 		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>fixedorder</key>
+				<false/>
+				<key>items</key>
+				<string>[{"title":"Last Month","arg":"lastmonth"},{"title":"Last Week","arg":"lastweek"},{"title":"Last 2 Weeks","arg":"lasttwoweeks"},{"title":"Capture URLs","arg":"capture"}]</string>
+				<key>keyword</key>
+				<string>hc</string>
+				<key>matchmode</key>
+				<integer>0</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>subtext</key>
+				<string>Opens All Looker Reports for HCs 📊</string>
+				<key>title</key>
+				<string>HC Looker Data</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
 			<key>type</key>
-			<string>alfred.workflow.utility.junction</string>
+			<string>alfred.workflow.input.listfilter</string>
 			<key>uid</key>
-			<string>5200BBFB-DFDB-4267-8E3D-EB2416AAADD6</string>
+			<string>49B9BD28-2350-4642-A08E-5DBFCBF7421A</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
 		<dict>
-			<key>config</key>
-			<dict>
-				<key>conditions</key>
-				<array>
-					<dict>
-						<key>inputstring</key>
-						<string></string>
-						<key>matchcasesensitive</key>
-						<false/>
-						<key>matchmode</key>
-						<integer>0</integer>
-						<key>matchstring</key>
-						<string>lasttwoweeks</string>
-						<key>outputlabel</key>
-						<string></string>
-						<key>uid</key>
-						<string>DC591F63-D68C-4FA2-8FAA-74ABBD5B6529</string>
-					</dict>
-				</array>
-				<key>elselabel</key>
-				<string>else</string>
-				<key>hideelse</key>
-				<false/>
-			</dict>
 			<key>type</key>
-			<string>alfred.workflow.utility.conditional</string>
+			<string>alfred.workflow.utility.junction</string>
 			<key>uid</key>
-			<string>05A365D0-32DC-4781-8E53-542E65578560</string>
+			<string>5200BBFB-DFDB-4267-8E3D-EB2416AAADD6</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -409,36 +398,32 @@ echo -n $query</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>availableviaurlhandler</key>
-				<false/>
-				<key>triggerid</key>
-				<string>hclookerdata</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.external</string>
-			<key>uid</key>
-			<string>60C40BFF-80E8-4C71-8564-F4A786C74492</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>keyword</key>
-				<string>hc</string>
-				<key>subtext</key>
-				<string>Opens All Looker Reports for HCs 📊</string>
-				<key>text</key>
-				<string>HC Looker Data</string>
-				<key>withspace</key>
+				<key>conditions</key>
+				<array>
+					<dict>
+						<key>inputstring</key>
+						<string></string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>0</integer>
+						<key>matchstring</key>
+						<string>lasttwoweeks</string>
+						<key>outputlabel</key>
+						<string></string>
+						<key>uid</key>
+						<string>DC591F63-D68C-4FA2-8FAA-74ABBD5B6529</string>
+					</dict>
+				</array>
+				<key>elselabel</key>
+				<string>else</string>
+				<key>hideelse</key>
 				<false/>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
+			<string>alfred.workflow.utility.conditional</string>
 			<key>uid</key>
-			<string>69AA3203-CF0A-42E7-8072-117C9DEDAB4B</string>
+			<string>05A365D0-32DC-4781-8E53-542E65578560</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -477,35 +462,77 @@ set the clipboard to urlList</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>conditions</key>
+				<array>
+					<dict>
+						<key>inputstring</key>
+						<string></string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>0</integer>
+						<key>matchstring</key>
+						<string>capture</string>
+						<key>outputlabel</key>
+						<string></string>
+						<key>uid</key>
+						<string>DC591F63-D68C-4FA2-8FAA-74ABBD5B6529</string>
+					</dict>
+				</array>
+				<key>elselabel</key>
+				<string>else</string>
+				<key>hideelse</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.conditional</string>
+			<key>uid</key>
+			<string>AE86398B-BBA7-45B0-9E8D-EDB8F50096F6</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string># HC Looker Data: Meow-nificent Data Analysis and Visualization for your HCs 🐾
 
 ![Cat Image](cat.png)
 
-Looker is a purr-fectly delightful business intelligence tool that helps organizations gain insights from their data, just like a curious cat uncovering hidden treasures. With its intuitive interface and powerful analytics capabilities, Looker empowers users to explore data like a feline, making informed decisions with agility and grace. Say goodbye to data hairballs and embrace the elegance of Looker's whisker-sharp visualizations and data-driven discoveries.</string>
+Looker is a purr-fectly delightful business intelligence tool that helps organizations gain insights from their data, just like a curious cat uncovering hidden treasures. 
+
+(Thanks ChatGPT)
+
+## Setup
+
+1.</string>
 	<key>uidata</key>
 	<dict>
 		<key>05A365D0-32DC-4781-8E53-542E65578560</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>1</integer>
+			<key>note</key>
+			<string>lasttwoweeks</string>
 			<key>xpos</key>
 			<real>365</real>
 			<key>ypos</key>
-			<real>375</real>
+			<real>460</real>
 		</dict>
 		<key>49B9BD28-2350-4642-A08E-5DBFCBF7421A</key>
 		<dict>
 			<key>xpos</key>
-			<real>85</real>
+			<real>55</real>
 			<key>ypos</key>
-			<real>275</real>
+			<real>360</real>
 		</dict>
 		<key>5200BBFB-DFDB-4267-8E3D-EB2416AAADD6</key>
 		<dict>
 			<key>xpos</key>
-			<real>250</real>
+			<real>225</real>
 			<key>ypos</key>
-			<real>305</real>
+			<real>390</real>
 		</dict>
 		<key>5FC7E336-3000-4CFE-B2C7-F4E050909449</key>
 		<dict>
@@ -518,28 +545,10 @@ Looker is a purr-fectly delightful business intelligence tool that helps organiz
 			<key>ypos</key>
 			<real>425</real>
 		</dict>
-		<key>60C40BFF-80E8-4C71-8564-F4A786C74492</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>2</integer>
-			<key>note</key>
-			<string>External Trigger -- Link to Other Alfred Workflows</string>
-			<key>xpos</key>
-			<real>85</real>
-			<key>ypos</key>
-			<real>445</real>
-		</dict>
-		<key>69AA3203-CF0A-42E7-8072-117C9DEDAB4B</key>
-		<dict>
-			<key>xpos</key>
-			<real>85</real>
-			<key>ypos</key>
-			<real>645</real>
-		</dict>
 		<key>7F0DE48A-E977-4EF8-9E26-E247B7A1764D</key>
 		<dict>
 			<key>colorindex</key>
-			<integer>5</integer>
+			<integer>4</integer>
 			<key>note</key>
 			<string>Opens HC Looker URL for the previous month, but with a 2-second delay.</string>
 			<key>xpos</key>
@@ -547,8 +556,21 @@ Looker is a purr-fectly delightful business intelligence tool that helps organiz
 			<key>ypos</key>
 			<real>80</real>
 		</dict>
+		<key>AE86398B-BBA7-45B0-9E8D-EDB8F50096F6</key>
+		<dict>
+			<key>note</key>
+			<string>capture</string>
+			<key>xpos</key>
+			<real>365</real>
+			<key>ypos</key>
+			<real>640</real>
+		</dict>
 		<key>B0E024E9-9E5A-48D2-A937-93F690448ED4</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>3</integer>
+			<key>note</key>
+			<string>lastweek</string>
 			<key>xpos</key>
 			<real>365</real>
 			<key>ypos</key>
@@ -561,17 +583,23 @@ Looker is a purr-fectly delightful business intelligence tool that helps organiz
 			<key>xpos</key>
 			<real>510</real>
 			<key>ypos</key>
-			<real>655</real>
+			<real>605</real>
 		</dict>
 		<key>C24C4243-97B5-4760-83CC-5315D18E83AA</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>4</integer>
+			<key>note</key>
+			<string>lastmonth</string>
 			<key>xpos</key>
 			<real>365</real>
 			<key>ypos</key>
-			<real>215</real>
+			<real>115</real>
 		</dict>
 		<key>D13A40B4-DD92-491B-AA37-E194E0C8ABC3</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>3</integer>
 			<key>note</key>
 			<string>Opens HC Looker URL for the last week, but with a 2-second delay.</string>
 			<key>xpos</key>
