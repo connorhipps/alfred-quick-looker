@@ -317,27 +317,6 @@ echo -n $query</string>
 			<integer>1</integer>
 		</dict>
 		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>keyword</key>
-				<string>hc</string>
-				<key>subtext</key>
-				<string>Opens All Looker Reports for HCs 📊</string>
-				<key>text</key>
-				<string>HC Looker Data</string>
-				<key>withspace</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>69AA3203-CF0A-42E7-8072-117C9DEDAB4B</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
 			<key>type</key>
 			<string>alfred.workflow.utility.junction</string>
 			<key>uid</key>
@@ -445,6 +424,27 @@ echo -n $query</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>hc</string>
+				<key>subtext</key>
+				<string>Opens All Looker Reports for HCs 📊</string>
+				<key>text</key>
+				<string>HC Looker Data</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>69AA3203-CF0A-42E7-8072-117C9DEDAB4B</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
@@ -489,21 +489,21 @@ Looker is a purr-fectly delightful business intelligence tool that helps organiz
 		<key>05A365D0-32DC-4781-8E53-542E65578560</key>
 		<dict>
 			<key>xpos</key>
-			<real>560</real>
+			<real>365</real>
 			<key>ypos</key>
 			<real>375</real>
 		</dict>
 		<key>49B9BD28-2350-4642-A08E-5DBFCBF7421A</key>
 		<dict>
 			<key>xpos</key>
-			<real>280</real>
+			<real>85</real>
 			<key>ypos</key>
 			<real>275</real>
 		</dict>
 		<key>5200BBFB-DFDB-4267-8E3D-EB2416AAADD6</key>
 		<dict>
 			<key>xpos</key>
-			<real>445</real>
+			<real>250</real>
 			<key>ypos</key>
 			<real>305</real>
 		</dict>
@@ -514,7 +514,7 @@ Looker is a purr-fectly delightful business intelligence tool that helps organiz
 			<key>note</key>
 			<string>Opens HC Looker URL for the last two weeks, but with a 2-second delay.</string>
 			<key>xpos</key>
-			<real>705</real>
+			<real>510</real>
 			<key>ypos</key>
 			<real>425</real>
 		</dict>
@@ -527,14 +527,14 @@ Looker is a purr-fectly delightful business intelligence tool that helps organiz
 			<key>xpos</key>
 			<real>85</real>
 			<key>ypos</key>
-			<real>485</real>
+			<real>445</real>
 		</dict>
 		<key>69AA3203-CF0A-42E7-8072-117C9DEDAB4B</key>
 		<dict>
 			<key>xpos</key>
-			<real>75</real>
+			<real>85</real>
 			<key>ypos</key>
-			<real>300</real>
+			<real>645</real>
 		</dict>
 		<key>7F0DE48A-E977-4EF8-9E26-E247B7A1764D</key>
 		<dict>
@@ -543,14 +543,14 @@ Looker is a purr-fectly delightful business intelligence tool that helps organiz
 			<key>note</key>
 			<string>Opens HC Looker URL for the previous month, but with a 2-second delay.</string>
 			<key>xpos</key>
-			<real>705</real>
+			<real>510</real>
 			<key>ypos</key>
 			<real>80</real>
 		</dict>
 		<key>B0E024E9-9E5A-48D2-A937-93F690448ED4</key>
 		<dict>
 			<key>xpos</key>
-			<real>560</real>
+			<real>365</real>
 			<key>ypos</key>
 			<real>295</real>
 		</dict>
@@ -559,14 +559,14 @@ Looker is a purr-fectly delightful business intelligence tool that helps organiz
 			<key>note</key>
 			<string>Capture URLs from Active Window</string>
 			<key>xpos</key>
-			<real>450</real>
+			<real>510</real>
 			<key>ypos</key>
-			<real>530</real>
+			<real>655</real>
 		</dict>
 		<key>C24C4243-97B5-4760-83CC-5315D18E83AA</key>
 		<dict>
 			<key>xpos</key>
-			<real>560</real>
+			<real>365</real>
 			<key>ypos</key>
 			<real>215</real>
 		</dict>
@@ -575,7 +575,7 @@ Looker is a purr-fectly delightful business intelligence tool that helps organiz
 			<key>note</key>
 			<string>Opens HC Looker URL for the last week, but with a 2-second delay.</string>
 			<key>xpos</key>
-			<real>705</real>
+			<real>510</real>
 			<key>ypos</key>
 			<real>260</real>
 		</dict>
