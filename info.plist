@@ -130,7 +130,7 @@
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
-	<string>HC Looker Data - Share 🦈</string>
+	<string>HC Looker Data</string>
 	<key>objects</key>
 	<array>
 		<dict>
@@ -316,9 +316,9 @@ echo -n $query</string>
 				<key>fixedorder</key>
 				<false/>
 				<key>items</key>
-				<string>[{"title":"Last Month","arg":"lastmonth"},{"title":"Last Week","arg":"lastweek"},{"title":"Last 2 Weeks","arg":"lasttwoweeks"},{"title":"Capture URLs","arg":"capture"}]</string>
+				<string>[{"title":"Last Month","arg":"lastmonth","subtitle":"Queries the Last Month"},{"title":"Last Week","arg":"lastweek","subtitle":"Queries the Last Week"},{"title":"Last 2 Weeks","arg":"lasttwoweeks","subtitle":"Queries the Last 2 Weeks"},{"title":"Capture URLs 📷","arg":"capture","subtitle":"Captures ALL URLs in The Active Browser"}]</string>
 				<key>keyword</key>
-				<string>hc</string>
+				<string>looker</string>
 				<key>matchmode</key>
 				<integer>0</integer>
 				<key>runningsubtext</key>
@@ -496,7 +496,7 @@ set the clipboard to urlList</string>
 		</dict>
 	</array>
 	<key>readme</key>
-	<string># HC Looker Data: Meow-nificent Data Analysis and Visualization for your HCs 🐾
+	<string># An Alfred Workflow for Quick Access to HC Looker Data 🐾
 
 ![Cat Image](cat.png)
 
