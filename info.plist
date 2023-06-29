@@ -6,6 +6,59 @@
 	<string>HC</string>
 	<key>connections</key>
 	<dict>
+		<key>03D563C7-F8D5-4EF9-80F6-655206C5832C</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>33563CC7-F070-451F-877D-0A880C4B7DB7</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>DC591F63-D68C-4FA2-8FAA-74ABBD5B6529</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>CE32A49C-8D73-4BD5-BB20-FF7FFA533534</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>33563CC7-F070-451F-877D-0A880C4B7DB7</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>D2E41FBB-8231-449B-99D4-59178E9C1632</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>34E78AC6-A421-4986-899B-55D131ED0077</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>FBC5F9B5-0E58-464C-B98D-A80FCBF7B767</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>DC591F63-D68C-4FA2-8FAA-74ABBD5B6529</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>60C40BFF-80E8-4C71-8564-F4A786C74492</key>
 		<array/>
 		<key>69AA3203-CF0A-42E7-8072-117C9DEDAB4B</key>
@@ -37,6 +90,19 @@
 				<integer>1048576</integer>
 				<key>modifiersubtext</key>
 				<string>Capture active Browser URLs</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>FBC5F9B5-0E58-464C-B98D-A80FCBF7B767</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>03D563C7-F8D5-4EF9-80F6-655206C5832C</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
 				<key>vitoclose</key>
 				<false/>
 			</dict>
@@ -185,6 +251,62 @@ echo -n $query</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string>All URLs for active browser tabs have been captured.</string>
+				<key>title</key>
+				<string>URLs Captured to Clipboard! 📷</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>D2E41FBB-8231-449B-99D4-59178E9C1632</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>tell application "Brave Browser"
+    set tabList to tabs of front window
+    set urlList to {}
+    repeat with aTab in tabList
+        set end of urlList to URL of aTab
+    end repeat
+end tell
+
+set {TID, text item delimiters} to {text item delimiters, return}
+set urlList to urlList as text
+set text item delimiters to TID
+
+set the clipboard to urlList</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>6</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>33563CC7-F070-451F-877D-0A880C4B7DB7</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
@@ -232,6 +354,120 @@ set the clipboard to urlList</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>fixedorder</key>
+				<true/>
+				<key>items</key>
+				<string>[{"title":"Yes","arg":"yes","subtitle":"All URLs for active browser tabs will be captured. 📷"},{"title":"No","arg":"no","subtitle":"All URLs for active browser tabs will NOT be captured. ❎"}]</string>
+				<key>matchmode</key>
+				<integer>0</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string>Are you sure you wish to capture all URLs?</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.listfilter</string>
+			<key>uid</key>
+			<string>FBC5F9B5-0E58-464C-B98D-A80FCBF7B767</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string>No URLs were captured to the clipboard.</string>
+				<key>title</key>
+				<string>Action Cancelled!</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>CE32A49C-8D73-4BD5-BB20-FF7FFA533534</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>conditions</key>
+				<array>
+					<dict>
+						<key>inputstring</key>
+						<string></string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>0</integer>
+						<key>matchstring</key>
+						<string>yes</string>
+						<key>outputlabel</key>
+						<string></string>
+						<key>uid</key>
+						<string>DC591F63-D68C-4FA2-8FAA-74ABBD5B6529</string>
+					</dict>
+				</array>
+				<key>elselabel</key>
+				<string>else</string>
+				<key>hideelse</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.conditional</string>
+			<key>uid</key>
+			<string>03D563C7-F8D5-4EF9-80F6-655206C5832C</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>conditions</key>
+				<array>
+					<dict>
+						<key>inputstring</key>
+						<string></string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>0</integer>
+						<key>matchstring</key>
+						<string>capture</string>
+						<key>outputlabel</key>
+						<string></string>
+						<key>uid</key>
+						<string>DC591F63-D68C-4FA2-8FAA-74ABBD5B6529</string>
+					</dict>
+				</array>
+				<key>elselabel</key>
+				<string>else</string>
+				<key>hideelse</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.conditional</string>
+			<key>uid</key>
+			<string>34E78AC6-A421-4986-899B-55D131ED0077</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string># HC Looker Data: Meow-nificent Data Analysis and Visualization for your HCs 🐾
@@ -241,6 +477,39 @@ set the clipboard to urlList</string>
 Looker is a purr-fectly delightful business intelligence tool that helps organizations gain insights from their data, just like a curious cat uncovering hidden treasures. With its intuitive interface and powerful analytics capabilities, Looker empowers users to explore data like a feline, making informed decisions with agility and grace. Say goodbye to data hairballs and embrace the elegance of Looker's whisker-sharp visualizations and data-driven discoveries.</string>
 	<key>uidata</key>
 	<dict>
+		<key>03D563C7-F8D5-4EF9-80F6-655206C5832C</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>7</integer>
+			<key>note</key>
+			<string>Yes / No</string>
+			<key>xpos</key>
+			<real>840</real>
+			<key>ypos</key>
+			<real>515</real>
+		</dict>
+		<key>33563CC7-F070-451F-877D-0A880C4B7DB7</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>7</integer>
+			<key>note</key>
+			<string>Capture URLs from Active Window</string>
+			<key>xpos</key>
+			<real>910</real>
+			<key>ypos</key>
+			<real>305</real>
+		</dict>
+		<key>34E78AC6-A421-4986-899B-55D131ED0077</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>7</integer>
+			<key>note</key>
+			<string>capture</string>
+			<key>xpos</key>
+			<real>460</real>
+			<key>ypos</key>
+			<real>530</real>
+		</dict>
 		<key>60C40BFF-80E8-4C71-8564-F4A786C74492</key>
 		<dict>
 			<key>colorindex</key>
@@ -281,6 +550,17 @@ Requires Updating Monthly</string>
 			<key>ypos</key>
 			<real>485</real>
 		</dict>
+		<key>CE32A49C-8D73-4BD5-BB20-FF7FFA533534</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>7</integer>
+			<key>note</key>
+			<string>Action Cancelled</string>
+			<key>xpos</key>
+			<real>1080</real>
+			<key>ypos</key>
+			<real>510</real>
+		</dict>
 		<key>D13A40B4-DD92-491B-AA37-E194E0C8ABC3</key>
 		<dict>
 			<key>note</key>
@@ -289,6 +569,28 @@ Requires Updating Monthly</string>
 			<real>265</real>
 			<key>ypos</key>
 			<real>300</real>
+		</dict>
+		<key>D2E41FBB-8231-449B-99D4-59178E9C1632</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>7</integer>
+			<key>note</key>
+			<string>URLs Captured</string>
+			<key>xpos</key>
+			<real>1080</real>
+			<key>ypos</key>
+			<real>305</real>
+		</dict>
+		<key>FBC5F9B5-0E58-464C-B98D-A80FCBF7B767</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>7</integer>
+			<key>note</key>
+			<string>Yes / No</string>
+			<key>xpos</key>
+			<real>605</real>
+			<key>ypos</key>
+			<real>495</real>
 		</dict>
 	</dict>
 	<key>userconfigurationconfig</key>
