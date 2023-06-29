@@ -83,16 +83,6 @@
 				<key>vitoclose</key>
 				<false/>
 			</dict>
-			<dict>
-				<key>destinationuid</key>
-				<string>BD8523FD-7625-4E47-A197-E1034538CA1E</string>
-				<key>modifiers</key>
-				<integer>1048576</integer>
-				<key>modifiersubtext</key>
-				<string>Capture active Browser URLs</string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
 		</array>
 		<key>FBC5F9B5-0E58-464C-B98D-A80FCBF7B767</key>
 		<array>
@@ -307,41 +297,6 @@ set the clipboard to urlList</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>tell application "Brave Browser"
-    set tabList to tabs of front window
-    set urlList to {}
-    repeat with aTab in tabList
-        set end of urlList to URL of aTab
-    end repeat
-end tell
-
-set {TID, text item delimiters} to {text item delimiters, return}
-set urlList to urlList as text
-set text item delimiters to TID
-
-set the clipboard to urlList</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>6</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>BD8523FD-7625-4E47-A197-E1034538CA1E</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>availableviaurlhandler</key>
 				<false/>
 				<key>triggerid</key>
@@ -540,15 +495,6 @@ Requires Updating Monthly</string>
 			<real>265</real>
 			<key>ypos</key>
 			<real>80</real>
-		</dict>
-		<key>BD8523FD-7625-4E47-A197-E1034538CA1E</key>
-		<dict>
-			<key>note</key>
-			<string>Capture URLs from Active Window</string>
-			<key>xpos</key>
-			<real>265</real>
-			<key>ypos</key>
-			<real>485</real>
 		</dict>
 		<key>CE32A49C-8D73-4BD5-BB20-FF7FFA533534</key>
 		<dict>
