@@ -417,6 +417,62 @@ echo -n $query</string>
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
+				<string>tell application "Brave Browser"
+    set tabList to tabs of front window
+    set urlList to {}
+    repeat with aTab in tabList
+        set end of urlList to URL of aTab
+    end repeat
+end tell
+
+set {TID, text item delimiters} to {text item delimiters, return}
+set urlList to urlList as text
+set text item delimiters to TID
+
+set the clipboard to urlList</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>6</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>84546B06-77EC-4DCF-982E-675A599A329B</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string>All URLs for active browser tabs have been captured.</string>
+				<key>title</key>
+				<string>URLs Captured to Clipboard! 📷</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>E7791453-3667-45DC-BC79-7E309E81F64B</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
 				<string>query=$1
 
 /usr/bin/open -na "Brave Browser"
@@ -488,62 +544,6 @@ echo -n $query</string>
 			<string>alfred.workflow.utility.conditional</string>
 			<key>uid</key>
 			<string>05A365D0-32DC-4781-8E53-542E65578560</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>tell application "Brave Browser"
-    set tabList to tabs of front window
-    set urlList to {}
-    repeat with aTab in tabList
-        set end of urlList to URL of aTab
-    end repeat
-end tell
-
-set {TID, text item delimiters} to {text item delimiters, return}
-set urlList to urlList as text
-set text item delimiters to TID
-
-set the clipboard to urlList</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>6</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>84546B06-77EC-4DCF-982E-675A599A329B</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>lastpathcomponent</key>
-				<false/>
-				<key>onlyshowifquerypopulated</key>
-				<false/>
-				<key>removeextension</key>
-				<false/>
-				<key>text</key>
-				<string>All URLs for active browser tabs have been captured.</string>
-				<key>title</key>
-				<string>URLs Captured to Clipboard! 📷</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.notification</string>
-			<key>uid</key>
-			<string>E7791453-3667-45DC-BC79-7E309E81F64B</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -700,7 +700,7 @@ Looker is a purr-fectly delightful business intelligence tool that helps organiz
 			<key>note</key>
 			<string>lasttwoweeks</string>
 			<key>xpos</key>
-			<real>365</real>
+			<real>315</real>
 			<key>ypos</key>
 			<real>460</real>
 		</dict>
@@ -711,9 +711,9 @@ Looker is a purr-fectly delightful business intelligence tool that helps organiz
 			<key>note</key>
 			<string>Action Cancelled</string>
 			<key>xpos</key>
-			<real>1025</real>
+			<real>985</real>
 			<key>ypos</key>
-			<real>890</real>
+			<real>620</real>
 		</dict>
 		<key>45AC3D7C-A598-4A41-9574-0418E1784612</key>
 		<dict>
@@ -722,21 +722,21 @@ Looker is a purr-fectly delightful business intelligence tool that helps organiz
 			<key>note</key>
 			<string>capture</string>
 			<key>xpos</key>
-			<real>360</real>
+			<real>320</real>
 			<key>ypos</key>
-			<real>910</real>
+			<real>640</real>
 		</dict>
 		<key>49B9BD28-2350-4642-A08E-5DBFCBF7421A</key>
 		<dict>
 			<key>xpos</key>
-			<real>55</real>
+			<real>30</real>
 			<key>ypos</key>
 			<real>360</real>
 		</dict>
 		<key>5200BBFB-DFDB-4267-8E3D-EB2416AAADD6</key>
 		<dict>
 			<key>xpos</key>
-			<real>225</real>
+			<real>185</real>
 			<key>ypos</key>
 			<real>390</real>
 		</dict>
@@ -769,9 +769,9 @@ Looker is a purr-fectly delightful business intelligence tool that helps organiz
 			<key>note</key>
 			<string>Capture URLs from Active Window</string>
 			<key>xpos</key>
-			<real>855</real>
+			<real>815</real>
 			<key>ypos</key>
-			<real>685</real>
+			<real>415</real>
 		</dict>
 		<key>A4762308-6E8B-4F0D-8ADE-BB9DE5272BDB</key>
 		<dict>
@@ -780,9 +780,9 @@ Looker is a purr-fectly delightful business intelligence tool that helps organiz
 			<key>note</key>
 			<string>Yes / No</string>
 			<key>xpos</key>
-			<real>550</real>
+			<real>510</real>
 			<key>ypos</key>
-			<real>875</real>
+			<real>605</real>
 		</dict>
 		<key>B0E024E9-9E5A-48D2-A937-93F690448ED4</key>
 		<dict>
@@ -791,7 +791,7 @@ Looker is a purr-fectly delightful business intelligence tool that helps organiz
 			<key>note</key>
 			<string>lastweek</string>
 			<key>xpos</key>
-			<real>365</real>
+			<real>315</real>
 			<key>ypos</key>
 			<real>295</real>
 		</dict>
@@ -802,7 +802,7 @@ Looker is a purr-fectly delightful business intelligence tool that helps organiz
 			<key>note</key>
 			<string>lastmonth</string>
 			<key>xpos</key>
-			<real>365</real>
+			<real>315</real>
 			<key>ypos</key>
 			<real>115</real>
 		</dict>
@@ -813,9 +813,9 @@ Looker is a purr-fectly delightful business intelligence tool that helps organiz
 			<key>note</key>
 			<string>Yes / No</string>
 			<key>xpos</key>
-			<real>755</real>
+			<real>715</real>
 			<key>ypos</key>
-			<real>895</real>
+			<real>625</real>
 		</dict>
 		<key>D13A40B4-DD92-491B-AA37-E194E0C8ABC3</key>
 		<dict>
@@ -833,9 +833,9 @@ Looker is a purr-fectly delightful business intelligence tool that helps organiz
 			<key>colorindex</key>
 			<integer>7</integer>
 			<key>xpos</key>
-			<real>465</real>
+			<real>430</real>
 			<key>ypos</key>
-			<real>905</real>
+			<real>635</real>
 		</dict>
 		<key>E7791453-3667-45DC-BC79-7E309E81F64B</key>
 		<dict>
@@ -844,9 +844,9 @@ Looker is a purr-fectly delightful business intelligence tool that helps organiz
 			<key>note</key>
 			<string>URLs Captured</string>
 			<key>xpos</key>
-			<real>1025</real>
+			<real>985</real>
 			<key>ypos</key>
-			<real>685</real>
+			<real>415</real>
 		</dict>
 	</dict>
 	<key>userconfigurationconfig</key>
