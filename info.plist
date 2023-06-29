@@ -378,7 +378,7 @@ echo -n $query</string>
 				<key>argumenttype</key>
 				<integer>2</integer>
 				<key>fixedorder</key>
-				<false/>
+				<true/>
 				<key>items</key>
 				<string>[{"title":"Last Month","arg":"lastmonth","subtitle":"Queries the Last Month"},{"title":"Last Week","arg":"lastweek","subtitle":"Queries the Last Week"},{"title":"Last 2 Weeks","arg":"lasttwoweeks","subtitle":"Queries the Last 2 Weeks"},{"title":"Capture URLs 📷","arg":"capture","subtitle":"Captures ALL URLs in The Active Browser"}]</string>
 				<key>keyword</key>
