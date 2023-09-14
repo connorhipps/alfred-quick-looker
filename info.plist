@@ -6,49 +6,11 @@
 	<string>HC</string>
 	<key>connections</key>
 	<dict>
-		<key>03D563C7-F8D5-4EF9-80F6-655206C5832C</key>
+		<key>05A365D0-32DC-4781-8E53-542E65578560</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>33563CC7-F070-451F-877D-0A880C4B7DB7</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>sourceoutputuid</key>
-				<string>DC591F63-D68C-4FA2-8FAA-74ABBD5B6529</string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>destinationuid</key>
-				<string>CE32A49C-8D73-4BD5-BB20-FF7FFA533534</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>33563CC7-F070-451F-877D-0A880C4B7DB7</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>D2E41FBB-8231-449B-99D4-59178E9C1632</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>34E78AC6-A421-4986-899B-55D131ED0077</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>FBC5F9B5-0E58-464C-B98D-A80FCBF7B767</string>
+				<string>5FC7E336-3000-4CFE-B2C7-F4E050909449</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -59,20 +21,105 @@
 				<false/>
 			</dict>
 		</array>
-		<key>60C40BFF-80E8-4C71-8564-F4A786C74492</key>
-		<array/>
-		<key>69AA3203-CF0A-42E7-8072-117C9DEDAB4B</key>
+		<key>45AC3D7C-A598-4A41-9574-0418E1784612</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>7F0DE48A-E977-4EF8-9E26-E247B7A1764D</string>
+				<string>D308A25B-10CA-4919-8CB0-CBFC0F46A898</string>
 				<key>modifiers</key>
-				<integer>131072</integer>
+				<integer>0</integer>
 				<key>modifiersubtext</key>
-				<string>Open Monthly Reports (Previous Month)</string>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>DC591F63-D68C-4FA2-8FAA-74ABBD5B6529</string>
 				<key>vitoclose</key>
 				<false/>
 			</dict>
+		</array>
+		<key>49B9BD28-2350-4642-A08E-5DBFCBF7421A</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>5200BBFB-DFDB-4267-8E3D-EB2416AAADD6</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>5200BBFB-DFDB-4267-8E3D-EB2416AAADD6</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>C24C4243-97B5-4760-83CC-5315D18E83AA</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>B0E024E9-9E5A-48D2-A937-93F690448ED4</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>05A365D0-32DC-4781-8E53-542E65578560</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>45AC3D7C-A598-4A41-9574-0418E1784612</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>84546B06-77EC-4DCF-982E-675A599A329B</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>E7791453-3667-45DC-BC79-7E309E81F64B</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>A4762308-6E8B-4F0D-8ADE-BB9DE5272BDB</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>C97914B3-8D41-4854-A8EE-25C94A5ED0BA</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>B0E024E9-9E5A-48D2-A937-93F690448ED4</key>
+		<array>
 			<dict>
 				<key>destinationuid</key>
 				<string>D13A40B4-DD92-491B-AA37-E194E0C8ABC3</string>
@@ -80,15 +127,57 @@
 				<integer>0</integer>
 				<key>modifiersubtext</key>
 				<string></string>
+				<key>sourceoutputuid</key>
+				<string>DC591F63-D68C-4FA2-8FAA-74ABBD5B6529</string>
 				<key>vitoclose</key>
 				<false/>
 			</dict>
 		</array>
-		<key>FBC5F9B5-0E58-464C-B98D-A80FCBF7B767</key>
+		<key>C24C4243-97B5-4760-83CC-5315D18E83AA</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>03D563C7-F8D5-4EF9-80F6-655206C5832C</string>
+				<string>7F0DE48A-E977-4EF8-9E26-E247B7A1764D</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>DC591F63-D68C-4FA2-8FAA-74ABBD5B6529</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>C97914B3-8D41-4854-A8EE-25C94A5ED0BA</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>84546B06-77EC-4DCF-982E-675A599A329B</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>DC591F63-D68C-4FA2-8FAA-74ABBD5B6529</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>2B5CAECF-1300-492E-A7FD-2461B864E0ED</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>D308A25B-10CA-4919-8CB0-CBFC0F46A898</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>A4762308-6E8B-4F0D-8ADE-BB9DE5272BDB</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -101,11 +190,11 @@
 	<key>createdby</key>
 	<string>Connor Hipps</string>
 	<key>description</key>
-	<string>Search by list filter for HC Team Activity.</string>
+	<string>Search by list filter for HC Looker data. 📊</string>
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
-	<string>HC Looker Data - Main</string>
+	<string>HC Looker Data</string>
 	<key>objects</key>
 	<array>
 		<dict>
@@ -161,21 +250,32 @@ echo -n $query</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>keyword</key>
-				<string>hc</string>
-				<key>subtext</key>
-				<string>Opens All Looker Reports for HCs 📊</string>
-				<key>text</key>
-				<string>HC Looker Data</string>
-				<key>withspace</key>
+				<key>conditions</key>
+				<array>
+					<dict>
+						<key>inputstring</key>
+						<string></string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>0</integer>
+						<key>matchstring</key>
+						<string>lastmonth</string>
+						<key>outputlabel</key>
+						<string></string>
+						<key>uid</key>
+						<string>DC591F63-D68C-4FA2-8FAA-74ABBD5B6529</string>
+					</dict>
+				</array>
+				<key>elselabel</key>
+				<string>else</string>
+				<key>hideelse</key>
 				<false/>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
+			<string>alfred.workflow.utility.conditional</string>
 			<key>uid</key>
-			<string>69AA3203-CF0A-42E7-8072-117C9DEDAB4B</string>
+			<string>C24C4243-97B5-4760-83CC-5315D18E83AA</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -241,21 +341,71 @@ echo -n $query</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>lastpathcomponent</key>
+				<key>conditions</key>
+				<array>
+					<dict>
+						<key>inputstring</key>
+						<string></string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>0</integer>
+						<key>matchstring</key>
+						<string>lastweek</string>
+						<key>outputlabel</key>
+						<string></string>
+						<key>uid</key>
+						<string>DC591F63-D68C-4FA2-8FAA-74ABBD5B6529</string>
+					</dict>
+				</array>
+				<key>elselabel</key>
+				<string>else</string>
+				<key>hideelse</key>
 				<false/>
-				<key>onlyshowifquerypopulated</key>
-				<false/>
-				<key>removeextension</key>
-				<false/>
-				<key>text</key>
-				<string>All URLs for active browser tabs have been captured.</string>
-				<key>title</key>
-				<string>URLs Captured to Clipboard! 📷</string>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.output.notification</string>
+			<string>alfred.workflow.utility.conditional</string>
 			<key>uid</key>
-			<string>D2E41FBB-8231-449B-99D4-59178E9C1632</string>
+			<string>B0E024E9-9E5A-48D2-A937-93F690448ED4</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>fixedorder</key>
+				<true/>
+				<key>items</key>
+				<string>[{"title":"Last Month","arg":"lastmonth","subtitle":"Queries the Last Month"},{"title":"Last Week","arg":"lastweek","subtitle":"Queries the Last Week"},{"title":"Last 2 Weeks","arg":"lasttwoweeks","subtitle":"Queries the Last 2 Weeks"},{"title":"Capture URLs 📷","arg":"capture","subtitle":"Captures ALL URLs in The Active Browser"}]</string>
+				<key>keyword</key>
+				<string>looker</string>
+				<key>matchmode</key>
+				<integer>0</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>subtext</key>
+				<string>Opens All Looker Reports for HCs 📊</string>
+				<key>title</key>
+				<string>HC Looker Data</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.listfilter</string>
+			<key>uid</key>
+			<string>49B9BD28-2350-4642-A08E-5DBFCBF7421A</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.junction</string>
+			<key>uid</key>
+			<string>5200BBFB-DFDB-4267-8E3D-EB2416AAADD6</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -290,22 +440,110 @@ set the clipboard to urlList</string>
 			<key>type</key>
 			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
-			<string>33563CC7-F070-451F-877D-0A880C4B7DB7</string>
+			<string>84546B06-77EC-4DCF-982E-675A599A329B</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>availableviaurlhandler</key>
+				<key>lastpathcomponent</key>
 				<false/>
-				<key>triggerid</key>
-				<string>hclookerdata</string>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string>All URLs for active browser tabs have been captured.</string>
+				<key>title</key>
+				<string>URLs Captured to Clipboard! 📷</string>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.trigger.external</string>
+			<string>alfred.workflow.output.notification</string>
 			<key>uid</key>
-			<string>60C40BFF-80E8-4C71-8564-F4A786C74492</string>
+			<string>E7791453-3667-45DC-BC79-7E309E81F64B</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>query=$1
+
+/usr/bin/open -na "Brave Browser"
+
+sleep 2
+
+open "https://looker.a8c.com/dashboards/477?Report+Date+Start=2+week&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Kudakwashe+Zafevere"
+
+open "https://looker.a8c.com/dashboards/477?Report+Date+Start=2+week&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Nazilya+Gismatullina"
+
+open "https://looker.a8c.com/dashboards/477?Report+Date+Start=2+week&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Anjana+Vijayan"
+
+open "https://looker.a8c.com/dashboards/477?Report+Date+Start=2+week&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Paulina+Fraser"
+
+open "https://looker.a8c.com/dashboards/477?Report+Date+Start=2+week&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Neha+Sharma"
+
+open "https://looker.a8c.com/dashboards/477?Report+Date+Start=2+week&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Lara+Gatchalian"
+
+open "https://looker.a8c.com/dashboards/477?Report+Date+Start=2+week&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Master+Rafique"
+
+open "https://looker.a8c.com/dashboards/477?Report+Date+Start=2+week&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Samod+Kareem"
+
+open "https://looker.a8c.com/dashboards/477?Report+Date+Start=2+week&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Briam+Rojas"
+
+open "https://looker.a8c.com/dashboards/477?Report+Date+Start=2+week&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Korede+Osunlalu"
+
+
+echo -n $query</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>5FC7E336-3000-4CFE-B2C7-F4E050909449</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>conditions</key>
+				<array>
+					<dict>
+						<key>inputstring</key>
+						<string></string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>0</integer>
+						<key>matchstring</key>
+						<string>lasttwoweeks</string>
+						<key>outputlabel</key>
+						<string></string>
+						<key>uid</key>
+						<string>DC591F63-D68C-4FA2-8FAA-74ABBD5B6529</string>
+					</dict>
+				</array>
+				<key>elselabel</key>
+				<string>else</string>
+				<key>hideelse</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.conditional</string>
+			<key>uid</key>
+			<string>05A365D0-32DC-4781-8E53-542E65578560</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -334,7 +572,7 @@ set the clipboard to urlList</string>
 			<key>type</key>
 			<string>alfred.workflow.input.listfilter</string>
 			<key>uid</key>
-			<string>FBC5F9B5-0E58-464C-B98D-A80FCBF7B767</string>
+			<string>A4762308-6E8B-4F0D-8ADE-BB9DE5272BDB</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -355,7 +593,7 @@ set the clipboard to urlList</string>
 			<key>type</key>
 			<string>alfred.workflow.output.notification</string>
 			<key>uid</key>
-			<string>CE32A49C-8D73-4BD5-BB20-FF7FFA533534</string>
+			<string>2B5CAECF-1300-492E-A7FD-2461B864E0ED</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -387,7 +625,24 @@ set the clipboard to urlList</string>
 			<key>type</key>
 			<string>alfred.workflow.utility.conditional</string>
 			<key>uid</key>
-			<string>03D563C7-F8D5-4EF9-80F6-655206C5832C</string>
+			<string>C97914B3-8D41-4854-A8EE-25C94A5ED0BA</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string></string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>D308A25B-10CA-4919-8CB0-CBFC0F46A898</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -419,124 +674,179 @@ set the clipboard to urlList</string>
 			<key>type</key>
 			<string>alfred.workflow.utility.conditional</string>
 			<key>uid</key>
-			<string>34E78AC6-A421-4986-899B-55D131ED0077</string>
+			<string>45AC3D7C-A598-4A41-9574-0418E1784612</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
 	</array>
 	<key>readme</key>
-	<string># HC Looker Data: Meow-nificent Data Analysis and Visualization for your HCs 🐾
+	<string># An Alfred Workflow for Quick Access to HC Looker Data 🐾
 
 ![Cat Image](cat.png)
 
-Looker is a purr-fectly delightful business intelligence tool that helps organizations gain insights from their data, just like a curious cat uncovering hidden treasures. With its intuitive interface and powerful analytics capabilities, Looker empowers users to explore data like a feline, making informed decisions with agility and grace. Say goodbye to data hairballs and embrace the elegance of Looker's whisker-sharp visualizations and data-driven discoveries.</string>
+Looker is a purr-fectly delightful business intelligence tool that helps organizations gain insights from their data, just like a curious cat uncovering hidden treasures. 
+
+(Thanks ChatGPT)
+
+## Setup
+
+1.</string>
 	<key>uidata</key>
 	<dict>
-		<key>03D563C7-F8D5-4EF9-80F6-655206C5832C</key>
+		<key>05A365D0-32DC-4781-8E53-542E65578560</key>
 		<dict>
 			<key>colorindex</key>
-			<integer>7</integer>
+			<integer>1</integer>
 			<key>note</key>
-			<string>Yes / No</string>
+			<string>lasttwoweeks</string>
 			<key>xpos</key>
-			<real>840</real>
+			<real>315</real>
 			<key>ypos</key>
-			<real>515</real>
-		</dict>
-		<key>33563CC7-F070-451F-877D-0A880C4B7DB7</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>7</integer>
-			<key>note</key>
-			<string>Capture URLs from Active Window</string>
-			<key>xpos</key>
-			<real>910</real>
-			<key>ypos</key>
-			<real>305</real>
-		</dict>
-		<key>34E78AC6-A421-4986-899B-55D131ED0077</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>7</integer>
-			<key>note</key>
-			<string>capture</string>
-			<key>xpos</key>
 			<real>460</real>
-			<key>ypos</key>
-			<real>530</real>
 		</dict>
-		<key>60C40BFF-80E8-4C71-8564-F4A786C74492</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>2</integer>
-			<key>note</key>
-			<string>External Trigger -- Link to Other Alfred Workflows</string>
-			<key>xpos</key>
-			<real>85</real>
-			<key>ypos</key>
-			<real>485</real>
-		</dict>
-		<key>69AA3203-CF0A-42E7-8072-117C9DEDAB4B</key>
-		<dict>
-			<key>xpos</key>
-			<real>75</real>
-			<key>ypos</key>
-			<real>300</real>
-		</dict>
-		<key>7F0DE48A-E977-4EF8-9E26-E247B7A1764D</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>5</integer>
-			<key>note</key>
-			<string>Open the HC Looker URL for the previous month, but with a 2-second delay.
-
-Requires Updating Monthly</string>
-			<key>xpos</key>
-			<real>265</real>
-			<key>ypos</key>
-			<real>80</real>
-		</dict>
-		<key>CE32A49C-8D73-4BD5-BB20-FF7FFA533534</key>
+		<key>2B5CAECF-1300-492E-A7FD-2461B864E0ED</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>7</integer>
 			<key>note</key>
 			<string>Action Cancelled</string>
 			<key>xpos</key>
-			<real>1080</real>
+			<real>985</real>
 			<key>ypos</key>
-			<real>510</real>
+			<real>620</real>
 		</dict>
-		<key>D13A40B4-DD92-491B-AA37-E194E0C8ABC3</key>
-		<dict>
-			<key>note</key>
-			<string>Open the HC Looker URL from the previous week in a new Brave browser window, but with a 2-second delay.</string>
-			<key>xpos</key>
-			<real>265</real>
-			<key>ypos</key>
-			<real>300</real>
-		</dict>
-		<key>D2E41FBB-8231-449B-99D4-59178E9C1632</key>
+		<key>45AC3D7C-A598-4A41-9574-0418E1784612</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>7</integer>
 			<key>note</key>
-			<string>URLs Captured</string>
+			<string>capture</string>
 			<key>xpos</key>
-			<real>1080</real>
+			<real>320</real>
 			<key>ypos</key>
-			<real>305</real>
+			<real>640</real>
 		</dict>
-		<key>FBC5F9B5-0E58-464C-B98D-A80FCBF7B767</key>
+		<key>49B9BD28-2350-4642-A08E-5DBFCBF7421A</key>
+		<dict>
+			<key>xpos</key>
+			<real>30</real>
+			<key>ypos</key>
+			<real>360</real>
+		</dict>
+		<key>5200BBFB-DFDB-4267-8E3D-EB2416AAADD6</key>
+		<dict>
+			<key>xpos</key>
+			<real>185</real>
+			<key>ypos</key>
+			<real>390</real>
+		</dict>
+		<key>5FC7E336-3000-4CFE-B2C7-F4E050909449</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>1</integer>
+			<key>note</key>
+			<string>Opens HC Looker URL for the last two weeks, but with a 2-second delay.</string>
+			<key>xpos</key>
+			<real>510</real>
+			<key>ypos</key>
+			<real>425</real>
+		</dict>
+		<key>7F0DE48A-E977-4EF8-9E26-E247B7A1764D</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>4</integer>
+			<key>note</key>
+			<string>Opens HC Looker URL for the previous month, but with a 2-second delay.</string>
+			<key>xpos</key>
+			<real>510</real>
+			<key>ypos</key>
+			<real>80</real>
+		</dict>
+		<key>84546B06-77EC-4DCF-982E-675A599A329B</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>7</integer>
+			<key>note</key>
+			<string>Capture URLs from Active Window</string>
+			<key>xpos</key>
+			<real>815</real>
+			<key>ypos</key>
+			<real>415</real>
+		</dict>
+		<key>A4762308-6E8B-4F0D-8ADE-BB9DE5272BDB</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>7</integer>
 			<key>note</key>
 			<string>Yes / No</string>
 			<key>xpos</key>
-			<real>605</real>
+			<real>510</real>
 			<key>ypos</key>
-			<real>495</real>
+			<real>605</real>
+		</dict>
+		<key>B0E024E9-9E5A-48D2-A937-93F690448ED4</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>3</integer>
+			<key>note</key>
+			<string>lastweek</string>
+			<key>xpos</key>
+			<real>315</real>
+			<key>ypos</key>
+			<real>295</real>
+		</dict>
+		<key>C24C4243-97B5-4760-83CC-5315D18E83AA</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>4</integer>
+			<key>note</key>
+			<string>lastmonth</string>
+			<key>xpos</key>
+			<real>315</real>
+			<key>ypos</key>
+			<real>115</real>
+		</dict>
+		<key>C97914B3-8D41-4854-A8EE-25C94A5ED0BA</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>7</integer>
+			<key>note</key>
+			<string>Yes / No</string>
+			<key>xpos</key>
+			<real>715</real>
+			<key>ypos</key>
+			<real>625</real>
+		</dict>
+		<key>D13A40B4-DD92-491B-AA37-E194E0C8ABC3</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>3</integer>
+			<key>note</key>
+			<string>Opens HC Looker URL for the last week, but with a 2-second delay.</string>
+			<key>xpos</key>
+			<real>510</real>
+			<key>ypos</key>
+			<real>260</real>
+		</dict>
+		<key>D308A25B-10CA-4919-8CB0-CBFC0F46A898</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>7</integer>
+			<key>xpos</key>
+			<real>430</real>
+			<key>ypos</key>
+			<real>635</real>
+		</dict>
+		<key>E7791453-3667-45DC-BC79-7E309E81F64B</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>7</integer>
+			<key>note</key>
+			<string>URLs Captured</string>
+			<key>xpos</key>
+			<real>985</real>
+			<key>ypos</key>
+			<real>415</real>
 		</dict>
 	</dict>
 	<key>userconfigurationconfig</key>
