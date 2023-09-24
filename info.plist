@@ -215,13 +215,9 @@ open "https://looker.a8c.com/dashboards/477?Report+Date+Start=last+month&amp;Upw
 
 open "https://looker.a8c.com/dashboards/477?Report+Date+Start=last+month&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Nazilya+Gismatullina"
 
-open "https://looker.a8c.com/dashboards/477?Report+Date+Start=last+month&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Anjana+Vijayan"
-
 open "https://looker.a8c.com/dashboards/477?Report+Date+Start=last+month&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Paulina+Fraser"
 
 open "https://looker.a8c.com/dashboards/477?Report+Date+Start=last+month&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Neha+Sharma"
-
-open "https://looker.a8c.com/dashboards/477?Report+Date+Start=last+month&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Lara+Gatchalian"
 
 open "https://looker.a8c.com/dashboards/477?Report+Date+Start=last+month&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Master+Rafique"
 
@@ -231,6 +227,9 @@ open "https://looker.a8c.com/dashboards/477?Report+Date+Start=last+month&amp;Upw
 
 open "https://looker.a8c.com/dashboards/477?Report+Date+Start=last+month&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Korede+Osunlalu"
 
+open "https://looker.a8c.com/dashboards/477?Report+Date+Start=last+month&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Josefh+Chavarria"
+
+open "https://looker.a8c.com/dashboards/477?Report+Date+Start=last+month&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Ibrahim+Chaudry"
 
 echo -n $query</string>
 				<key>scriptargtype</key>
@@ -298,18 +297,10 @@ open "https://looker.a8c.com/dashboards/477?Report+Date+Start=last+week&amp;Upwo
 
 open "https://looker.a8c.com/dashboards/477?Report+Date+Start=last+week&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Nazilya+Gismatullina"
 
-
-open "https://looker.a8c.com/dashboards/477?Report+Date+Start=last+week&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Anjana+Vijayan"
-
-
 open "https://looker.a8c.com/dashboards/477?Report+Date+Start=last+week&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Paulina+Fraser"
 
 
 open "https://looker.a8c.com/dashboards/477?Report+Date+Start=last+week&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Neha+Sharma"
-
-
-open "https://looker.a8c.com/dashboards/477?Report+Date+Start=last+week&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Lara+Gatchalian"
-
 
 open "https://looker.a8c.com/dashboards/477?Report+Date+Start=last+week&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Master+Rafique"
 
@@ -322,6 +313,9 @@ open "https://looker.a8c.com/dashboards/477?Report+Date+Start=last+week&amp;Upwo
 
 open "https://looker.a8c.com/dashboards/477?Report+Date+Start=last+week&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Korede+Osunlalu"
 
+open "https://looker.a8c.com/dashboards/477?Report+Date+Start=last+week&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Josefh+Chavarria"
+
+open "https://looker.a8c.com/dashboards/477?Report+Date+Start=last+week&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Ibrahim+Chaudry"
 
 echo -n $query</string>
 				<key>scriptargtype</key>
@@ -483,13 +477,9 @@ open "https://looker.a8c.com/dashboards/477?Report+Date+Start=2+week&amp;Upwork+
 
 open "https://looker.a8c.com/dashboards/477?Report+Date+Start=2+week&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Nazilya+Gismatullina"
 
-open "https://looker.a8c.com/dashboards/477?Report+Date+Start=2+week&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Anjana+Vijayan"
-
 open "https://looker.a8c.com/dashboards/477?Report+Date+Start=2+week&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Paulina+Fraser"
 
 open "https://looker.a8c.com/dashboards/477?Report+Date+Start=2+week&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Neha+Sharma"
-
-open "https://looker.a8c.com/dashboards/477?Report+Date+Start=2+week&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Lara+Gatchalian"
 
 open "https://looker.a8c.com/dashboards/477?Report+Date+Start=2+week&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Master+Rafique"
 
@@ -499,6 +489,9 @@ open "https://looker.a8c.com/dashboards/477?Report+Date+Start=2+week&amp;Upwork+
 
 open "https://looker.a8c.com/dashboards/477?Report+Date+Start=2+week&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Korede+Osunlalu"
 
+open "https://looker.a8c.com/dashboards/477?Report+Date+Start=2+week&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Josefh+Chavarria"
+
+open "https://looker.a8c.com/dashboards/477?Report+Date+Start=2+week&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Ibrahim+Chaudry"
 
 echo -n $query</string>
 				<key>scriptargtype</key>
