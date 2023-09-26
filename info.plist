@@ -6,11 +6,24 @@
 	<string>HC</string>
 	<key>connections</key>
 	<dict>
-		<key>05A365D0-32DC-4781-8E53-542E65578560</key>
+		<key>1FE147A8-83D5-4258-9EA7-9243A9E5EA27</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>5FC7E336-3000-4CFE-B2C7-F4E050909449</string>
+				<string>67833930-5A68-4CDC-ABD7-70F9AE7D45C3</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>421DF5CA-BC77-4166-B55D-D7F1C847656B</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>50BD2CD7-A187-4ABE-BEEA-FB43CBE19D6D</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -36,11 +49,34 @@
 				<false/>
 			</dict>
 		</array>
+		<key>472674D9-B19D-496D-8231-721689FCF5E8</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>165E26DD-06DD-4E6D-A9CC-3F43F8B98A0A</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>49B9BD28-2350-4642-A08E-5DBFCBF7421A</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>5200BBFB-DFDB-4267-8E3D-EB2416AAADD6</string>
+				<string>C6964A3B-0C40-4C4B-85C4-587BE6630A15</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>45AC3D7C-A598-4A41-9574-0418E1784612</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -58,42 +94,22 @@
 				<key>vitoclose</key>
 				<false/>
 			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>421DF5CA-BC77-4166-B55D-D7F1C847656B</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
 		</array>
-		<key>5200BBFB-DFDB-4267-8E3D-EB2416AAADD6</key>
+		<key>67833930-5A68-4CDC-ABD7-70F9AE7D45C3</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>C24C4243-97B5-4760-83CC-5315D18E83AA</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>destinationuid</key>
-				<string>B0E024E9-9E5A-48D2-A937-93F690448ED4</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>destinationuid</key>
-				<string>05A365D0-32DC-4781-8E53-542E65578560</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>destinationuid</key>
-				<string>45AC3D7C-A598-4A41-9574-0418E1784612</string>
+				<string>AD6922E6-9860-4D86-9556-930856D78720</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -143,22 +159,32 @@
 				<false/>
 			</dict>
 		</array>
-		<key>B0E024E9-9E5A-48D2-A937-93F690448ED4</key>
+		<key>AD6922E6-9860-4D86-9556-930856D78720</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>D13A40B4-DD92-491B-AA37-E194E0C8ABC3</string>
+				<string>472674D9-B19D-496D-8231-721689FCF5E8</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
 				<string></string>
 				<key>sourceoutputuid</key>
-				<string>DC591F63-D68C-4FA2-8FAA-74ABBD5B6529</string>
+				<string>22E5CB21-EEEB-4C9C-9C47-A521AE4F9130</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>C8299EBA-6F55-4EB6-86FA-A7B31CF71B4B</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
 				<key>vitoclose</key>
 				<false/>
 			</dict>
 		</array>
-		<key>C24C4243-97B5-4760-83CC-5315D18E83AA</key>
+		<key>C6964A3B-0C40-4C4B-85C4-587BE6630A15</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
@@ -169,6 +195,30 @@
 				<string></string>
 				<key>sourceoutputuid</key>
 				<string>DC591F63-D68C-4FA2-8FAA-74ABBD5B6529</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>D13A40B4-DD92-491B-AA37-E194E0C8ABC3</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>621354A5-265D-450D-A788-8AB2AE739137</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>5FC7E336-3000-4CFE-B2C7-F4E050909449</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>4058AE6E-5AAA-4B02-9117-8AF2B6612B91</string>
 				<key>vitoclose</key>
 				<false/>
 			</dict>
@@ -266,38 +316,6 @@ done</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>conditions</key>
-				<array>
-					<dict>
-						<key>inputstring</key>
-						<string></string>
-						<key>matchcasesensitive</key>
-						<false/>
-						<key>matchmode</key>
-						<integer>0</integer>
-						<key>matchstring</key>
-						<string>lastmonth</string>
-						<key>outputlabel</key>
-						<string></string>
-						<key>uid</key>
-						<string>DC591F63-D68C-4FA2-8FAA-74ABBD5B6529</string>
-					</dict>
-				</array>
-				<key>elselabel</key>
-				<string>else</string>
-				<key>hideelse</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.conditional</string>
-			<key>uid</key>
-			<string>C24C4243-97B5-4760-83CC-5315D18E83AA</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
@@ -340,38 +358,6 @@ done</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>conditions</key>
-				<array>
-					<dict>
-						<key>inputstring</key>
-						<string></string>
-						<key>matchcasesensitive</key>
-						<false/>
-						<key>matchmode</key>
-						<integer>0</integer>
-						<key>matchstring</key>
-						<string>lastweek</string>
-						<key>outputlabel</key>
-						<string></string>
-						<key>uid</key>
-						<string>DC591F63-D68C-4FA2-8FAA-74ABBD5B6529</string>
-					</dict>
-				</array>
-				<key>elselabel</key>
-				<string>else</string>
-				<key>hideelse</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.conditional</string>
-			<key>uid</key>
-			<string>B0E024E9-9E5A-48D2-A937-93F690448ED4</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>argumenttrimmode</key>
 				<integer>0</integer>
 				<key>argumenttype</key>
@@ -379,7 +365,7 @@ done</string>
 				<key>fixedorder</key>
 				<true/>
 				<key>items</key>
-				<string>[{"title":"Last Month","arg":"lastmonth","subtitle":"Queries the Last Month"},{"title":"Last Week","arg":"lastweek","subtitle":"Queries the Last Week"},{"title":"Last 2 Weeks","arg":"lasttwoweeks","subtitle":"Queries the Last 2 Weeks"},{"title":"Capture URLs 📷","arg":"capture","subtitle":"Captures ALL URLs in The Active Browser"},{"title":"Test","arg":"test"}]</string>
+				<string>[{"title":"Last Month","arg":"lastmonth","subtitle":"Queries the Last Month"},{"title":"Last Week","arg":"lastweek","subtitle":"Queries the Last Week"},{"title":"Last 2 Weeks","arg":"lasttwoweeks","subtitle":"Queries the Last 2 Weeks"},{"title":"Capture URLs 📷","arg":"capture","subtitle":"Captures ALL URLs in The Active Browser"},{"title":"Test","arg":"test"},{"title":"Test w\/ Variable","arg":"testvar"}]</string>
 				<key>keyword</key>
 				<string>looker</string>
 				<key>matchmode</key>
@@ -401,66 +387,62 @@ done</string>
 			<integer>1</integer>
 		</dict>
 		<dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.junction</string>
-			<key>uid</key>
-			<string>5200BBFB-DFDB-4267-8E3D-EB2416AAADD6</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
 			<key>config</key>
 			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>tell application "Brave Browser"
-    set tabList to tabs of front window
-    set urlList to {}
-    repeat with aTab in tabList
-        set end of urlList to URL of aTab
-    end repeat
-end tell
-
-set {TID, text item delimiters} to {text item delimiters, return}
-set urlList to urlList as text
-set text item delimiters to TID
-
-set the clipboard to urlList</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>6</integer>
+				<key>conditions</key>
+				<array>
+					<dict>
+						<key>inputstring</key>
+						<string></string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>0</integer>
+						<key>matchstring</key>
+						<string>lastmonth</string>
+						<key>outputlabel</key>
+						<string>lastmonth</string>
+						<key>uid</key>
+						<string>DC591F63-D68C-4FA2-8FAA-74ABBD5B6529</string>
+					</dict>
+					<dict>
+						<key>inputstring</key>
+						<string></string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>0</integer>
+						<key>matchstring</key>
+						<string>lastweek</string>
+						<key>outputlabel</key>
+						<string>lastweek</string>
+						<key>uid</key>
+						<string>621354A5-265D-450D-A788-8AB2AE739137</string>
+					</dict>
+					<dict>
+						<key>inputstring</key>
+						<string></string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>0</integer>
+						<key>matchstring</key>
+						<string>lasttwoweeks</string>
+						<key>outputlabel</key>
+						<string>lasttwoweeks</string>
+						<key>uid</key>
+						<string>4058AE6E-5AAA-4B02-9117-8AF2B6612B91</string>
+					</dict>
+				</array>
+				<key>elselabel</key>
+				<string>else</string>
+				<key>hideelse</key>
+				<true/>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.action.script</string>
+			<string>alfred.workflow.utility.conditional</string>
 			<key>uid</key>
-			<string>84546B06-77EC-4DCF-982E-675A599A329B</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>lastpathcomponent</key>
-				<false/>
-				<key>onlyshowifquerypopulated</key>
-				<false/>
-				<key>removeextension</key>
-				<false/>
-				<key>text</key>
-				<string>All URLs for active browser tabs have been captured.</string>
-				<key>title</key>
-				<string>URLs Captured to Clipboard! 📷</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.notification</string>
-			<key>uid</key>
-			<string>E7791453-3667-45DC-BC79-7E309E81F64B</string>
+			<string>C6964A3B-0C40-4C4B-85C4-587BE6630A15</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -509,32 +491,104 @@ done</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>conditions</key>
-				<array>
-					<dict>
-						<key>inputstring</key>
-						<string></string>
-						<key>matchcasesensitive</key>
-						<false/>
-						<key>matchmode</key>
-						<integer>0</integer>
-						<key>matchstring</key>
-						<string>lasttwoweeks</string>
-						<key>outputlabel</key>
-						<string></string>
-						<key>uid</key>
-						<string>DC591F63-D68C-4FA2-8FAA-74ABBD5B6529</string>
-					</dict>
-				</array>
-				<key>elselabel</key>
-				<string>else</string>
-				<key>hideelse</key>
+				<key>lastpathcomponent</key>
 				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string>All URLs for active browser tabs have been captured.</string>
+				<key>title</key>
+				<string>URLs Captured to Clipboard! 📷</string>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.utility.conditional</string>
+			<string>alfred.workflow.output.notification</string>
 			<key>uid</key>
-			<string>05A365D0-32DC-4781-8E53-542E65578560</string>
+			<string>E7791453-3667-45DC-BC79-7E309E81F64B</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>tell application "Brave Browser"
+    set tabList to tabs of front window
+    set urlList to {}
+    repeat with aTab in tabList
+        set end of urlList to URL of aTab
+    end repeat
+end tell
+
+set {TID, text item delimiters} to {text item delimiters, return}
+set urlList to urlList as text
+set text item delimiters to TID
+
+set the clipboard to urlList</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>6</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>84546B06-77EC-4DCF-982E-675A599A329B</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>adduuid</key>
+				<false/>
+				<key>allowemptyfiles</key>
+				<false/>
+				<key>createintermediatefolders</key>
+				<true/>
+				<key>filename</key>
+				<string>{var:todos_path}/{var:filename}.txt</string>
+				<key>filetext</key>
+				<string>- {var:task}</string>
+				<key>ignoredynamicplaceholders</key>
+				<false/>
+				<key>relativepathmode</key>
+				<integer>0</integer>
+				<key>type</key>
+				<integer>2</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.writefile</string>
+			<key>uid</key>
+			<string>472674D9-B19D-496D-8231-721689FCF5E8</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string>{var:task}</string>
+				<key>title</key>
+				<string>Added task to {var:filename}</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>165E26DD-06DD-4E6D-A9CC-3F43F8B98A0A</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -672,6 +726,104 @@ done</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>fixedorder</key>
+				<true/>
+				<key>items</key>
+				<string>[{"title":"Home","arg":"home","subtitle":"Stuff relating to home"},{"title":"Work","arg":"work","subtitle":"Work-related tasks"},{"title":"Waiting For","arg":"waitingfor","subtitle":"What you waiting, what you waiting foooor?"}]</string>
+				<key>keyword</key>
+				<string>vtodo</string>
+				<key>matchmode</key>
+				<integer>0</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>subtext</key>
+				<string>Which list would you like to use?</string>
+				<key>title</key>
+				<string>Choose a to-do list</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.listfilter</string>
+			<key>uid</key>
+			<string>1FE147A8-83D5-4258-9EA7-9243A9E5EA27</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>conditions</key>
+				<array>
+					<dict>
+						<key>inputstring</key>
+						<string>{var:task}</string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>1</integer>
+						<key>matchstring</key>
+						<string></string>
+						<key>outputlabel</key>
+						<string>Append</string>
+						<key>uid</key>
+						<string>22E5CB21-EEEB-4C9C-9C47-A521AE4F9130</string>
+					</dict>
+				</array>
+				<key>elselabel</key>
+				<string>Open File</string>
+				<key>hideelse</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.conditional</string>
+			<key>uid</key>
+			<string>AD6922E6-9860-4D86-9556-930856D78720</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string>{query}</string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict>
+					<key>filename</key>
+					<string>{query}</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>67833930-5A68-4CDC-ABD7-70F9AE7D45C3</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>openwith</key>
+				<string></string>
+				<key>sourcefile</key>
+				<string>{var:todos_path}/{var:filename}.txt</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openfile</string>
+			<key>uid</key>
+			<string>C8299EBA-6F55-4EB6-86FA-A7B31CF71B4B</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
@@ -736,6 +888,76 @@ done</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>#!/bin/bash
+
+# Get the first and last names from environment variables
+first_name="$FIRST_NAME_ENV_VAR"
+last_name="$LAST_NAME_ENV_VAR"
+
+# Check if both environment variables are set and not empty
+if [ -n "$first_name" ] &amp;&amp; [ -n "$last_name" ]; then
+    # Create the URL with the appended first and last names
+    url="https://looker.a8c.com/dashboards/477?Report+Date+Start=last+week&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=${first_name}+${last_name}"
+
+    # Open the URL in a new tab of the specified web browser
+    osascript -e "tell application \"$browser\" to open location \"$url\""
+else
+    echo "One or both of the environment variables (FIRST_NAME_ENV_VAR and LAST_NAME_ENV_VAR) are not set or empty."
+fi</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>50BD2CD7-A187-4ABE-BEEA-FB43CBE19D6D</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>conditions</key>
+				<array>
+					<dict>
+						<key>inputstring</key>
+						<string></string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>0</integer>
+						<key>matchstring</key>
+						<string>testvar</string>
+						<key>outputlabel</key>
+						<string></string>
+						<key>uid</key>
+						<string>DC591F63-D68C-4FA2-8FAA-74ABBD5B6529</string>
+					</dict>
+				</array>
+				<key>elselabel</key>
+				<string>else</string>
+				<key>hideelse</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.conditional</string>
+			<key>uid</key>
+			<string>421DF5CA-BC77-4166-B55D-D7F1C847656B</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string># An Alfred Workflow for Quick Access to HC Looker Data 🐾
@@ -751,16 +973,29 @@ Looker is a purr-fectly delightful business intelligence tool that helps organiz
 1.</string>
 	<key>uidata</key>
 	<dict>
-		<key>05A365D0-32DC-4781-8E53-542E65578560</key>
+		<key>165E26DD-06DD-4E6D-A9CC-3F43F8B98A0A</key>
 		<dict>
 			<key>colorindex</key>
-			<integer>1</integer>
+			<integer>8</integer>
 			<key>note</key>
-			<string>lasttwoweeks</string>
+			<string>8. The Post Notification output lets you know that the task has been added through the Notification Center.</string>
 			<key>xpos</key>
-			<real>315</real>
+			<real>1945</real>
 			<key>ypos</key>
-			<real>460</real>
+			<real>535</real>
+		</dict>
+		<key>1FE147A8-83D5-4258-9EA7-9243A9E5EA27</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>3</integer>
+			<key>note</key>
+			<string>3. The List Filter input lets you select (from the options you set in this object) which to-do list to add the task to. (Following the green path)
+
+4. Using "vtodo" keyword and selecting a list opens the specified to-do list instead. (Following the blue path as there is no "task" variable)</string>
+			<key>xpos</key>
+			<real>1350</real>
+			<key>ypos</key>
+			<real>650</real>
 		</dict>
 		<key>2B5CAECF-1300-492E-A7FD-2461B864E0ED</key>
 		<dict>
@@ -784,6 +1019,17 @@ Looker is a purr-fectly delightful business intelligence tool that helps organiz
 			<key>ypos</key>
 			<real>800</real>
 		</dict>
+		<key>421DF5CA-BC77-4166-B55D-D7F1C847656B</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>4</integer>
+			<key>note</key>
+			<string>test</string>
+			<key>xpos</key>
+			<real>320</real>
+			<key>ypos</key>
+			<real>1025</real>
+		</dict>
 		<key>45AC3D7C-A598-4A41-9574-0418E1784612</key>
 		<dict>
 			<key>colorindex</key>
@@ -795,6 +1041,17 @@ Looker is a purr-fectly delightful business intelligence tool that helps organiz
 			<key>ypos</key>
 			<real>640</real>
 		</dict>
+		<key>472674D9-B19D-496D-8231-721689FCF5E8</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>8</integer>
+			<key>note</key>
+			<string>7. The Append To File output appends the to-do text (moved into a variable called "todo" in the orange object) to the appropriate list.</string>
+			<key>xpos</key>
+			<real>1790</real>
+			<key>ypos</key>
+			<real>535</real>
+		</dict>
 		<key>49B9BD28-2350-4642-A08E-5DBFCBF7421A</key>
 		<dict>
 			<key>xpos</key>
@@ -802,12 +1059,16 @@ Looker is a purr-fectly delightful business intelligence tool that helps organiz
 			<key>ypos</key>
 			<real>360</real>
 		</dict>
-		<key>5200BBFB-DFDB-4267-8E3D-EB2416AAADD6</key>
+		<key>50BD2CD7-A187-4ABE-BEEA-FB43CBE19D6D</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>4</integer>
+			<key>note</key>
+			<string>Opens HC Looker URL for the previous month, but with a 2-second delay.</string>
 			<key>xpos</key>
-			<real>185</real>
+			<real>510</real>
 			<key>ypos</key>
-			<real>390</real>
+			<real>990</real>
 		</dict>
 		<key>5FC7E336-3000-4CFE-B2C7-F4E050909449</key>
 		<dict>
@@ -816,9 +1077,20 @@ Looker is a purr-fectly delightful business intelligence tool that helps organiz
 			<key>note</key>
 			<string>Opens HC Looker URL for the last two weeks, but with a 2-second delay.</string>
 			<key>xpos</key>
-			<real>510</real>
+			<real>505</real>
 			<key>ypos</key>
-			<real>425</real>
+			<real>390</real>
+		</dict>
+		<key>67833930-5A68-4CDC-ABD7-70F9AE7D45C3</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>4</integer>
+			<key>note</key>
+			<string>5. The Arg/Var utility moves the chosen to-do list to a variable called "filename" until it's needed later.</string>
+			<key>xpos</key>
+			<real>1540</real>
+			<key>ypos</key>
+			<real>675</real>
 		</dict>
 		<key>7C92A601-B428-4D35-9763-D0DB21ED966B</key>
 		<dict>
@@ -838,9 +1110,9 @@ Looker is a purr-fectly delightful business intelligence tool that helps organiz
 			<key>note</key>
 			<string>Opens HC Looker URL for the previous month, but with a 2-second delay.</string>
 			<key>xpos</key>
-			<real>510</real>
+			<real>505</real>
 			<key>ypos</key>
-			<real>80</real>
+			<real>50</real>
 		</dict>
 		<key>84546B06-77EC-4DCF-982E-675A599A329B</key>
 		<dict>
@@ -864,27 +1136,34 @@ Looker is a purr-fectly delightful business intelligence tool that helps organiz
 			<key>ypos</key>
 			<real>605</real>
 		</dict>
-		<key>B0E024E9-9E5A-48D2-A937-93F690448ED4</key>
+		<key>AD6922E6-9860-4D86-9556-930856D78720</key>
 		<dict>
 			<key>colorindex</key>
-			<integer>3</integer>
+			<integer>5</integer>
 			<key>note</key>
-			<string>lastweek</string>
+			<string>6. The Conditional utility allows you to decide which path the workflow should take, based on whether the query should be appended, or the list opened.</string>
 			<key>xpos</key>
-			<real>315</real>
+			<real>1650</real>
 			<key>ypos</key>
-			<real>295</real>
+			<real>665</real>
 		</dict>
-		<key>C24C4243-97B5-4760-83CC-5315D18E83AA</key>
+		<key>C6964A3B-0C40-4C4B-85C4-587BE6630A15</key>
+		<dict>
+			<key>xpos</key>
+			<real>285</real>
+			<key>ypos</key>
+			<real>365</real>
+		</dict>
+		<key>C8299EBA-6F55-4EB6-86FA-A7B31CF71B4B</key>
 		<dict>
 			<key>colorindex</key>
-			<integer>4</integer>
+			<integer>10</integer>
 			<key>note</key>
-			<string>lastmonth</string>
+			<string>9. The Open File action opens the list specified in the yellow List Filter object.</string>
 			<key>xpos</key>
-			<real>315</real>
+			<real>1790</real>
 			<key>ypos</key>
-			<real>115</real>
+			<real>775</real>
 		</dict>
 		<key>C97914B3-8D41-4854-A8EE-25C94A5ED0BA</key>
 		<dict>
@@ -904,9 +1183,9 @@ Looker is a purr-fectly delightful business intelligence tool that helps organiz
 			<key>note</key>
 			<string>Opens HC Looker URL for the last week, but with a 2-second delay.</string>
 			<key>xpos</key>
-			<real>510</real>
+			<real>505</real>
 			<key>ypos</key>
-			<real>260</real>
+			<real>230</real>
 		</dict>
 		<key>D308A25B-10CA-4919-8CB0-CBFC0F46A898</key>
 		<dict>
@@ -965,6 +1244,15 @@ Looker is a purr-fectly delightful business intelligence tool that helps organiz
 			<key>variable</key>
 			<string>browser</string>
 		</dict>
+	</array>
+	<key>variables</key>
+	<dict>
+		<key>Connor Hipps</key>
+		<string>Connor Hipps</string>
+	</dict>
+	<key>variablesdontexport</key>
+	<array>
+		<string>Connor Hipps</string>
 	</array>
 	<key>version</key>
 	<string>1.0.0</string>
