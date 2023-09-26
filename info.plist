@@ -1073,7 +1073,7 @@ Looker is a purr-fectly delightful business intelligence tool that helps organiz
 		<key>5FC7E336-3000-4CFE-B2C7-F4E050909449</key>
 		<dict>
 			<key>colorindex</key>
-			<integer>1</integer>
+			<integer>2</integer>
 			<key>note</key>
 			<string>Opens HC Looker URL for the last two weeks, but with a 2-second delay.</string>
 			<key>xpos</key>
@@ -1106,7 +1106,7 @@ Looker is a purr-fectly delightful business intelligence tool that helps organiz
 		<key>7F0DE48A-E977-4EF8-9E26-E247B7A1764D</key>
 		<dict>
 			<key>colorindex</key>
-			<integer>4</integer>
+			<integer>2</integer>
 			<key>note</key>
 			<string>Opens HC Looker URL for the previous month, but with a 2-second delay.</string>
 			<key>xpos</key>
@@ -1149,6 +1149,8 @@ Looker is a purr-fectly delightful business intelligence tool that helps organiz
 		</dict>
 		<key>C6964A3B-0C40-4C4B-85C4-587BE6630A15</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>2</integer>
 			<key>xpos</key>
 			<real>285</real>
 			<key>ypos</key>
@@ -1179,7 +1181,7 @@ Looker is a purr-fectly delightful business intelligence tool that helps organiz
 		<key>D13A40B4-DD92-491B-AA37-E194E0C8ABC3</key>
 		<dict>
 			<key>colorindex</key>
-			<integer>3</integer>
+			<integer>2</integer>
 			<key>note</key>
 			<string>Opens HC Looker URL for the last week, but with a 2-second delay.</string>
 			<key>xpos</key>
