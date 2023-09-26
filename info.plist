@@ -48,6 +48,16 @@
 				<key>vitoclose</key>
 				<false/>
 			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>7C92A601-B428-4D35-9763-D0DB21ED966B</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
 		</array>
 		<key>5200BBFB-DFDB-4267-8E3D-EB2416AAADD6</key>
 		<array>
@@ -88,6 +98,21 @@
 				<integer>0</integer>
 				<key>modifiersubtext</key>
 				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>7C92A601-B428-4D35-9763-D0DB21ED966B</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>3980E7C5-9812-455B-A3F6-3642EA817E58</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>DC591F63-D68C-4FA2-8FAA-74ABBD5B6529</string>
 				<key>vitoclose</key>
 				<false/>
 			</dict>
@@ -205,33 +230,25 @@
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
-				<string>query=$1
+				<string>#!/bin/bash
 
-/usr/bin/open -na "Brave Browser"
+# Define an array of URLs
+urls=(
+"https://looker.a8c.com/dashboards/477?Report+Date+Start=last+month&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Kudakwashe+Zafevere"
+"https://looker.a8c.com/dashboards/477?Report+Date+Start=last+month&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Nazilya+Gismatullina"
+"https://looker.a8c.com/dashboards/477?Report+Date+Start=last+month&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Paulina+Fraser"
+"https://looker.a8c.com/dashboards/477?Report+Date+Start=last+month&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Neha+Sharma"
+"https://looker.a8c.com/dashboards/477?Report+Date+Start=last+month&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Samod+Kareem"
+"https://looker.a8c.com/dashboards/477?Report+Date+Start=last+month&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Briam+Rojas"
+"https://looker.a8c.com/dashboards/477?Report+Date+Start=last+month&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Korede+Osunlalu"
+"https://looker.a8c.com/dashboards/477?Report+Date+Start=last+month&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Josefh+Chavarria"
+"https://looker.a8c.com/dashboards/477?Report+Date+Start=last+month&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Abdulazeez+Akan"
+)
 
-sleep 2
-
-open "https://looker.a8c.com/dashboards/477?Report+Date+Start=last+month&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Kudakwashe+Zafevere"
-
-open "https://looker.a8c.com/dashboards/477?Report+Date+Start=last+month&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Nazilya+Gismatullina"
-
-open "https://looker.a8c.com/dashboards/477?Report+Date+Start=last+month&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Paulina+Fraser"
-
-open "https://looker.a8c.com/dashboards/477?Report+Date+Start=last+month&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Neha+Sharma"
-
-open "https://looker.a8c.com/dashboards/477?Report+Date+Start=last+month&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Samod+Kareem"
-
-open "https://looker.a8c.com/dashboards/477?Report+Date+Start=last+month&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Briam+Rojas"
-
-open "https://looker.a8c.com/dashboards/477?Report+Date+Start=last+month&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Korede+Osunlalu"
-
-open "https://looker.a8c.com/dashboards/477?Report+Date+Start=last+month&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Josefh+Chavarria"
-
-open "https://looker.a8c.com/dashboards/477?Report+Date+Start=last+month&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Ibrahim+Chaudry"
-
-open "https://looker.a8c.com/dashboards/477?Report+Date+Start=last+month&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Abdulazeez+Akan"
-
-echo -n $query</string>
+# Iterate through the URLs and open each in a new tab
+for url in "${urls[@]}"; do
+  /usr/bin/open -a "$browser" "$url"
+done</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -286,31 +303,26 @@ echo -n $query</string>
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
-				<string>query=$1
+				<string>#!/bin/bash
 
-/usr/bin/open -na "Brave Browser"
 
-sleep 2
+# Define an array of URLs
+urls=(
+"https://looker.a8c.com/dashboards/477?Report+Date+Start=last+week&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Kudakwashe+Zafevere"
+"https://looker.a8c.com/dashboards/477?Report+Date+Start=last+week&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Nazilya+Gismatullina"
+"https://looker.a8c.com/dashboards/477?Report+Date+Start=last+week&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Paulina+Fraser"
+"https://looker.a8c.com/dashboards/477?Report+Date+Start=last+week&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Neha+Sharma"
+"https://looker.a8c.com/dashboards/477?Report+Date+Start=last+week&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Samod+Kareem"
+"https://looker.a8c.com/dashboards/477?Report+Date+Start=last+week&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Briam+Rojas"
+"https://looker.a8c.com/dashboards/477?Report+Date+Start=last+week&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Korede+Osunlalu"
+"https://looker.a8c.com/dashboards/477?Report+Date+Start=last+week&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Josefh+Chavarria"
+"https://looker.a8c.com/dashboards/477?Report+Date+Start=last+week&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Abdulazeez+Akan"
+)
 
-open "https://looker.a8c.com/dashboards/477?Report+Date+Start=last+week&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Kudakwashe+Zafevere"
-
-open "https://looker.a8c.com/dashboards/477?Report+Date+Start=last+week&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Nazilya+Gismatullina"
-
-open "https://looker.a8c.com/dashboards/477?Report+Date+Start=last+week&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Paulina+Fraser"
-
-open "https://looker.a8c.com/dashboards/477?Report+Date+Start=last+week&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Neha+Sharma"
-
-open "https://looker.a8c.com/dashboards/477?Report+Date+Start=last+week&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Samod+Kareem"
-
-open "https://looker.a8c.com/dashboards/477?Report+Date+Start=last+week&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Briam+Rojas"
-
-open "https://looker.a8c.com/dashboards/477?Report+Date+Start=last+week&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Korede+Osunlalu"
-
-open "https://looker.a8c.com/dashboards/477?Report+Date+Start=last+week&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Josefh+Chavarria"
-
-open "https://looker.a8c.com/dashboards/477?Report+Date+Start=last+week&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Abdulazeez+Akan"
-
-echo -n $query</string>
+# Iterate through the URLs and open each in a new tab
+for url in "${urls[@]}"; do
+  /usr/bin/open -a "$browser" "$url"
+done</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -367,7 +379,7 @@ echo -n $query</string>
 				<key>fixedorder</key>
 				<true/>
 				<key>items</key>
-				<string>[{"title":"Last Month","arg":"lastmonth","subtitle":"Queries the Last Month"},{"title":"Last Week","arg":"lastweek","subtitle":"Queries the Last Week"},{"title":"Last 2 Weeks","arg":"lasttwoweeks","subtitle":"Queries the Last 2 Weeks"},{"title":"Capture URLs 📷","arg":"capture","subtitle":"Captures ALL URLs in The Active Browser"}]</string>
+				<string>[{"title":"Last Month","arg":"lastmonth","subtitle":"Queries the Last Month"},{"title":"Last Week","arg":"lastweek","subtitle":"Queries the Last Week"},{"title":"Last 2 Weeks","arg":"lasttwoweeks","subtitle":"Queries the Last 2 Weeks"},{"title":"Capture URLs 📷","arg":"capture","subtitle":"Captures ALL URLs in The Active Browser"},{"title":"Test","arg":"test"}]</string>
 				<key>keyword</key>
 				<string>looker</string>
 				<key>matchmode</key>
@@ -460,33 +472,26 @@ set the clipboard to urlList</string>
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
-				<string>query=$1
+				<string>#!/bin/bash
 
-/usr/bin/open -na "Brave Browser"
 
-sleep 2
+# Define an array of URLs
+urls=(
+"https://looker.a8c.com/dashboards/477?Report+Date+Start=2+week&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Kudakwashe+Zafevere"
+"https://looker.a8c.com/dashboards/477?Report+Date+Start=2+week&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Nazilya+Gismatullina"
+"https://looker.a8c.com/dashboards/477?Report+Date+Start=2+week&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Paulina+Fraser"
+"https://looker.a8c.com/dashboards/477?Report+Date+Start=2+week&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Neha+Sharma"
+"https://looker.a8c.com/dashboards/477?Report+Date+Start=2+week&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Samod+Kareem"
+"https://looker.a8c.com/dashboards/477?Report+Date+Start=2+week&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Briam+Rojas"
+"https://looker.a8c.com/dashboards/477?Report+Date+Start=2+week&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Korede+Osunlalu"
+"https://looker.a8c.com/dashboards/477?Report+Date+Start=2+week&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Josefh+Chavarria"
+"https://looker.a8c.com/dashboards/477?Report+Date+Start=2+week&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Abdulazeez+Akan"
+)
 
-open "https://looker.a8c.com/dashboards/477?Report+Date+Start=2+week&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Kudakwashe+Zafevere"
-
-open "https://looker.a8c.com/dashboards/477?Report+Date+Start=2+week&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Nazilya+Gismatullina"
-
-open "https://looker.a8c.com/dashboards/477?Report+Date+Start=2+week&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Paulina+Fraser"
-
-open "https://looker.a8c.com/dashboards/477?Report+Date+Start=2+week&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Neha+Sharma"
-
-open "https://looker.a8c.com/dashboards/477?Report+Date+Start=2+week&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Samod+Kareem"
-
-open "https://looker.a8c.com/dashboards/477?Report+Date+Start=2+week&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Briam+Rojas"
-
-open "https://looker.a8c.com/dashboards/477?Report+Date+Start=2+week&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Korede+Osunlalu"
-
-open "https://looker.a8c.com/dashboards/477?Report+Date+Start=2+week&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Josefh+Chavarria"
-
-open "https://looker.a8c.com/dashboards/477?Report+Date+Start=2+week&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Ibrahim+Chaudry"
-
-open "https://looker.a8c.com/dashboards/477?Report+Date+Start=2+week&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Abdulazeez+Akan"
-
-echo -n $query</string>
+# Iterate through the URLs and open each in a new tab
+for url in "${urls[@]}"; do
+  /usr/bin/open -a "$browser" "$url"
+done</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -664,6 +669,73 @@ echo -n $query</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>#!/bin/bash
+
+
+# Define an array of URLs
+urls=(
+  "https://looker.a8c.com/dashboards/477?Report+Date+Start=last+month&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Kudakwashe+Zafevere"
+  "https://looker.a8c.com/dashboards/477?Report+Date+Start=last+week&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Nazilya+Gismatullina"
+)
+
+# Iterate through the URLs and open each in a new tab
+for url in "${urls[@]}"; do
+  /usr/bin/open -a "$browser" "$url"
+done</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>3980E7C5-9812-455B-A3F6-3642EA817E58</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>conditions</key>
+				<array>
+					<dict>
+						<key>inputstring</key>
+						<string></string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>0</integer>
+						<key>matchstring</key>
+						<string>test</string>
+						<key>outputlabel</key>
+						<string></string>
+						<key>uid</key>
+						<string>DC591F63-D68C-4FA2-8FAA-74ABBD5B6529</string>
+					</dict>
+				</array>
+				<key>elselabel</key>
+				<string>else</string>
+				<key>hideelse</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.conditional</string>
+			<key>uid</key>
+			<string>7C92A601-B428-4D35-9763-D0DB21ED966B</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string># An Alfred Workflow for Quick Access to HC Looker Data 🐾
@@ -701,6 +773,17 @@ Looker is a purr-fectly delightful business intelligence tool that helps organiz
 			<key>ypos</key>
 			<real>620</real>
 		</dict>
+		<key>3980E7C5-9812-455B-A3F6-3642EA817E58</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>4</integer>
+			<key>note</key>
+			<string>Opens HC Looker URL for the previous month, but with a 2-second delay.</string>
+			<key>xpos</key>
+			<real>510</real>
+			<key>ypos</key>
+			<real>800</real>
+		</dict>
 		<key>45AC3D7C-A598-4A41-9574-0418E1784612</key>
 		<dict>
 			<key>colorindex</key>
@@ -736,6 +819,17 @@ Looker is a purr-fectly delightful business intelligence tool that helps organiz
 			<real>510</real>
 			<key>ypos</key>
 			<real>425</real>
+		</dict>
+		<key>7C92A601-B428-4D35-9763-D0DB21ED966B</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>4</integer>
+			<key>note</key>
+			<string>test</string>
+			<key>xpos</key>
+			<real>320</real>
+			<key>ypos</key>
+			<real>835</real>
 		</dict>
 		<key>7F0DE48A-E977-4EF8-9E26-E247B7A1764D</key>
 		<dict>
@@ -836,7 +930,42 @@ Looker is a purr-fectly delightful business intelligence tool that helps organiz
 		</dict>
 	</dict>
 	<key>userconfigurationconfig</key>
-	<array/>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<string>Google Chrome</string>
+				<key>pairs</key>
+				<array>
+					<array>
+						<string>Brave</string>
+						<string>Brave Browser</string>
+					</array>
+					<array>
+						<string>Safari</string>
+						<string>Safari</string>
+					</array>
+					<array>
+						<string>Chrome</string>
+						<string>Google Chrome</string>
+					</array>
+					<array>
+						<string>Firefox</string>
+						<string>Firefox</string>
+					</array>
+				</array>
+			</dict>
+			<key>description</key>
+			<string>Select the browser you wish to open links in.</string>
+			<key>label</key>
+			<string>Browser Selection</string>
+			<key>type</key>
+			<string>popupbutton</string>
+			<key>variable</key>
+			<string>browser</string>
+		</dict>
+	</array>
 	<key>version</key>
 	<string>1.0.0</string>
 	<key>webaddress</key>
