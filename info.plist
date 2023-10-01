@@ -491,27 +491,6 @@ done</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>lastpathcomponent</key>
-				<false/>
-				<key>onlyshowifquerypopulated</key>
-				<false/>
-				<key>removeextension</key>
-				<false/>
-				<key>text</key>
-				<string>All URLs for active browser tabs have been captured.</string>
-				<key>title</key>
-				<string>URLs Captured to Clipboard! 📷</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.notification</string>
-			<key>uid</key>
-			<string>E7791453-3667-45DC-BC79-7E309E81F64B</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
@@ -543,6 +522,27 @@ set the clipboard to urlList</string>
 			<string>84546B06-77EC-4DCF-982E-675A599A329B</string>
 			<key>version</key>
 			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string>All URLs for active browser tabs have been captured.</string>
+				<key>title</key>
+				<string>URLs Captured to Clipboard! 📷</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>E7791453-3667-45DC-BC79-7E309E81F64B</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -960,17 +960,17 @@ fi</string>
 		</dict>
 	</array>
 	<key>readme</key>
-	<string># An Alfred Workflow for Quick Access to HC Looker Data 🐾
+	<string># An Alfred Workflow for Quick Access to HC Looker Data 📊
+
+README information to follow. In the meantime, enjoy AI-generated picture of a kitten. 
 
 ![Cat Image](cat.png)
 
-Looker is a purr-fectly delightful business intelligence tool that helps organizations gain insights from their data, just like a curious cat uncovering hidden treasures. 
+## Notes/FAQ
 
-(Thanks ChatGPT)
-
-## Setup
-
-1.</string>
+1. The workflow is currently only available for use with the **Brave browser**, but it can be adapted upon request. 
+2. This is very much a beta product: further testing is needed to ensure that everything works as expected, every time. 
+3. "Does it work well enough to use in my day-to-day work?" → Yes, it does! 😊 I use it almost every day in some way, shape, or form.</string>
 	<key>uidata</key>
 	<dict>
 		<key>165E26DD-06DD-4E6D-A9CC-3F43F8B98A0A</key>
@@ -1077,7 +1077,7 @@ Looker is a purr-fectly delightful business intelligence tool that helps organiz
 			<key>note</key>
 			<string>Opens HC Looker URL for the last two weeks, but with a 2-second delay.</string>
 			<key>xpos</key>
-			<real>505</real>
+			<real>510</real>
 			<key>ypos</key>
 			<real>390</real>
 		</dict>
@@ -1110,7 +1110,7 @@ Looker is a purr-fectly delightful business intelligence tool that helps organiz
 			<key>note</key>
 			<string>Opens HC Looker URL for the previous month, but with a 2-second delay.</string>
 			<key>xpos</key>
-			<real>505</real>
+			<real>510</real>
 			<key>ypos</key>
 			<real>50</real>
 		</dict>
@@ -1152,7 +1152,7 @@ Looker is a purr-fectly delightful business intelligence tool that helps organiz
 			<key>colorindex</key>
 			<integer>2</integer>
 			<key>xpos</key>
-			<real>285</real>
+			<real>270</real>
 			<key>ypos</key>
 			<real>365</real>
 		</dict>
@@ -1185,7 +1185,7 @@ Looker is a purr-fectly delightful business intelligence tool that helps organiz
 			<key>note</key>
 			<string>Opens HC Looker URL for the last week, but with a 2-second delay.</string>
 			<key>xpos</key>
-			<real>505</real>
+			<real>510</real>
 			<key>ypos</key>
 			<real>230</real>
 		</dict>

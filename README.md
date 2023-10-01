@@ -1,5 +1,11 @@
-# HC Looker Data: Meow-nificent Data Analysis and Visualization for your HCs 🐾
+# An Alfred Workflow for Quick Access to HC Looker Data 📊
 
+README information to follow. In the meantime, enjoy AI-generated picture of a kitten. 
 
+![Cat Image](cat.png)
 
-Looker is a purr-fectly delightful business intelligence tool that helps organizations gain insights from their data, just like a curious cat uncovering hidden treasures. With its intuitive interface and powerful analytics capabilities, Looker empowers users to explore data like a feline, making informed decisions with agility and grace. Say goodbye to data hairballs and embrace the elegance of Looker's whisker-sharp visualizations and data-driven discoveries.
+## Notes/FAQ
+
+1. The workflow is currently only available for use with the **Brave browser**, but it can be adapted upon request. 
+2. This is very much a beta product: further testing is needed to ensure that everything works as expected, every time. 
+3. "Does it work well enough to use in my day-to-day work?" → Yes, it does! 😊 I use it almost every day in some way, shape, or form. 
