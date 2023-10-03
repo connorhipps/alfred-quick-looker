@@ -57,45 +57,6 @@
 				<false/>
 			</dict>
 		</array>
-		<key>1FE147A8-83D5-4258-9EA7-9243A9E5EA27</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>67833930-5A68-4CDC-ABD7-70F9AE7D45C3</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>472674D9-B19D-496D-8231-721689FCF5E8</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>165E26DD-06DD-4E6D-A9CC-3F43F8B98A0A</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>67833930-5A68-4CDC-ABD7-70F9AE7D45C3</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>AD6922E6-9860-4D86-9556-930856D78720</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>7AAB23BE-4C64-499D-BC1A-AE68FE6D2E31</key>
 		<array>
 			<dict>
@@ -140,31 +101,6 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>C97914B3-8D41-4854-A8EE-25C94A5ED0BA</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>AD6922E6-9860-4D86-9556-930856D78720</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>472674D9-B19D-496D-8231-721689FCF5E8</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>sourceoutputuid</key>
-				<string>22E5CB21-EEEB-4C9C-9C47-A521AE4F9130</string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>destinationuid</key>
-				<string>C8299EBA-6F55-4EB6-86FA-A7B31CF71B4B</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -694,152 +630,6 @@ set the clipboard to urlList</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>adduuid</key>
-				<false/>
-				<key>allowemptyfiles</key>
-				<false/>
-				<key>createintermediatefolders</key>
-				<true/>
-				<key>filename</key>
-				<string>{var:todos_path}/{var:filename}.txt</string>
-				<key>filetext</key>
-				<string>- {var:task}</string>
-				<key>ignoredynamicplaceholders</key>
-				<false/>
-				<key>relativepathmode</key>
-				<integer>0</integer>
-				<key>type</key>
-				<integer>2</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.writefile</string>
-			<key>uid</key>
-			<string>472674D9-B19D-496D-8231-721689FCF5E8</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>lastpathcomponent</key>
-				<false/>
-				<key>onlyshowifquerypopulated</key>
-				<false/>
-				<key>removeextension</key>
-				<false/>
-				<key>text</key>
-				<string>{var:task}</string>
-				<key>title</key>
-				<string>Added task to {var:filename}</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.notification</string>
-			<key>uid</key>
-			<string>165E26DD-06DD-4E6D-A9CC-3F43F8B98A0A</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttrimmode</key>
-				<integer>0</integer>
-				<key>argumenttype</key>
-				<integer>1</integer>
-				<key>fixedorder</key>
-				<true/>
-				<key>items</key>
-				<string>[{"title":"Home","arg":"home","subtitle":"Stuff relating to home"},{"title":"Work","arg":"work","subtitle":"Work-related tasks"},{"title":"Waiting For","arg":"waitingfor","subtitle":"What you waiting, what you waiting foooor?"}]</string>
-				<key>keyword</key>
-				<string>vtodo</string>
-				<key>matchmode</key>
-				<integer>0</integer>
-				<key>runningsubtext</key>
-				<string></string>
-				<key>subtext</key>
-				<string>Which list would you like to use?</string>
-				<key>title</key>
-				<string>Choose a to-do list</string>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.listfilter</string>
-			<key>uid</key>
-			<string>1FE147A8-83D5-4258-9EA7-9243A9E5EA27</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>conditions</key>
-				<array>
-					<dict>
-						<key>inputstring</key>
-						<string>{var:task}</string>
-						<key>matchcasesensitive</key>
-						<false/>
-						<key>matchmode</key>
-						<integer>1</integer>
-						<key>matchstring</key>
-						<string></string>
-						<key>outputlabel</key>
-						<string>Append</string>
-						<key>uid</key>
-						<string>22E5CB21-EEEB-4C9C-9C47-A521AE4F9130</string>
-					</dict>
-				</array>
-				<key>elselabel</key>
-				<string>Open File</string>
-				<key>hideelse</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.conditional</string>
-			<key>uid</key>
-			<string>AD6922E6-9860-4D86-9556-930856D78720</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argument</key>
-				<string>{query}</string>
-				<key>passthroughargument</key>
-				<false/>
-				<key>variables</key>
-				<dict>
-					<key>filename</key>
-					<string>{query}</string>
-				</dict>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.argument</string>
-			<key>uid</key>
-			<string>67833930-5A68-4CDC-ABD7-70F9AE7D45C3</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>openwith</key>
-				<string></string>
-				<key>sourcefile</key>
-				<string>{var:todos_path}/{var:filename}.txt</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openfile</string>
-			<key>uid</key>
-			<string>C8299EBA-6F55-4EB6-86FA-A7B31CF71B4B</string>
-			<key>version</key>
-			<integer>3</integer>
-		</dict>
 	</array>
 	<key>readme</key>
 	<string># An Alfred Workflow for Quick Access to HC Looker Data 📊
@@ -862,31 +652,7 @@ README information to follow. In the meantime, enjoy AI-generated picture of a k
 			<key>xpos</key>
 			<real>260</real>
 			<key>ypos</key>
-			<real>275</real>
-		</dict>
-		<key>165E26DD-06DD-4E6D-A9CC-3F43F8B98A0A</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>8</integer>
-			<key>note</key>
-			<string>8. The Post Notification output lets you know that the task has been added through the Notification Center.</string>
-			<key>xpos</key>
-			<real>1945</real>
-			<key>ypos</key>
-			<real>535</real>
-		</dict>
-		<key>1FE147A8-83D5-4258-9EA7-9243A9E5EA27</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>3</integer>
-			<key>note</key>
-			<string>3. The List Filter input lets you select (from the options you set in this object) which to-do list to add the task to. (Following the green path)
-
-4. Using "vtodo" keyword and selecting a list opens the specified to-do list instead. (Following the blue path as there is no "task" variable)</string>
-			<key>xpos</key>
-			<real>1350</real>
-			<key>ypos</key>
-			<real>650</real>
+			<real>270</real>
 		</dict>
 		<key>2B5CAECF-1300-492E-A7FD-2461B864E0ED</key>
 		<dict>
@@ -899,17 +665,6 @@ README information to follow. In the meantime, enjoy AI-generated picture of a k
 			<key>ypos</key>
 			<real>480</real>
 		</dict>
-		<key>472674D9-B19D-496D-8231-721689FCF5E8</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>8</integer>
-			<key>note</key>
-			<string>7. The Append To File output appends the to-do text (moved into a variable called "todo" in the orange object) to the appropriate list.</string>
-			<key>xpos</key>
-			<real>1790</real>
-			<key>ypos</key>
-			<real>535</real>
-		</dict>
 		<key>6713B905-EE69-4844-AD1B-70CD4C00BEF9</key>
 		<dict>
 			<key>colorindex</key>
@@ -919,23 +674,14 @@ README information to follow. In the meantime, enjoy AI-generated picture of a k
 			<key>xpos</key>
 			<real>415</real>
 			<key>ypos</key>
-			<real>270</real>
-		</dict>
-		<key>67833930-5A68-4CDC-ABD7-70F9AE7D45C3</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>4</integer>
-			<key>note</key>
-			<string>5. The Arg/Var utility moves the chosen to-do list to a variable called "filename" until it's needed later.</string>
-			<key>xpos</key>
-			<real>1540</real>
-			<key>ypos</key>
-			<real>675</real>
+			<real>265</real>
 		</dict>
 		<key>7AAB23BE-4C64-499D-BC1A-AE68FE6D2E31</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>6</integer>
+			<key>note</key>
+			<string>Start Workflow</string>
 			<key>xpos</key>
 			<real>90</real>
 			<key>ypos</key>
@@ -973,28 +719,6 @@ README information to follow. In the meantime, enjoy AI-generated picture of a k
 			<real>415</real>
 			<key>ypos</key>
 			<real>465</real>
-		</dict>
-		<key>AD6922E6-9860-4D86-9556-930856D78720</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>5</integer>
-			<key>note</key>
-			<string>6. The Conditional utility allows you to decide which path the workflow should take, based on whether the query should be appended, or the list opened.</string>
-			<key>xpos</key>
-			<real>1650</real>
-			<key>ypos</key>
-			<real>665</real>
-		</dict>
-		<key>C8299EBA-6F55-4EB6-86FA-A7B31CF71B4B</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>10</integer>
-			<key>note</key>
-			<string>9. The Open File action opens the list specified in the yellow List Filter object.</string>
-			<key>xpos</key>
-			<real>1790</real>
-			<key>ypos</key>
-			<real>775</real>
 		</dict>
 		<key>C97914B3-8D41-4854-A8EE-25C94A5ED0BA</key>
 		<dict>
@@ -1296,6 +1020,8 @@ README information to follow. In the meantime, enjoy AI-generated picture of a k
 			<string>hc10</string>
 		</dict>
 	</array>
+	<key>variablesdontexport</key>
+	<array/>
 	<key>version</key>
 	<string>1.0.1</string>
 	<key>webaddress</key>
