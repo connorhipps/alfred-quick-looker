@@ -1544,6 +1544,153 @@ README information to follow. In the meantime, enjoy AI-generated picture of a k
 			<key>variable</key>
 			<string>hc3</string>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<string></string>
+				<key>placeholder</key>
+				<string></string>
+				<key>required</key>
+				<false/>
+				<key>trim</key>
+				<true/>
+			</dict>
+			<key>description</key>
+			<string>Add the first and last name of an HC to search for. Please be sure to add a space beteen the first and last name.</string>
+			<key>label</key>
+			<string>HC #4</string>
+			<key>type</key>
+			<string>textfield</string>
+			<key>variable</key>
+			<string>hc4</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<string></string>
+				<key>placeholder</key>
+				<string></string>
+				<key>required</key>
+				<false/>
+				<key>trim</key>
+				<true/>
+			</dict>
+			<key>description</key>
+			<string>Add the first and last name of an HC to search for. Please be sure to add a space beteen the first and last name.</string>
+			<key>label</key>
+			<string>HC #5</string>
+			<key>type</key>
+			<string>textfield</string>
+			<key>variable</key>
+			<string>hc5</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<string></string>
+				<key>placeholder</key>
+				<string></string>
+				<key>required</key>
+				<false/>
+				<key>trim</key>
+				<true/>
+			</dict>
+			<key>description</key>
+			<string>Add the first and last name of an HC to search for. Please be sure to add a space beteen the first and last name.</string>
+			<key>label</key>
+			<string>HC #6</string>
+			<key>type</key>
+			<string>textfield</string>
+			<key>variable</key>
+			<string>hc6</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<string></string>
+				<key>placeholder</key>
+				<string></string>
+				<key>required</key>
+				<false/>
+				<key>trim</key>
+				<true/>
+			</dict>
+			<key>description</key>
+			<string>Add the first and last name of an HC to search for. Please be sure to add a space beteen the first and last name.</string>
+			<key>label</key>
+			<string>hc7</string>
+			<key>type</key>
+			<string>textfield</string>
+			<key>variable</key>
+			<string>HC_7</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<string></string>
+				<key>placeholder</key>
+				<string></string>
+				<key>required</key>
+				<false/>
+				<key>trim</key>
+				<true/>
+			</dict>
+			<key>description</key>
+			<string>Add the first and last name of an HC to search for. Please be sure to add a space beteen the first and last name.</string>
+			<key>label</key>
+			<string>HC #8</string>
+			<key>type</key>
+			<string>textfield</string>
+			<key>variable</key>
+			<string>hc8</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<string></string>
+				<key>placeholder</key>
+				<string></string>
+				<key>required</key>
+				<false/>
+				<key>trim</key>
+				<true/>
+			</dict>
+			<key>description</key>
+			<string>Add the first and last name of an HC to search for. Please be sure to add a space beteen the first and last name.</string>
+			<key>label</key>
+			<string>HC #9</string>
+			<key>type</key>
+			<string>textfield</string>
+			<key>variable</key>
+			<string>hc9</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<string></string>
+				<key>placeholder</key>
+				<string></string>
+				<key>required</key>
+				<false/>
+				<key>trim</key>
+				<true/>
+			</dict>
+			<key>description</key>
+			<string>Add the first and last name of an HC to search for. Please be sure to add a space beteen the first and last name.</string>
+			<key>label</key>
+			<string>HC #10</string>
+			<key>type</key>
+			<string>textfield</string>
+			<key>variable</key>
+			<string>hc10</string>
+		</dict>
 	</array>
 	<key>variables</key>
 	<dict>
