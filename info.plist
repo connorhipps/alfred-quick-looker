@@ -6,6 +6,45 @@
 	<string>HC</string>
 	<key>connections</key>
 	<dict>
+		<key>142749E1-4508-48B4-B2B4-FD002B9A4B6D</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>6713B905-EE69-4844-AD1B-70CD4C00BEF9</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>DC591F63-D68C-4FA2-8FAA-74ABBD5B6529</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>6713B905-EE69-4844-AD1B-70CD4C00BEF9</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>621354A5-265D-450D-A788-8AB2AE739137</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>6713B905-EE69-4844-AD1B-70CD4C00BEF9</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>BFC5E240-14BC-41F9-8682-9152983EDB11</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>1FE147A8-83D5-4258-9EA7-9243A9E5EA27</key>
 		<array>
 			<dict>
@@ -50,6 +89,19 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>AD6922E6-9860-4D86-9556-930856D78720</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>7AAB23BE-4C64-499D-BC1A-AE68FE6D2E31</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>142749E1-4508-48B4-B2B4-FD002B9A4B6D</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -171,6 +223,18 @@
 				<key>vitoclose</key>
 				<false/>
 			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>7AAB23BE-4C64-499D-BC1A-AE68FE6D2E31</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>F127D165-08E0-4F36-A5B3-32685274843F</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
 		</array>
 		<key>C97914B3-8D41-4854-A8EE-25C94A5ED0BA</key>
 		<array>
@@ -259,6 +323,47 @@ done</string>
 			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
 			<string>7F0DE48A-E977-4EF8-9E26-E247B7A1764D</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>#!/bin/bash
+
+# Define an array of URLs
+urls=(
+"https://looker.a8c.com/dashboards/477?Report+Date+Start=last+month&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Kudakwashe+Zafevere"
+"https://looker.a8c.com/dashboards/477?Report+Date+Start=last+month&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Nazilya+Gismatullina"
+"https://looker.a8c.com/dashboards/477?Report+Date+Start=last+month&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Paulina+Fraser"
+"https://looker.a8c.com/dashboards/477?Report+Date+Start=last+month&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Neha+Sharma"
+"https://looker.a8c.com/dashboards/477?Report+Date+Start=last+month&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Samod+Kareem"
+"https://looker.a8c.com/dashboards/477?Report+Date+Start=last+month&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Briam+Rojas"
+"https://looker.a8c.com/dashboards/477?Report+Date+Start=last+month&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Korede+Osunlalu"
+"https://looker.a8c.com/dashboards/477?Report+Date+Start=last+month&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Josefh+Chavarria"
+"https://looker.a8c.com/dashboards/477?Report+Date+Start=last+month&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Abdulazeez+Akan"
+)
+
+# Iterate through the URLs and open each in a new tab
+for url in "${urls[@]}"; do
+  /usr/bin/open -a "$browser" "$url"
+done</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>DBD4EDA0-1A0A-45C1-998C-804AFA26FD32</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
@@ -379,6 +484,20 @@ done</string>
 						<key>uid</key>
 						<string>9F7CBFF9-E457-4CBB-A21C-92385F459A59</string>
 					</dict>
+					<dict>
+						<key>inputstring</key>
+						<string></string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>0</integer>
+						<key>matchstring</key>
+						<string>filtertest</string>
+						<key>outputlabel</key>
+						<string>filtertest</string>
+						<key>uid</key>
+						<string>F127D165-08E0-4F36-A5B3-32685274843F</string>
+					</dict>
 				</array>
 				<key>elselabel</key>
 				<string>else</string>
@@ -444,7 +563,7 @@ done</string>
 				<key>fixedorder</key>
 				<true/>
 				<key>items</key>
-				<string>[{"title":"Last Month","arg":"lastmonth","subtitle":"Queries the Last Month"},{"title":"Last Week","arg":"lastweek","subtitle":"Queries the Last Week"},{"title":"Last 2 Weeks","arg":"lasttwoweeks","subtitle":"Queries the Last 2 Weeks"},{"title":"Capture URLs 📷","arg":"capture","subtitle":"Captures ALL URLs in The Active Browser"},{"title":"Variable Testing 🧪","arg":"variable","subtitle":"Test custom variables added to the workflow."}]</string>
+				<string>[{"title":"Last Month","arg":"lastmonth","subtitle":"Queries the Last Month"},{"title":"Last Week","arg":"lastweek","subtitle":"Queries the Last Week"},{"title":"Last 2 Weeks","arg":"lasttwoweeks","subtitle":"Queries the Last 2 Weeks"},{"title":"Capture URLs 📷","arg":"capture","subtitle":"Captures ALL URLs in The Active Browser"},{"title":"Variable Testing 🧪","arg":"variable","subtitle":"Test custom variables added to the workflow."},{"title":"Filter Test 🧪","arg":"filtertest","subtitle":"Test filtering for months"}]</string>
 				<key>keyword</key>
 				<string>looker</string>
 				<key>matchmode</key>
@@ -702,6 +821,58 @@ set the clipboard to urlList</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>conditions</key>
+				<array>
+					<dict>
+						<key>inputstring</key>
+						<string>{var:task}</string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>1</integer>
+						<key>matchstring</key>
+						<string></string>
+						<key>outputlabel</key>
+						<string>Append</string>
+						<key>uid</key>
+						<string>22E5CB21-EEEB-4C9C-9C47-A521AE4F9130</string>
+					</dict>
+				</array>
+				<key>elselabel</key>
+				<string>Open File</string>
+				<key>hideelse</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.conditional</string>
+			<key>uid</key>
+			<string>AD6922E6-9860-4D86-9556-930856D78720</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string>{query}</string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict>
+					<key>filename</key>
+					<string>{query}</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>67833930-5A68-4CDC-ABD7-70F9AE7D45C3</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
@@ -771,58 +942,6 @@ fi</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>conditions</key>
-				<array>
-					<dict>
-						<key>inputstring</key>
-						<string>{var:task}</string>
-						<key>matchcasesensitive</key>
-						<false/>
-						<key>matchmode</key>
-						<integer>1</integer>
-						<key>matchstring</key>
-						<string></string>
-						<key>outputlabel</key>
-						<string>Append</string>
-						<key>uid</key>
-						<string>22E5CB21-EEEB-4C9C-9C47-A521AE4F9130</string>
-					</dict>
-				</array>
-				<key>elselabel</key>
-				<string>Open File</string>
-				<key>hideelse</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.conditional</string>
-			<key>uid</key>
-			<string>AD6922E6-9860-4D86-9556-930856D78720</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argument</key>
-				<string>{query}</string>
-				<key>passthroughargument</key>
-				<false/>
-				<key>variables</key>
-				<dict>
-					<key>filename</key>
-					<string>{query}</string>
-				</dict>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.argument</string>
-			<key>uid</key>
-			<string>67833930-5A68-4CDC-ABD7-70F9AE7D45C3</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>openwith</key>
 				<string></string>
 				<key>sourcefile</key>
@@ -834,6 +953,238 @@ fi</string>
 			<string>C8299EBA-6F55-4EB6-86FA-A7B31CF71B4B</string>
 			<key>version</key>
 			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>fixedorder</key>
+				<true/>
+				<key>items</key>
+				<string>[{"title":"Last Month 🧪","arg":"last+month","subtitle":"Queries the Last Month"},{"title":"Last Week 🧪","arg":"last+week","subtitle":"Queries the Last Week"},{"title":"Last 2 Weeks 🧪","arg":"2+week","subtitle":"Queries the Last 2 Weeks"}]</string>
+				<key>matchmode</key>
+				<integer>0</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>subtext</key>
+				<string>Opens All Looker Reports for HCs 📊</string>
+				<key>title</key>
+				<string>HC Looker Data</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>inboundconfig</key>
+			<dict>
+				<key>usecustominputarg</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.listfilter</string>
+			<key>uid</key>
+			<string>7AAB23BE-4C64-499D-BC1A-AE68FE6D2E31</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string># Split the full name of hc1 into first and last names
+first_name_hc1=$(echo "$hc1" | cut -d' ' -f1)
+last_name_hc1=$(echo "$hc1" | cut -d' ' -f2)
+
+# Check if both environment variables for hc1 are set and not empty
+if [ -n "$first_name_hc1" ] &amp;&amp; [ -n "$last_name_hc1" ]; then
+    # Create the URL with the appended first and last names for hc1
+    url_hc1="https://looker.a8c.com/dashboards/477?Report+Date+Start={query}&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=${first_name_hc1}+${last_name_hc1}"
+
+    # Open the URL for hc1 in a new tab of the specified web browser
+    osascript -e "tell application \"$browser\" to open location \"$url_hc1\""
+else
+    # Handle the case where first_name or last_name for hc1 is empty
+    echo "First name or last name for hc1 is missing."
+fi
+
+# Split the full name of hc2 into first and last names
+first_name_hc2=$(echo "$hc2" | cut -d' ' -f1)
+last_name_hc2=$(echo "$hc2" | cut -d' ' -f2)
+
+# Check if both environment variables for hc2 are set and not empty
+if [ -n "$first_name_hc2" ] &amp;&amp; [ -n "$last_name_hc2" ]; then
+    # Create the URL with the appended first and last names for hc2
+    url_hc2="https://looker.a8c.com/dashboards/477?Report+Date+Start={query}&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=${first_name_hc2}+${last_name_hc2}"
+
+    # Open the URL for hc2 in a new tab of the specified web browser
+    osascript -e "tell application \"$browser\" to open location \"$url_hc2\""
+else
+    # Handle the case where first_name or last_name for hc2 is empty
+    echo "First name or last name for hc2 is missing."
+fi
+
+# Split the full name of hc3 into first and last names
+first_name_hc3=$(echo "$hc3" | cut -d' ' -f1)
+last_name_hc3=$(echo "$hc3" | cut -d' ' -f2)
+
+# Check if both environment variables for hc3 are set and not empty
+if [ -n "$first_name_hc3" ] &amp;&amp; [ -n "$last_name_hc3" ]; then
+    # Create the URL with the appended first and last names for hc3
+    url_hc3="https://looker.a8c.com/dashboards/477?Report+Date+Start={query}&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=${first_name_hc3}+${last_name_hc3}"
+
+    # Open the URL for hc3 in a new tab of the specified web browser
+    osascript -e "tell application \"$browser\" to open location \"$url_hc3\""
+else
+    # Handle the case where first_name or last_name for hc3 is empty
+    echo "First name or last name for hc3 is missing."
+fi</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>6713B905-EE69-4844-AD1B-70CD4C00BEF9</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>conditions</key>
+				<array>
+					<dict>
+						<key>inputstring</key>
+						<string></string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>0</integer>
+						<key>matchstring</key>
+						<string>last+month</string>
+						<key>outputlabel</key>
+						<string>last+month</string>
+						<key>uid</key>
+						<string>DC591F63-D68C-4FA2-8FAA-74ABBD5B6529</string>
+					</dict>
+					<dict>
+						<key>inputstring</key>
+						<string></string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>0</integer>
+						<key>matchstring</key>
+						<string>last+week</string>
+						<key>outputlabel</key>
+						<string>last+week</string>
+						<key>uid</key>
+						<string>621354A5-265D-450D-A788-8AB2AE739137</string>
+					</dict>
+					<dict>
+						<key>inputstring</key>
+						<string></string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>0</integer>
+						<key>matchstring</key>
+						<string>2+week</string>
+						<key>outputlabel</key>
+						<string>2+week</string>
+						<key>uid</key>
+						<string>BFC5E240-14BC-41F9-8682-9152983EDB11</string>
+					</dict>
+				</array>
+				<key>elselabel</key>
+				<string>else</string>
+				<key>hideelse</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.conditional</string>
+			<key>uid</key>
+			<string>142749E1-4508-48B4-B2B4-FD002B9A4B6D</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string># Split the full name of hc1 into first and last names
+first_name_hc1=$(echo "$hc1" | cut -d' ' -f1)
+last_name_hc1=$(echo "$hc1" | cut -d' ' -f2)
+
+# Check if both environment variables for hc1 are set and not empty
+if [ -n "$first_name_hc1" ] &amp;&amp; [ -n "$last_name_hc1" ]; then
+    # Create the URL with the appended first and last names for hc1
+    url_hc1="https://looker.a8c.com/dashboards/477?Report+Date+Start=last+week&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=${first_name_hc1}+${last_name_hc1}"
+
+    # Open the URL for hc1 in a new tab of the specified web browser
+    osascript -e "tell application \"$browser\" to open location \"$url_hc1\""
+else
+    # Handle the case where first_name or last_name for hc1 is empty
+    echo "First name or last name for hc1 is missing."
+fi
+
+# Split the full name of hc2 into first and last names
+first_name_hc2=$(echo "$hc2" | cut -d' ' -f1)
+last_name_hc2=$(echo "$hc2" | cut -d' ' -f2)
+
+# Check if both environment variables for hc2 are set and not empty
+if [ -n "$first_name_hc2" ] &amp;&amp; [ -n "$last_name_hc2" ]; then
+    # Create the URL with the appended first and last names for hc2
+    url_hc2="https://looker.a8c.com/dashboards/477?Report+Date+Start=last+week&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=${first_name_hc2}+${last_name_hc2}"
+
+    # Open the URL for hc2 in a new tab of the specified web browser
+    osascript -e "tell application \"$browser\" to open location \"$url_hc2\""
+else
+    # Handle the case where first_name or last_name for hc2 is empty
+    echo "First name or last name for hc2 is missing."
+fi
+
+# Split the full name of hc3 into first and last names
+first_name_hc3=$(echo "$hc3" | cut -d' ' -f1)
+last_name_hc3=$(echo "$hc3" | cut -d' ' -f2)
+
+# Check if both environment variables for hc3 are set and not empty
+if [ -n "$first_name_hc3" ] &amp;&amp; [ -n "$last_name_hc3" ]; then
+    # Create the URL with the appended first and last names for hc3
+    url_hc3="https://looker.a8c.com/dashboards/477?Report+Date+Start=last+week&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=${first_name_hc3}+${last_name_hc3}"
+
+    # Open the URL for hc3 in a new tab of the specified web browser
+    osascript -e "tell application \"$browser\" to open location \"$url_hc3\""
+else
+    # Handle the case where first_name or last_name for hc3 is empty
+    echo "First name or last name for hc3 is missing."
+fi</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>71B23729-DE1B-47FA-A14C-96BBE045C6EF</string>
+			<key>version</key>
+			<integer>2</integer>
 		</dict>
 	</array>
 	<key>readme</key>
@@ -850,6 +1201,15 @@ README information to follow. In the meantime, enjoy AI-generated picture of a k
 3. "Does it work well enough to use in my day-to-day work?" → Yes, it does! 😊 I use it almost every day in some way, shape, or form.</string>
 	<key>uidata</key>
 	<dict>
+		<key>142749E1-4508-48B4-B2B4-FD002B9A4B6D</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>6</integer>
+			<key>xpos</key>
+			<real>425</real>
+			<key>ypos</key>
+			<real>785</real>
+		</dict>
 		<key>165E26DD-06DD-4E6D-A9CC-3F43F8B98A0A</key>
 		<dict>
 			<key>colorindex</key>
@@ -890,11 +1250,11 @@ README information to follow. In the meantime, enjoy AI-generated picture of a k
 			<key>colorindex</key>
 			<integer>4</integer>
 			<key>note</key>
-			<string>Script works with variables! Previous Week</string>
+			<string>⭐ Script works with variables! Previous Week</string>
 			<key>xpos</key>
-			<real>335</real>
+			<real>30</real>
 			<key>ypos</key>
-			<real>655</real>
+			<real>690</real>
 		</dict>
 		<key>472674D9-B19D-496D-8231-721689FCF5E8</key>
 		<dict>
@@ -912,7 +1272,7 @@ README information to follow. In the meantime, enjoy AI-generated picture of a k
 			<key>xpos</key>
 			<real>30</real>
 			<key>ypos</key>
-			<real>375</real>
+			<real>390</real>
 		</dict>
 		<key>5FC7E336-3000-4CFE-B2C7-F4E050909449</key>
 		<dict>
@@ -925,6 +1285,17 @@ README information to follow. In the meantime, enjoy AI-generated picture of a k
 			<key>ypos</key>
 			<real>375</real>
 		</dict>
+		<key>6713B905-EE69-4844-AD1B-70CD4C00BEF9</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>6</integer>
+			<key>note</key>
+			<string>⭐ Script works with variables! Previous Week</string>
+			<key>xpos</key>
+			<real>580</real>
+			<key>ypos</key>
+			<real>780</real>
+		</dict>
 		<key>67833930-5A68-4CDC-ABD7-70F9AE7D45C3</key>
 		<dict>
 			<key>colorindex</key>
@@ -935,6 +1306,26 @@ README information to follow. In the meantime, enjoy AI-generated picture of a k
 			<real>1540</real>
 			<key>ypos</key>
 			<real>675</real>
+		</dict>
+		<key>71B23729-DE1B-47FA-A14C-96BBE045C6EF</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>4</integer>
+			<key>note</key>
+			<string>⭐ Script works with variables! Previous Week</string>
+			<key>xpos</key>
+			<real>740</real>
+			<key>ypos</key>
+			<real>785</real>
+		</dict>
+		<key>7AAB23BE-4C64-499D-BC1A-AE68FE6D2E31</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>6</integer>
+			<key>xpos</key>
+			<real>255</real>
+			<key>ypos</key>
+			<real>780</real>
 		</dict>
 		<key>7F0DE48A-E977-4EF8-9E26-E247B7A1764D</key>
 		<dict>
@@ -985,7 +1376,7 @@ README information to follow. In the meantime, enjoy AI-generated picture of a k
 			<key>colorindex</key>
 			<integer>2</integer>
 			<key>xpos</key>
-			<real>270</real>
+			<real>225</real>
 			<key>ypos</key>
 			<real>350</real>
 		</dict>
@@ -1030,6 +1421,17 @@ README information to follow. In the meantime, enjoy AI-generated picture of a k
 			<real>430</real>
 			<key>ypos</key>
 			<real>585</real>
+		</dict>
+		<key>DBD4EDA0-1A0A-45C1-998C-804AFA26FD32</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>2</integer>
+			<key>note</key>
+			<string>Opens HC Looker URL for the previous month, but with a 2-second delay.</string>
+			<key>xpos</key>
+			<real>245</real>
+			<key>ypos</key>
+			<real>85</real>
 		</dict>
 		<key>E7791453-3667-45DC-BC79-7E309E81F64B</key>
 		<dict>
@@ -1092,7 +1494,7 @@ README information to follow. In the meantime, enjoy AI-generated picture of a k
 				<true/>
 			</dict>
 			<key>description</key>
-			<string>Add the first and last name of an HC to search for. Please be sure to add a space beteen the firrst nad last name.</string>
+			<string>Add the first and last name of an HC to search for. Please be sure to add a space beteen the first and last name.</string>
 			<key>label</key>
 			<string>HC #1</string>
 			<key>type</key>
@@ -1113,7 +1515,7 @@ README information to follow. In the meantime, enjoy AI-generated picture of a k
 				<true/>
 			</dict>
 			<key>description</key>
-			<string>Add the first and last name of an HC to search for. Please be sure to add a space beteen the firrst nad last name.</string>
+			<string>Add the first and last name of an HC to search for. Please be sure to add a space beteen the first and last name.</string>
 			<key>label</key>
 			<string>HC #2</string>
 			<key>type</key>
@@ -1134,7 +1536,7 @@ README information to follow. In the meantime, enjoy AI-generated picture of a k
 				<true/>
 			</dict>
 			<key>description</key>
-			<string>Add the first and last name of an HC to search for. Please be sure to add a space beteen the firrst nad last name.</string>
+			<string>Add the first and last name of an HC to search for. Please be sure to add a space beteen the first and last name.</string>
 			<key>label</key>
 			<string>HC #3</string>
 			<key>type</key>
