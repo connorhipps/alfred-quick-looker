@@ -701,75 +701,6 @@ set the clipboard to urlList</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string># Split the full name of hc1 into first and last names
-first_name_hc1=$(echo "$hc1" | cut -d' ' -f1)
-last_name_hc1=$(echo "$hc1" | cut -d' ' -f2)
-
-# Check if both environment variables for hc1 are set and not empty
-if [ -n "$first_name_hc1" ] &amp;&amp; [ -n "$last_name_hc1" ]; then
-    # Create the URL with the appended first and last names for hc1
-    url_hc1="https://looker.a8c.com/dashboards/477?Report+Date+Start=last+week&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=${first_name_hc1}+${last_name_hc1}"
-
-    # Open the URL for hc1 in a new tab of the specified web browser
-    osascript -e "tell application \"$browser\" to open location \"$url_hc1\""
-else
-    # Handle the case where first_name or last_name for hc1 is empty
-    echo "First name or last name for hc1 is missing."
-fi
-
-# Split the full name of hc2 into first and last names
-first_name_hc2=$(echo "$hc2" | cut -d' ' -f1)
-last_name_hc2=$(echo "$hc2" | cut -d' ' -f2)
-
-# Check if both environment variables for hc2 are set and not empty
-if [ -n "$first_name_hc2" ] &amp;&amp; [ -n "$last_name_hc2" ]; then
-    # Create the URL with the appended first and last names for hc2
-    url_hc2="https://looker.a8c.com/dashboards/477?Report+Date+Start=last+week&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=${first_name_hc2}+${last_name_hc2}"
-
-    # Open the URL for hc2 in a new tab of the specified web browser
-    osascript -e "tell application \"$browser\" to open location \"$url_hc2\""
-else
-    # Handle the case where first_name or last_name for hc2 is empty
-    echo "First name or last name for hc2 is missing."
-fi
-
-# Split the full name of hc3 into first and last names
-first_name_hc3=$(echo "$hc3" | cut -d' ' -f1)
-last_name_hc3=$(echo "$hc3" | cut -d' ' -f2)
-
-# Check if both environment variables for hc3 are set and not empty
-if [ -n "$first_name_hc3" ] &amp;&amp; [ -n "$last_name_hc3" ]; then
-    # Create the URL with the appended first and last names for hc3
-    url_hc3="https://looker.a8c.com/dashboards/477?Report+Date+Start=last+week&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=${first_name_hc3}+${last_name_hc3}"
-
-    # Open the URL for hc3 in a new tab of the specified web browser
-    osascript -e "tell application \"$browser\" to open location \"$url_hc3\""
-else
-    # Handle the case where first_name or last_name for hc3 is empty
-    echo "First name or last name for hc3 is missing."
-fi</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>2C08611E-37B1-406A-9C9B-142B47BEE530</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>argumenttrimmode</key>
 				<integer>0</integer>
 				<key>argumenttype</key>
@@ -923,17 +854,6 @@ README information to follow. In the meantime, enjoy AI-generated picture of a k
 			<real>890</real>
 			<key>ypos</key>
 			<real>480</real>
-		</dict>
-		<key>2C08611E-37B1-406A-9C9B-142B47BEE530</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>4</integer>
-			<key>note</key>
-			<string>⭐ Script works with variables! Previous Week</string>
-			<key>xpos</key>
-			<real>30</real>
-			<key>ypos</key>
-			<real>575</real>
 		</dict>
 		<key>472674D9-B19D-496D-8231-721689FCF5E8</key>
 		<dict>
