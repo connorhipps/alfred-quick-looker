@@ -44,6 +44,18 @@
 				<key>vitoclose</key>
 				<false/>
 			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>D308A25B-10CA-4919-8CB0-CBFC0F46A898</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>668BC54C-FDBF-421C-9A47-A8CAC99D9753</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
 		</array>
 		<key>1FE147A8-83D5-4258-9EA7-9243A9E5EA27</key>
 		<array>
@@ -63,19 +75,6 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>165E26DD-06DD-4E6D-A9CC-3F43F8B98A0A</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>49B9BD28-2350-4642-A08E-5DBFCBF7421A</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>C6964A3B-0C40-4C4B-85C4-587BE6630A15</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -161,69 +160,6 @@
 				<false/>
 			</dict>
 		</array>
-		<key>C6964A3B-0C40-4C4B-85C4-587BE6630A15</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>7F0DE48A-E977-4EF8-9E26-E247B7A1764D</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>sourceoutputuid</key>
-				<string>DC591F63-D68C-4FA2-8FAA-74ABBD5B6529</string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>destinationuid</key>
-				<string>D13A40B4-DD92-491B-AA37-E194E0C8ABC3</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>sourceoutputuid</key>
-				<string>621354A5-265D-450D-A788-8AB2AE739137</string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>destinationuid</key>
-				<string>5FC7E336-3000-4CFE-B2C7-F4E050909449</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>sourceoutputuid</key>
-				<string>4058AE6E-5AAA-4B02-9117-8AF2B6612B91</string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>destinationuid</key>
-				<string>D308A25B-10CA-4919-8CB0-CBFC0F46A898</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>sourceoutputuid</key>
-				<string>FCBF2D61-498C-402A-9181-353621746D85</string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>destinationuid</key>
-				<string>7AAB23BE-4C64-499D-BC1A-AE68FE6D2E31</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>sourceoutputuid</key>
-				<string>F127D165-08E0-4F36-A5B3-32685274843F</string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>C97914B3-8D41-4854-A8EE-25C94A5ED0BA</key>
 		<array>
 			<dict>
@@ -281,27 +217,167 @@
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
-				<string>#!/bin/bash
+				<string># Split the full name of hc1 into first and last names
+first_name_hc1=$(echo "$hc1" | cut -d' ' -f1)
+last_name_hc1=$(echo "$hc1" | cut -d' ' -f2)
 
-# Define an array of URLs
-urls=(
-"https://looker.a8c.com/dashboards/477?Report+Date+Start=last+month&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Kudakwashe+Zafevere"
-"https://looker.a8c.com/dashboards/477?Report+Date+Start=last+month&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Nazilya+Gismatullina"
-"https://looker.a8c.com/dashboards/477?Report+Date+Start=last+month&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Paulina+Fraser"
-"https://looker.a8c.com/dashboards/477?Report+Date+Start=last+month&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Neha+Sharma"
-"https://looker.a8c.com/dashboards/477?Report+Date+Start=last+month&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Samod+Kareem"
-"https://looker.a8c.com/dashboards/477?Report+Date+Start=last+month&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Briam+Rojas"
-"https://looker.a8c.com/dashboards/477?Report+Date+Start=last+month&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Korede+Osunlalu"
-"https://looker.a8c.com/dashboards/477?Report+Date+Start=last+month&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Josefh+Chavarria"
-"https://looker.a8c.com/dashboards/477?Report+Date+Start=last+month&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Abdulazeez+Akan"
-)
+# Check if both environment variables for hc1 are set and not empty
+if [ -n "$first_name_hc1" ] &amp;&amp; [ -n "$last_name_hc1" ]; then
+    # Create the URL with the appended first and last names for hc1
+    url_hc1="https://looker.a8c.com/dashboards/477?Report+Date+Start={query}&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=${first_name_hc1}+${last_name_hc1}"
 
-# Iterate through the URLs and open each in a new tab
-for url in "${urls[@]}"; do
-  /usr/bin/open -a "$browser" "$url"
-done</string>
+    # Open the URL for hc1 in a new tab of the specified web browser
+    osascript -e "tell application \"$browser\" to open location \"$url_hc1\""
+else
+    # Handle the case where first_name or last_name for hc1 is empty
+    echo "First name or last name for hc1 is missing."
+fi
+
+# Split the full name of hc2 into first and last names
+first_name_hc2=$(echo "$hc2" | cut -d' ' -f1)
+last_name_hc2=$(echo "$hc2" | cut -d' ' -f2)
+
+# Check if both environment variables for hc2 are set and not empty
+if [ -n "$first_name_hc2" ] &amp;&amp; [ -n "$last_name_hc2" ]; then
+    # Create the URL with the appended first and last names for hc2
+    url_hc2="https://looker.a8c.com/dashboards/477?Report+Date+Start={query}&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=${first_name_hc2}+${last_name_hc2}"
+
+    # Open the URL for hc2 in a new tab of the specified web browser
+    osascript -e "tell application \"$browser\" to open location \"$url_hc2\""
+else
+    # Handle the case where first_name or last_name for hc2 is empty
+    echo "First name or last name for hc2 is missing."
+fi
+
+# Split the full name of hc3 into first and last names
+first_name_hc3=$(echo "$hc3" | cut -d' ' -f1)
+last_name_hc3=$(echo "$hc3" | cut -d' ' -f2)
+
+# Check if both environment variables for hc3 are set and not empty
+if [ -n "$first_name_hc3" ] &amp;&amp; [ -n "$last_name_hc3" ]; then
+    # Create the URL with the appended first and last names for hc3
+    url_hc3="https://looker.a8c.com/dashboards/477?Report+Date+Start={query}&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=${first_name_hc3}+${last_name_hc3}"
+
+    # Open the URL for hc3 in a new tab of the specified web browser
+    osascript -e "tell application \"$browser\" to open location \"$url_hc3\""
+else
+    # Handle the case where first_name or last_name for hc3 is empty
+    echo "First name or last name for hc3 is missing."
+fi
+
+# Split the full name of hc4 into first and last names
+first_name_hc4=$(echo "$hc4" | cut -d' ' -f1)
+last_name_hc4=$(echo "$hc4" | cut -d' ' -f2)
+
+# Check if both environment variables for hc4 are set and not empty
+if [ -n "$first_name_hc4" ] &amp;&amp; [ -n "$last_name_hc4" ]; then
+    # Create the URL with the appended first and last names for hc4
+    url_hc4="https://looker.a8c.com/dashboards/477?Report+Date+Start={query}&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=${first_name_hc4}+${last_name_hc4}"
+
+    # Open the URL for hc4 in a new tab of the specified web browser
+    osascript -e "tell application \"$browser\" to open location \"$url_hc4\""
+else
+    # Handle the case where first_name or last_name for hc4 is empty
+    echo "First name or last name for hc4 is missing."
+fi
+
+# Split the full name of hc5 into first and last names
+first_name_hc5=$(echo "$hc5" | cut -d' ' -f1)
+last_name_hc5=$(echo "$hc5" | cut -d' ' -f2)
+
+# Check if both environment variables for hc5 are set and not empty
+if [ -n "$first_name_hc5" ] &amp;&amp; [ -n "$last_name_hc5" ]; then
+    # Create the URL with the appended first and last names for hc5
+    url_hc5="https://looker.a8c.com/dashboards/477?Report+Date+Start={query}&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=${first_name_hc5}+${last_name_hc5}"
+
+    # Open the URL for hc5 in a new tab of the specified web browser
+    osascript -e "tell application \"$browser\" to open location \"$url_hc5\""
+else
+    # Handle the case where first_name or last_name for hc5 is empty
+    echo "First name or last name for hc5 is missing."
+fi
+
+# Split the full name of hc6 into first and last names
+first_name_hc6=$(echo "$hc6" | cut -d' ' -f1)
+last_name_hc6=$(echo "$hc6" | cut -d' ' -f2)
+
+# Check if both environment variables for hc6 are set and not empty
+if [ -n "$first_name_hc6" ] &amp;&amp; [ -n "$last_name_hc6" ]; then
+    # Create the URL with the appended first and last names for hc6
+    url_hc6="https://looker.a8c.com/dashboards/477?Report+Date+Start={query}&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=${first_name_hc6}+${last_name_hc6}"
+
+    # Open the URL for hc6 in a new tab of the specified web browser
+    osascript -e "tell application \"$browser\" to open location \"$url_hc6\""
+else
+    # Handle the case where first_name or last_name for hc6 is empty
+    echo "First name or last name for hc6 is missing."
+fi
+
+# Split the full name of hc7 into first and last names
+first_name_hc7=$(echo "$hc7" | cut -d' ' -f1)
+last_name_hc7=$(echo "$hc7" | cut -d' ' -f2)
+
+# Check if both environment variables for hc7 are set and not empty
+if [ -n "$first_name_hc7" ] &amp;&amp; [ -n "$last_name_hc7" ]; then
+    # Create the URL with the appended first and last names for hc7
+    url_hc7="https://looker.a8c.com/dashboards/477?Report+Date+Start={query}&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=${first_name_hc7}+${last_name_hc7}"
+
+    # Open the URL for hc7 in a new tab of the specified web browser
+    osascript -e "tell application \"$browser\" to open location \"$url_hc7\""
+else
+    # Handle the case where first_name or last_name for hc7 is empty
+    echo "First name or last name for hc7 is missing."
+fi
+
+# Split the full name of hc8 into first and last names
+first_name_hc8=$(echo "$hc8" | cut -d' ' -f1)
+last_name_hc8=$(echo "$hc8" | cut -d' ' -f2)
+
+# Check if both environment variables for hc8 are set and not empty
+if [ -n "$first_name_hc8" ] &amp;&amp; [ -n "$last_name_hc8" ]; then
+    # Create the URL with the appended first and last names for hc8
+    url_hc8="https://looker.a8c.com/dashboards/477?Report+Date+Start={query}&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=${first_name_hc8}+${last_name_hc8}"
+
+    # Open the URL for hc8 in a new tab of the specified web browser
+    osascript -e "tell application \"$browser\" to open location \"$url_hc8\""
+else
+    # Handle the case where first_name or last_name for hc8 is empty
+    echo "First name or last name for hc8 is missing."
+fi
+
+# Split the full name of hc9 into first and last names
+first_name_hc9=$(echo "$hc9" | cut -d' ' -f1)
+last_name_hc9=$(echo "$hc9" | cut -d' ' -f2)
+
+# Check if both environment variables for hc9 are set and not empty
+if [ -n "$first_name_hc9" ] &amp;&amp; [ -n "$last_name_hc9" ]; then
+    # Create the URL with the appended first and last names for hc9
+    url_hc9="https://looker.a8c.com/dashboards/477?Report+Date+Start={query}&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=${first_name_hc9}+${last_name_hc9}"
+
+    # Open the URL for hc9 in a new tab of the specified web browser
+    osascript -e "tell application \"$browser\" to open location \"$url_hc9\""
+else
+    # Handle the case where first_name or last_name for hc9 is empty
+    echo "First name or last name for hc9 is missing."
+fi
+
+# Split the full name of hc10 into first and last names
+first_name_hc10=$(echo "$hc10" | cut -d' ' -f1)
+last_name_hc10=$(echo "$hc10" | cut -d' ' -f2)
+
+# Check if both environment variables for hc10 are set and not empty
+if [ -n "$first_name_hc10" ] &amp;&amp; [ -n "$last_name_hc10" ]; then
+    # Create the URL with the appended first and last names for hc10
+    url_hc10="https://looker.a8c.com/dashboards/477?Report+Date+Start={query}&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=${first_name_hc10}+${last_name_hc10}"
+
+    # Open the URL for hc10 in a new tab of the specified web browser
+    osascript -e "tell application \"$browser\" to open location \"$url_hc10\""
+else
+    # Handle the case where first_name or last_name for hc10 is empty
+    echo "First name or last name for hc10 is missing."
+fi</string>
 				<key>scriptargtype</key>
-				<integer>1</integer>
+				<integer>0</integer>
 				<key>scriptfile</key>
 				<string></string>
 				<key>type</key>
@@ -310,49 +386,7 @@ done</string>
 			<key>type</key>
 			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
-			<string>7F0DE48A-E977-4EF8-9E26-E247B7A1764D</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>#!/bin/bash
-
-
-# Define an array of URLs
-urls=(
-"https://looker.a8c.com/dashboards/477?Report+Date+Start=last+week&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Kudakwashe+Zafevere"
-"https://looker.a8c.com/dashboards/477?Report+Date+Start=last+week&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Nazilya+Gismatullina"
-"https://looker.a8c.com/dashboards/477?Report+Date+Start=last+week&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Paulina+Fraser"
-"https://looker.a8c.com/dashboards/477?Report+Date+Start=last+week&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Neha+Sharma"
-"https://looker.a8c.com/dashboards/477?Report+Date+Start=last+week&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Samod+Kareem"
-"https://looker.a8c.com/dashboards/477?Report+Date+Start=last+week&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Briam+Rojas"
-"https://looker.a8c.com/dashboards/477?Report+Date+Start=last+week&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Korede+Osunlalu"
-"https://looker.a8c.com/dashboards/477?Report+Date+Start=last+week&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Josefh+Chavarria"
-"https://looker.a8c.com/dashboards/477?Report+Date+Start=last+week&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Abdulazeez+Akan"
-)
-
-# Iterate through the URLs and open each in a new tab
-for url in "${urls[@]}"; do
-  /usr/bin/open -a "$browser" "$url"
-done</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>D13A40B4-DD92-491B-AA37-E194E0C8ABC3</string>
+			<string>6713B905-EE69-4844-AD1B-70CD4C00BEF9</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
@@ -369,9 +403,9 @@ done</string>
 						<key>matchmode</key>
 						<integer>0</integer>
 						<key>matchstring</key>
-						<string>lastmonth</string>
+						<string>last+month</string>
 						<key>outputlabel</key>
-						<string>lastmonth</string>
+						<string>last+month</string>
 						<key>uid</key>
 						<string>DC591F63-D68C-4FA2-8FAA-74ABBD5B6529</string>
 					</dict>
@@ -383,9 +417,9 @@ done</string>
 						<key>matchmode</key>
 						<integer>0</integer>
 						<key>matchstring</key>
-						<string>lastweek</string>
+						<string>last+week</string>
 						<key>outputlabel</key>
-						<string>lastweek</string>
+						<string>last+week</string>
 						<key>uid</key>
 						<string>621354A5-265D-450D-A788-8AB2AE739137</string>
 					</dict>
@@ -397,11 +431,11 @@ done</string>
 						<key>matchmode</key>
 						<integer>0</integer>
 						<key>matchstring</key>
-						<string>lasttwoweeks</string>
+						<string>2+week</string>
 						<key>outputlabel</key>
-						<string>lasttwoweeks</string>
+						<string>2+week</string>
 						<key>uid</key>
-						<string>4058AE6E-5AAA-4B02-9117-8AF2B6612B91</string>
+						<string>BFC5E240-14BC-41F9-8682-9152983EDB11</string>
 					</dict>
 					<dict>
 						<key>inputstring</key>
@@ -415,21 +449,7 @@ done</string>
 						<key>outputlabel</key>
 						<string>capture</string>
 						<key>uid</key>
-						<string>FCBF2D61-498C-402A-9181-353621746D85</string>
-					</dict>
-					<dict>
-						<key>inputstring</key>
-						<string></string>
-						<key>matchcasesensitive</key>
-						<false/>
-						<key>matchmode</key>
-						<integer>0</integer>
-						<key>matchstring</key>
-						<string>filtertest</string>
-						<key>outputlabel</key>
-						<string>filtertest</string>
-						<key>uid</key>
-						<string>F127D165-08E0-4F36-A5B3-32685274843F</string>
+						<string>668BC54C-FDBF-421C-9A47-A8CAC99D9753</string>
 					</dict>
 				</array>
 				<key>elselabel</key>
@@ -440,51 +460,9 @@ done</string>
 			<key>type</key>
 			<string>alfred.workflow.utility.conditional</string>
 			<key>uid</key>
-			<string>C6964A3B-0C40-4C4B-85C4-587BE6630A15</string>
+			<string>142749E1-4508-48B4-B2B4-FD002B9A4B6D</string>
 			<key>version</key>
 			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>#!/bin/bash
-
-
-# Define an array of URLs
-urls=(
-"https://looker.a8c.com/dashboards/477?Report+Date+Start=2+week&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Kudakwashe+Zafevere"
-"https://looker.a8c.com/dashboards/477?Report+Date+Start=2+week&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Nazilya+Gismatullina"
-"https://looker.a8c.com/dashboards/477?Report+Date+Start=2+week&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Paulina+Fraser"
-"https://looker.a8c.com/dashboards/477?Report+Date+Start=2+week&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Neha+Sharma"
-"https://looker.a8c.com/dashboards/477?Report+Date+Start=2+week&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Samod+Kareem"
-"https://looker.a8c.com/dashboards/477?Report+Date+Start=2+week&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Briam+Rojas"
-"https://looker.a8c.com/dashboards/477?Report+Date+Start=2+week&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Korede+Osunlalu"
-"https://looker.a8c.com/dashboards/477?Report+Date+Start=2+week&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Josefh+Chavarria"
-"https://looker.a8c.com/dashboards/477?Report+Date+Start=2+week&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Abdulazeez+Akan"
-)
-
-# Iterate through the URLs and open each in a new tab
-for url in "${urls[@]}"; do
-  /usr/bin/open -a "$browser" "$url"
-done</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>5FC7E336-3000-4CFE-B2C7-F4E050909449</string>
-			<key>version</key>
-			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -496,7 +474,7 @@ done</string>
 				<key>fixedorder</key>
 				<true/>
 				<key>items</key>
-				<string>[{"title":"Last Month","arg":"lastmonth","subtitle":"Queries the Last Month"},{"title":"Last Week","arg":"lastweek","subtitle":"Queries the Last Week"},{"title":"Last 2 Weeks","arg":"lasttwoweeks","subtitle":"Queries the Last 2 Weeks"},{"title":"Capture URLs 📷","arg":"capture","subtitle":"Captures ALL URLs in The Active Browser"},{"title":"Variable Testing 🧪","arg":"variable","subtitle":"Test custom variables added to the workflow."},{"title":"Filter Test 🧪","arg":"filtertest","subtitle":"Test filtering for months"}]</string>
+				<string>[{"title":"Last Month","arg":"last+month","subtitle":"Queries the Last Month"},{"title":"Last Week","arg":"last+week","subtitle":"Queries the Last Week"},{"title":"Last 2 Weeks","arg":"2+week","subtitle":"Queries the Last 2 Weeks"},{"title":"Capture URLs 📷","arg":"capture","subtitle":"Captures ALL URLs in The Active Browser"}]</string>
 				<key>keyword</key>
 				<string>looker</string>
 				<key>matchmode</key>
@@ -513,7 +491,7 @@ done</string>
 			<key>type</key>
 			<string>alfred.workflow.input.listfilter</string>
 			<key>uid</key>
-			<string>49B9BD28-2350-4642-A08E-5DBFCBF7421A</string>
+			<string>7AAB23BE-4C64-499D-BC1A-AE68FE6D2E31</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -570,54 +548,6 @@ set the clipboard to urlList</string>
 			<string>alfred.workflow.output.notification</string>
 			<key>uid</key>
 			<string>E7791453-3667-45DC-BC79-7E309E81F64B</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>adduuid</key>
-				<false/>
-				<key>allowemptyfiles</key>
-				<false/>
-				<key>createintermediatefolders</key>
-				<true/>
-				<key>filename</key>
-				<string>{var:todos_path}/{var:filename}.txt</string>
-				<key>filetext</key>
-				<string>- {var:task}</string>
-				<key>ignoredynamicplaceholders</key>
-				<false/>
-				<key>relativepathmode</key>
-				<integer>0</integer>
-				<key>type</key>
-				<integer>2</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.writefile</string>
-			<key>uid</key>
-			<string>472674D9-B19D-496D-8231-721689FCF5E8</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>lastpathcomponent</key>
-				<false/>
-				<key>onlyshowifquerypopulated</key>
-				<false/>
-				<key>removeextension</key>
-				<false/>
-				<key>text</key>
-				<string>{var:task}</string>
-				<key>title</key>
-				<string>Added task to {var:filename}</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.notification</string>
-			<key>uid</key>
-			<string>165E26DD-06DD-4E6D-A9CC-3F43F8B98A0A</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -706,6 +636,71 @@ set the clipboard to urlList</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>argument</key>
+				<string></string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>D308A25B-10CA-4919-8CB0-CBFC0F46A898</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>adduuid</key>
+				<false/>
+				<key>allowemptyfiles</key>
+				<false/>
+				<key>createintermediatefolders</key>
+				<true/>
+				<key>filename</key>
+				<string>{var:todos_path}/{var:filename}.txt</string>
+				<key>filetext</key>
+				<string>- {var:task}</string>
+				<key>ignoredynamicplaceholders</key>
+				<false/>
+				<key>relativepathmode</key>
+				<integer>0</integer>
+				<key>type</key>
+				<integer>2</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.writefile</string>
+			<key>uid</key>
+			<string>472674D9-B19D-496D-8231-721689FCF5E8</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string>{var:task}</string>
+				<key>title</key>
+				<string>Added task to {var:filename}</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>165E26DD-06DD-4E6D-A9CC-3F43F8B98A0A</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
@@ -771,23 +766,6 @@ fi</string>
 			<string>2C08611E-37B1-406A-9C9B-142B47BEE530</string>
 			<key>version</key>
 			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argument</key>
-				<string></string>
-				<key>passthroughargument</key>
-				<false/>
-				<key>variables</key>
-				<dict/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.argument</string>
-			<key>uid</key>
-			<string>D308A25B-10CA-4919-8CB0-CBFC0F46A898</string>
-			<key>version</key>
-			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -875,169 +853,6 @@ fi</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>argumenttrimmode</key>
-				<integer>0</integer>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>fixedorder</key>
-				<true/>
-				<key>items</key>
-				<string>[{"title":"Last Month 🧪","arg":"last+month","subtitle":"Queries the Last Month"},{"title":"Last Week 🧪","arg":"last+week","subtitle":"Queries the Last Week"},{"title":"Last 2 Weeks 🧪","arg":"2+week","subtitle":"Queries the Last 2 Weeks"}]</string>
-				<key>matchmode</key>
-				<integer>0</integer>
-				<key>runningsubtext</key>
-				<string></string>
-				<key>subtext</key>
-				<string>Opens All Looker Reports for HCs 📊</string>
-				<key>title</key>
-				<string>HC Looker Data</string>
-				<key>withspace</key>
-				<false/>
-			</dict>
-			<key>inboundconfig</key>
-			<dict>
-				<key>usecustominputarg</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.listfilter</string>
-			<key>uid</key>
-			<string>7AAB23BE-4C64-499D-BC1A-AE68FE6D2E31</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string># Split the full name of hc1 into first and last names
-first_name_hc1=$(echo "$hc1" | cut -d' ' -f1)
-last_name_hc1=$(echo "$hc1" | cut -d' ' -f2)
-
-# Check if both environment variables for hc1 are set and not empty
-if [ -n "$first_name_hc1" ] &amp;&amp; [ -n "$last_name_hc1" ]; then
-    # Create the URL with the appended first and last names for hc1
-    url_hc1="https://looker.a8c.com/dashboards/477?Report+Date+Start={query}&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=${first_name_hc1}+${last_name_hc1}"
-
-    # Open the URL for hc1 in a new tab of the specified web browser
-    osascript -e "tell application \"$browser\" to open location \"$url_hc1\""
-else
-    # Handle the case where first_name or last_name for hc1 is empty
-    echo "First name or last name for hc1 is missing."
-fi
-
-# Split the full name of hc2 into first and last names
-first_name_hc2=$(echo "$hc2" | cut -d' ' -f1)
-last_name_hc2=$(echo "$hc2" | cut -d' ' -f2)
-
-# Check if both environment variables for hc2 are set and not empty
-if [ -n "$first_name_hc2" ] &amp;&amp; [ -n "$last_name_hc2" ]; then
-    # Create the URL with the appended first and last names for hc2
-    url_hc2="https://looker.a8c.com/dashboards/477?Report+Date+Start={query}&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=${first_name_hc2}+${last_name_hc2}"
-
-    # Open the URL for hc2 in a new tab of the specified web browser
-    osascript -e "tell application \"$browser\" to open location \"$url_hc2\""
-else
-    # Handle the case where first_name or last_name for hc2 is empty
-    echo "First name or last name for hc2 is missing."
-fi
-
-# Split the full name of hc3 into first and last names
-first_name_hc3=$(echo "$hc3" | cut -d' ' -f1)
-last_name_hc3=$(echo "$hc3" | cut -d' ' -f2)
-
-# Check if both environment variables for hc3 are set and not empty
-if [ -n "$first_name_hc3" ] &amp;&amp; [ -n "$last_name_hc3" ]; then
-    # Create the URL with the appended first and last names for hc3
-    url_hc3="https://looker.a8c.com/dashboards/477?Report+Date+Start={query}&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=${first_name_hc3}+${last_name_hc3}"
-
-    # Open the URL for hc3 in a new tab of the specified web browser
-    osascript -e "tell application \"$browser\" to open location \"$url_hc3\""
-else
-    # Handle the case where first_name or last_name for hc3 is empty
-    echo "First name or last name for hc3 is missing."
-fi</string>
-				<key>scriptargtype</key>
-				<integer>0</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>6713B905-EE69-4844-AD1B-70CD4C00BEF9</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>conditions</key>
-				<array>
-					<dict>
-						<key>inputstring</key>
-						<string></string>
-						<key>matchcasesensitive</key>
-						<false/>
-						<key>matchmode</key>
-						<integer>0</integer>
-						<key>matchstring</key>
-						<string>last+month</string>
-						<key>outputlabel</key>
-						<string>last+month</string>
-						<key>uid</key>
-						<string>DC591F63-D68C-4FA2-8FAA-74ABBD5B6529</string>
-					</dict>
-					<dict>
-						<key>inputstring</key>
-						<string></string>
-						<key>matchcasesensitive</key>
-						<false/>
-						<key>matchmode</key>
-						<integer>0</integer>
-						<key>matchstring</key>
-						<string>last+week</string>
-						<key>outputlabel</key>
-						<string>last+week</string>
-						<key>uid</key>
-						<string>621354A5-265D-450D-A788-8AB2AE739137</string>
-					</dict>
-					<dict>
-						<key>inputstring</key>
-						<string></string>
-						<key>matchcasesensitive</key>
-						<false/>
-						<key>matchmode</key>
-						<integer>0</integer>
-						<key>matchstring</key>
-						<string>2+week</string>
-						<key>outputlabel</key>
-						<string>2+week</string>
-						<key>uid</key>
-						<string>BFC5E240-14BC-41F9-8682-9152983EDB11</string>
-					</dict>
-				</array>
-				<key>elselabel</key>
-				<string>else</string>
-				<key>hideelse</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.conditional</string>
-			<key>uid</key>
-			<string>142749E1-4508-48B4-B2B4-FD002B9A4B6D</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>openwith</key>
 				<string></string>
 				<key>sourcefile</key>
@@ -1070,9 +885,9 @@ README information to follow. In the meantime, enjoy AI-generated picture of a k
 			<key>colorindex</key>
 			<integer>6</integer>
 			<key>xpos</key>
-			<real>520</real>
+			<real>260</real>
 			<key>ypos</key>
-			<real>695</real>
+			<real>275</real>
 		</dict>
 		<key>165E26DD-06DD-4E6D-A9CC-3F43F8B98A0A</key>
 		<dict>
@@ -1105,9 +920,9 @@ README information to follow. In the meantime, enjoy AI-generated picture of a k
 			<key>note</key>
 			<string>Action Cancelled</string>
 			<key>xpos</key>
-			<real>985</real>
+			<real>890</real>
 			<key>ypos</key>
-			<real>570</real>
+			<real>480</real>
 		</dict>
 		<key>2C08611E-37B1-406A-9C9B-142B47BEE530</key>
 		<dict>
@@ -1131,34 +946,16 @@ README information to follow. In the meantime, enjoy AI-generated picture of a k
 			<key>ypos</key>
 			<real>535</real>
 		</dict>
-		<key>49B9BD28-2350-4642-A08E-5DBFCBF7421A</key>
-		<dict>
-			<key>xpos</key>
-			<real>35</real>
-			<key>ypos</key>
-			<real>375</real>
-		</dict>
-		<key>5FC7E336-3000-4CFE-B2C7-F4E050909449</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>2</integer>
-			<key>note</key>
-			<string>Opens HC Looker URL for the last two weeks, but with a 2-second delay.</string>
-			<key>xpos</key>
-			<real>510</real>
-			<key>ypos</key>
-			<real>375</real>
-		</dict>
 		<key>6713B905-EE69-4844-AD1B-70CD4C00BEF9</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>6</integer>
 			<key>note</key>
-			<string>⭐ Script works with variables! Previous Week</string>
+			<string>Opens script based on custom variables in Configure Workflow.</string>
 			<key>xpos</key>
-			<real>675</real>
+			<real>415</real>
 			<key>ypos</key>
-			<real>690</real>
+			<real>270</real>
 		</dict>
 		<key>67833930-5A68-4CDC-ABD7-70F9AE7D45C3</key>
 		<dict>
@@ -1176,20 +973,9 @@ README information to follow. In the meantime, enjoy AI-generated picture of a k
 			<key>colorindex</key>
 			<integer>6</integer>
 			<key>xpos</key>
-			<real>350</real>
+			<real>90</real>
 			<key>ypos</key>
-			<real>690</real>
-		</dict>
-		<key>7F0DE48A-E977-4EF8-9E26-E247B7A1764D</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>2</integer>
-			<key>note</key>
-			<string>Opens HC Looker URL for the previous month, but with a 2-second delay.</string>
-			<key>xpos</key>
-			<real>510</real>
-			<key>ypos</key>
-			<real>40</real>
+			<real>280</real>
 		</dict>
 		<key>84546B06-77EC-4DCF-982E-675A599A329B</key>
 		<dict>
@@ -1198,9 +984,9 @@ README information to follow. In the meantime, enjoy AI-generated picture of a k
 			<key>note</key>
 			<string>Capture URLs from Active Window</string>
 			<key>xpos</key>
-			<real>815</real>
+			<real>720</real>
 			<key>ypos</key>
-			<real>415</real>
+			<real>325</real>
 		</dict>
 		<key>A4762308-6E8B-4F0D-8ADE-BB9DE5272BDB</key>
 		<dict>
@@ -1209,9 +995,9 @@ README information to follow. In the meantime, enjoy AI-generated picture of a k
 			<key>note</key>
 			<string>Yes / No</string>
 			<key>xpos</key>
-			<real>510</real>
+			<real>415</real>
 			<key>ypos</key>
-			<real>555</real>
+			<real>465</real>
 		</dict>
 		<key>AD6922E6-9860-4D86-9556-930856D78720</key>
 		<dict>
@@ -1223,15 +1009,6 @@ README information to follow. In the meantime, enjoy AI-generated picture of a k
 			<real>1650</real>
 			<key>ypos</key>
 			<real>665</real>
-		</dict>
-		<key>C6964A3B-0C40-4C4B-85C4-587BE6630A15</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>2</integer>
-			<key>xpos</key>
-			<real>225</real>
-			<key>ypos</key>
-			<real>350</real>
 		</dict>
 		<key>C8299EBA-6F55-4EB6-86FA-A7B31CF71B4B</key>
 		<dict>
@@ -1251,29 +1028,18 @@ README information to follow. In the meantime, enjoy AI-generated picture of a k
 			<key>note</key>
 			<string>Yes / No</string>
 			<key>xpos</key>
-			<real>715</real>
+			<real>620</real>
 			<key>ypos</key>
-			<real>575</real>
-		</dict>
-		<key>D13A40B4-DD92-491B-AA37-E194E0C8ABC3</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>2</integer>
-			<key>note</key>
-			<string>Opens HC Looker URL for the last week, but with a 2-second delay.</string>
-			<key>xpos</key>
-			<real>510</real>
-			<key>ypos</key>
-			<real>215</real>
+			<real>485</real>
 		</dict>
 		<key>D308A25B-10CA-4919-8CB0-CBFC0F46A898</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>7</integer>
 			<key>xpos</key>
-			<real>430</real>
+			<real>335</real>
 			<key>ypos</key>
-			<real>585</real>
+			<real>495</real>
 		</dict>
 		<key>E7791453-3667-45DC-BC79-7E309E81F64B</key>
 		<dict>
@@ -1282,9 +1048,9 @@ README information to follow. In the meantime, enjoy AI-generated picture of a k
 			<key>note</key>
 			<string>URLs Captured</string>
 			<key>xpos</key>
-			<real>985</real>
+			<real>890</real>
 			<key>ypos</key>
-			<real>415</real>
+			<real>325</real>
 		</dict>
 	</dict>
 	<key>userconfigurationconfig</key>
