@@ -122,6 +122,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>8F76E536-E82E-453C-BB5C-9A9A8A626D4E</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>7AAB23BE-4C64-499D-BC1A-AE68FE6D2E31</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>A4762308-6E8B-4F0D-8ADE-BB9DE5272BDB</key>
 		<array>
 			<dict>
@@ -209,6 +222,37 @@
 	<string>HC Looker Data</string>
 	<key>objects</key>
 	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>0</integer>
+				<key>hotmod</key>
+				<integer>0</integer>
+				<key>hotstring</key>
+				<string></string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedAppsMode</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>8F76E536-E82E-453C-BB5C-9A9A8A626D4E</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
@@ -907,6 +951,17 @@ README information to follow. In the meantime, enjoy AI-generated picture of a k
 			<real>720</real>
 			<key>ypos</key>
 			<real>325</real>
+		</dict>
+		<key>8F76E536-E82E-453C-BB5C-9A9A8A626D4E</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>6</integer>
+			<key>note</key>
+			<string>Hotkey (Optional)</string>
+			<key>xpos</key>
+			<real>90</real>
+			<key>ypos</key>
+			<real>100</real>
 		</dict>
 		<key>A4762308-6E8B-4F0D-8ADE-BB9DE5272BDB</key>
 		<dict>
