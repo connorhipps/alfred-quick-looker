@@ -213,18 +213,6 @@
 			</dict>
 			<dict>
 				<key>destinationuid</key>
-				<string>2C08611E-37B1-406A-9C9B-142B47BEE530</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>sourceoutputuid</key>
-				<string>9F7CBFF9-E457-4CBB-A21C-92385F459A59</string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>destinationuid</key>
 				<string>7AAB23BE-4C64-499D-BC1A-AE68FE6D2E31</string>
 				<key>modifiers</key>
 				<integer>0</integer>
@@ -336,47 +324,6 @@ done</string>
 				<key>script</key>
 				<string>#!/bin/bash
 
-# Define an array of URLs
-urls=(
-"https://looker.a8c.com/dashboards/477?Report+Date+Start=last+month&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Kudakwashe+Zafevere"
-"https://looker.a8c.com/dashboards/477?Report+Date+Start=last+month&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Nazilya+Gismatullina"
-"https://looker.a8c.com/dashboards/477?Report+Date+Start=last+month&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Paulina+Fraser"
-"https://looker.a8c.com/dashboards/477?Report+Date+Start=last+month&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Neha+Sharma"
-"https://looker.a8c.com/dashboards/477?Report+Date+Start=last+month&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Samod+Kareem"
-"https://looker.a8c.com/dashboards/477?Report+Date+Start=last+month&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Briam+Rojas"
-"https://looker.a8c.com/dashboards/477?Report+Date+Start=last+month&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Korede+Osunlalu"
-"https://looker.a8c.com/dashboards/477?Report+Date+Start=last+month&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Josefh+Chavarria"
-"https://looker.a8c.com/dashboards/477?Report+Date+Start=last+month&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=Abdulazeez+Akan"
-)
-
-# Iterate through the URLs and open each in a new tab
-for url in "${urls[@]}"; do
-  /usr/bin/open -a "$browser" "$url"
-done</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>DBD4EDA0-1A0A-45C1-998C-804AFA26FD32</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>#!/bin/bash
-
 
 # Define an array of URLs
 urls=(
@@ -469,20 +416,6 @@ done</string>
 						<string>capture</string>
 						<key>uid</key>
 						<string>FCBF2D61-498C-402A-9181-353621746D85</string>
-					</dict>
-					<dict>
-						<key>inputstring</key>
-						<string></string>
-						<key>matchcasesensitive</key>
-						<false/>
-						<key>matchmode</key>
-						<integer>0</integer>
-						<key>matchstring</key>
-						<string>variable</string>
-						<key>outputlabel</key>
-						<string>variable</string>
-						<key>uid</key>
-						<string>9F7CBFF9-E457-4CBB-A21C-92385F459A59</string>
 					</dict>
 					<dict>
 						<key>inputstring</key>
@@ -773,6 +706,75 @@ set the clipboard to urlList</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string># Split the full name of hc1 into first and last names
+first_name_hc1=$(echo "$hc1" | cut -d' ' -f1)
+last_name_hc1=$(echo "$hc1" | cut -d' ' -f2)
+
+# Check if both environment variables for hc1 are set and not empty
+if [ -n "$first_name_hc1" ] &amp;&amp; [ -n "$last_name_hc1" ]; then
+    # Create the URL with the appended first and last names for hc1
+    url_hc1="https://looker.a8c.com/dashboards/477?Report+Date+Start=last+week&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=${first_name_hc1}+${last_name_hc1}"
+
+    # Open the URL for hc1 in a new tab of the specified web browser
+    osascript -e "tell application \"$browser\" to open location \"$url_hc1\""
+else
+    # Handle the case where first_name or last_name for hc1 is empty
+    echo "First name or last name for hc1 is missing."
+fi
+
+# Split the full name of hc2 into first and last names
+first_name_hc2=$(echo "$hc2" | cut -d' ' -f1)
+last_name_hc2=$(echo "$hc2" | cut -d' ' -f2)
+
+# Check if both environment variables for hc2 are set and not empty
+if [ -n "$first_name_hc2" ] &amp;&amp; [ -n "$last_name_hc2" ]; then
+    # Create the URL with the appended first and last names for hc2
+    url_hc2="https://looker.a8c.com/dashboards/477?Report+Date+Start=last+week&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=${first_name_hc2}+${last_name_hc2}"
+
+    # Open the URL for hc2 in a new tab of the specified web browser
+    osascript -e "tell application \"$browser\" to open location \"$url_hc2\""
+else
+    # Handle the case where first_name or last_name for hc2 is empty
+    echo "First name or last name for hc2 is missing."
+fi
+
+# Split the full name of hc3 into first and last names
+first_name_hc3=$(echo "$hc3" | cut -d' ' -f1)
+last_name_hc3=$(echo "$hc3" | cut -d' ' -f2)
+
+# Check if both environment variables for hc3 are set and not empty
+if [ -n "$first_name_hc3" ] &amp;&amp; [ -n "$last_name_hc3" ]; then
+    # Create the URL with the appended first and last names for hc3
+    url_hc3="https://looker.a8c.com/dashboards/477?Report+Date+Start=last+week&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=${first_name_hc3}+${last_name_hc3}"
+
+    # Open the URL for hc3 in a new tab of the specified web browser
+    osascript -e "tell application \"$browser\" to open location \"$url_hc3\""
+else
+    # Handle the case where first_name or last_name for hc3 is empty
+    echo "First name or last name for hc3 is missing."
+fi</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>2C08611E-37B1-406A-9C9B-142B47BEE530</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>argument</key>
 				<string></string>
 				<key>passthroughargument</key>
@@ -869,90 +871,6 @@ set the clipboard to urlList</string>
 			<string>67833930-5A68-4CDC-ABD7-70F9AE7D45C3</string>
 			<key>version</key>
 			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string># Split the full name of hc1 into first and last names
-first_name_hc1=$(echo "$hc1" | cut -d' ' -f1)
-last_name_hc1=$(echo "$hc1" | cut -d' ' -f2)
-
-# Check if both environment variables for hc1 are set and not empty
-if [ -n "$first_name_hc1" ] &amp;&amp; [ -n "$last_name_hc1" ]; then
-    # Create the URL with the appended first and last names for hc1
-    url_hc1="https://looker.a8c.com/dashboards/477?Report+Date+Start=last+week&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=${first_name_hc1}+${last_name_hc1}"
-
-    # Open the URL for hc1 in a new tab of the specified web browser
-    osascript -e "tell application \"$browser\" to open location \"$url_hc1\""
-else
-    # Handle the case where first_name or last_name for hc1 is empty
-    echo "First name or last name for hc1 is missing."
-fi
-
-# Split the full name of hc2 into first and last names
-first_name_hc2=$(echo "$hc2" | cut -d' ' -f1)
-last_name_hc2=$(echo "$hc2" | cut -d' ' -f2)
-
-# Check if both environment variables for hc2 are set and not empty
-if [ -n "$first_name_hc2" ] &amp;&amp; [ -n "$last_name_hc2" ]; then
-    # Create the URL with the appended first and last names for hc2
-    url_hc2="https://looker.a8c.com/dashboards/477?Report+Date+Start=last+week&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=${first_name_hc2}+${last_name_hc2}"
-
-    # Open the URL for hc2 in a new tab of the specified web browser
-    osascript -e "tell application \"$browser\" to open location \"$url_hc2\""
-else
-    # Handle the case where first_name or last_name for hc2 is empty
-    echo "First name or last name for hc2 is missing."
-fi
-
-# Split the full name of hc3 into first and last names
-first_name_hc3=$(echo "$hc3" | cut -d' ' -f1)
-last_name_hc3=$(echo "$hc3" | cut -d' ' -f2)
-
-# Check if both environment variables for hc3 are set and not empty
-if [ -n "$first_name_hc3" ] &amp;&amp; [ -n "$last_name_hc3" ]; then
-    # Create the URL with the appended first and last names for hc3
-    url_hc3="https://looker.a8c.com/dashboards/477?Report+Date+Start=last+week&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=${first_name_hc3}+${last_name_hc3}"
-
-    # Open the URL for hc3 in a new tab of the specified web browser
-    osascript -e "tell application \"$browser\" to open location \"$url_hc3\""
-else
-    # Handle the case where first_name or last_name for hc3 is empty
-    echo "First name or last name for hc3 is missing."
-fi</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>2C08611E-37B1-406A-9C9B-142B47BEE530</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>openwith</key>
-				<string></string>
-				<key>sourcefile</key>
-				<string>{var:todos_path}/{var:filename}.txt</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openfile</string>
-			<key>uid</key>
-			<string>C8299EBA-6F55-4EB6-86FA-A7B31CF71B4B</string>
-			<key>version</key>
-			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -1120,71 +1038,17 @@ fi</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string># Split the full name of hc1 into first and last names
-first_name_hc1=$(echo "$hc1" | cut -d' ' -f1)
-last_name_hc1=$(echo "$hc1" | cut -d' ' -f2)
-
-# Check if both environment variables for hc1 are set and not empty
-if [ -n "$first_name_hc1" ] &amp;&amp; [ -n "$last_name_hc1" ]; then
-    # Create the URL with the appended first and last names for hc1
-    url_hc1="https://looker.a8c.com/dashboards/477?Report+Date+Start=last+week&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=${first_name_hc1}+${last_name_hc1}"
-
-    # Open the URL for hc1 in a new tab of the specified web browser
-    osascript -e "tell application \"$browser\" to open location \"$url_hc1\""
-else
-    # Handle the case where first_name or last_name for hc1 is empty
-    echo "First name or last name for hc1 is missing."
-fi
-
-# Split the full name of hc2 into first and last names
-first_name_hc2=$(echo "$hc2" | cut -d' ' -f1)
-last_name_hc2=$(echo "$hc2" | cut -d' ' -f2)
-
-# Check if both environment variables for hc2 are set and not empty
-if [ -n "$first_name_hc2" ] &amp;&amp; [ -n "$last_name_hc2" ]; then
-    # Create the URL with the appended first and last names for hc2
-    url_hc2="https://looker.a8c.com/dashboards/477?Report+Date+Start=last+week&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=${first_name_hc2}+${last_name_hc2}"
-
-    # Open the URL for hc2 in a new tab of the specified web browser
-    osascript -e "tell application \"$browser\" to open location \"$url_hc2\""
-else
-    # Handle the case where first_name or last_name for hc2 is empty
-    echo "First name or last name for hc2 is missing."
-fi
-
-# Split the full name of hc3 into first and last names
-first_name_hc3=$(echo "$hc3" | cut -d' ' -f1)
-last_name_hc3=$(echo "$hc3" | cut -d' ' -f2)
-
-# Check if both environment variables for hc3 are set and not empty
-if [ -n "$first_name_hc3" ] &amp;&amp; [ -n "$last_name_hc3" ]; then
-    # Create the URL with the appended first and last names for hc3
-    url_hc3="https://looker.a8c.com/dashboards/477?Report+Date+Start=last+week&amp;Upwork+team=English+Language+Support+Team&amp;Upwork+name=${first_name_hc3}+${last_name_hc3}"
-
-    # Open the URL for hc3 in a new tab of the specified web browser
-    osascript -e "tell application \"$browser\" to open location \"$url_hc3\""
-else
-    # Handle the case where first_name or last_name for hc3 is empty
-    echo "First name or last name for hc3 is missing."
-fi</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
+				<key>openwith</key>
 				<string></string>
-				<key>type</key>
-				<integer>0</integer>
+				<key>sourcefile</key>
+				<string>{var:todos_path}/{var:filename}.txt</string>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.action.script</string>
+			<string>alfred.workflow.action.openfile</string>
 			<key>uid</key>
-			<string>71B23729-DE1B-47FA-A14C-96BBE045C6EF</string>
+			<string>C8299EBA-6F55-4EB6-86FA-A7B31CF71B4B</string>
 			<key>version</key>
-			<integer>2</integer>
+			<integer>3</integer>
 		</dict>
 	</array>
 	<key>readme</key>
@@ -1206,9 +1070,9 @@ README information to follow. In the meantime, enjoy AI-generated picture of a k
 			<key>colorindex</key>
 			<integer>6</integer>
 			<key>xpos</key>
-			<real>425</real>
+			<real>520</real>
 			<key>ypos</key>
-			<real>785</real>
+			<real>695</real>
 		</dict>
 		<key>165E26DD-06DD-4E6D-A9CC-3F43F8B98A0A</key>
 		<dict>
@@ -1254,7 +1118,7 @@ README information to follow. In the meantime, enjoy AI-generated picture of a k
 			<key>xpos</key>
 			<real>30</real>
 			<key>ypos</key>
-			<real>690</real>
+			<real>575</real>
 		</dict>
 		<key>472674D9-B19D-496D-8231-721689FCF5E8</key>
 		<dict>
@@ -1270,9 +1134,9 @@ README information to follow. In the meantime, enjoy AI-generated picture of a k
 		<key>49B9BD28-2350-4642-A08E-5DBFCBF7421A</key>
 		<dict>
 			<key>xpos</key>
-			<real>30</real>
+			<real>35</real>
 			<key>ypos</key>
-			<real>390</real>
+			<real>375</real>
 		</dict>
 		<key>5FC7E336-3000-4CFE-B2C7-F4E050909449</key>
 		<dict>
@@ -1292,9 +1156,9 @@ README information to follow. In the meantime, enjoy AI-generated picture of a k
 			<key>note</key>
 			<string>⭐ Script works with variables! Previous Week</string>
 			<key>xpos</key>
-			<real>580</real>
+			<real>675</real>
 			<key>ypos</key>
-			<real>780</real>
+			<real>690</real>
 		</dict>
 		<key>67833930-5A68-4CDC-ABD7-70F9AE7D45C3</key>
 		<dict>
@@ -1307,25 +1171,14 @@ README information to follow. In the meantime, enjoy AI-generated picture of a k
 			<key>ypos</key>
 			<real>675</real>
 		</dict>
-		<key>71B23729-DE1B-47FA-A14C-96BBE045C6EF</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>4</integer>
-			<key>note</key>
-			<string>⭐ Script works with variables! Previous Week</string>
-			<key>xpos</key>
-			<real>740</real>
-			<key>ypos</key>
-			<real>785</real>
-		</dict>
 		<key>7AAB23BE-4C64-499D-BC1A-AE68FE6D2E31</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>6</integer>
 			<key>xpos</key>
-			<real>255</real>
+			<real>350</real>
 			<key>ypos</key>
-			<real>780</real>
+			<real>690</real>
 		</dict>
 		<key>7F0DE48A-E977-4EF8-9E26-E247B7A1764D</key>
 		<dict>
@@ -1421,17 +1274,6 @@ README information to follow. In the meantime, enjoy AI-generated picture of a k
 			<real>430</real>
 			<key>ypos</key>
 			<real>585</real>
-		</dict>
-		<key>DBD4EDA0-1A0A-45C1-998C-804AFA26FD32</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>2</integer>
-			<key>note</key>
-			<string>Opens HC Looker URL for the previous month, but with a 2-second delay.</string>
-			<key>xpos</key>
-			<real>245</real>
-			<key>ypos</key>
-			<real>85</real>
 		</dict>
 		<key>E7791453-3667-45DC-BC79-7E309E81F64B</key>
 		<dict>
