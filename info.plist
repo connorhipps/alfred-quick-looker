@@ -151,11 +151,11 @@
 	<key>createdby</key>
 	<string>Connor Hipps</string>
 	<key>description</key>
-	<string>Search by list filter for HC Looker data. 📊</string>
+	<string>Search by list filter for an individual's Looker data. 📊</string>
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
-	<string>HC Looker Data</string>
+	<string>Alfred Looker Search</string>
 	<key>objects</key>
 	<array>
 		<dict>
@@ -632,7 +632,7 @@ set the clipboard to urlList</string>
 		</dict>
 	</array>
 	<key>readme</key>
-	<string># An Alfred Workflow for Quick Access to HC Looker Data 📊
+	<string># An Alfred Workflow for Quick Access to Individual Looker Data 📊
 
 README information to follow. In the meantime, enjoy an AI-generated picture of a kitten. 
 
