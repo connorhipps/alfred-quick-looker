@@ -1014,6 +1014,8 @@ README information to follow. In the meantime, enjoy an AI-generated picture of 
 			<string>hc10</string>
 		</dict>
 	</array>
+	<key>variablesdontexport</key>
+	<array/>
 	<key>version</key>
 	<string>1.0.1</string>
 	<key>webaddress</key>
