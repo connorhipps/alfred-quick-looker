@@ -4,6 +4,8 @@
 <dict>
 	<key>bundleid</key>
 	<string>HC</string>
+	<key>category</key>
+	<string>Productivity</string>
 	<key>connections</key>
 	<dict>
 		<key>142749E1-4508-48B4-B2B4-FD002B9A4B6D</key>
@@ -1019,6 +1021,6 @@ README information to follow. In the meantime, enjoy an AI-generated picture of 
 	<key>version</key>
 	<string>1.0.1</string>
 	<key>webaddress</key>
-	<string></string>
+	<string>https://github.com/connorhipps/alfred-looker-search</string>
 </dict>
 </plist>
