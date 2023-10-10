@@ -24,6 +24,7 @@ Alfred 5 is necessary to utilize [Workflow Configuration](https://www.alfredapp.
 - View Looker reports based on increments of time. 
 
 ### Roadmap
+- Open new/seperate tab for Looker reports. 
 - Looker Dashboard Selection
 - Group vs. Individual Selection
 - Additional increments of time. 
