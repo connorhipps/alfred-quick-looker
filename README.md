@@ -1,7 +1,25 @@
-# An Alfred Workflow for Quick Access to Individual Looker Data 📊
+<h1 align="center">
+  
+<a href="https://github.com/connorhipps/alfred-looker-search/releases/latest/">
+  <img src="icon.png" width="16%"><br/>
+  <img alt="Download Latest Release"
+       src="https://img.shields.io/badge/Download-Alfred%20Workflow-yellow?style=for-the-badge&logo=download"><br/>
+</a>
+  Alfred Quick-Looker 👀
+</h1>
+<p align="center">
+	An Alfred Workflow for Quick Access to Individual Looker Data 📊
+</p>
 
-[Download Alfred Workflow](https://github.com/connorhipps/alfred-looker-search/blob/75fd91b6f16c3664540909286f0666d3253ae030/HC%20Looker%20Data.alfredworkflow)
-
-README information to follow. In the meantime, enjoy an AI-generated picture of a kitten. 
+***
 
 ![Cat Image](cat.png)
+
+
+### Requirements
+- [Alfred 5](https://alfredapp.com/)
+
+Alfred 5 is necessary to utilize [Workflow Configuration](https://www.alfredapp.com/help/workflows/workflow-configuration/). 
+
+### Features
+- 
