@@ -81,7 +81,7 @@
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
-	<string>Alfred Looker Search</string>
+	<string>Alfred Quick-Looker</string>
 	<key>objects</key>
 	<array>
 		<dict>
