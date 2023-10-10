@@ -698,7 +698,7 @@ If you see this message, then you're on Alfred 5! 😊
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>1.0.3</string>
+	<string>1.0.4</string>
 	<key>webaddress</key>
 	<string>https://github.com/connorhipps/alfred-looker-search</string>
 </dict>

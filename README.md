@@ -1,6 +1,6 @@
 <h1 align="center">
   
-<a href="https://github.com/connorhipps/alfred-looker-search/releases/latest/">
+<a href="https://github.com/connorhipps/alfred-quick-looker/releases/latest/">
   <img src="icon.png" width="16%"><br/>
   <img alt="Download Latest Release"
        src="https://img.shields.io/badge/Download-Alfred%20Workflow-purple?style=for-the-badge&logo=download"><br/>
