@@ -77,7 +77,7 @@
 	<key>createdby</key>
 	<string>Connor Hipps</string>
 	<key>description</key>
-	<string>Search by list filter for an individual's Looker data. 📊</string>
+	<string>An Alfred Workflow for Quick Access to HC Looker Data 📊</string>
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
