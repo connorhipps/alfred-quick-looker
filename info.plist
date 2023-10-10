@@ -46,18 +46,6 @@
 				<key>vitoclose</key>
 				<false/>
 			</dict>
-			<dict>
-				<key>destinationuid</key>
-				<string>D308A25B-10CA-4919-8CB0-CBFC0F46A898</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>sourceoutputuid</key>
-				<string>668BC54C-FDBF-421C-9A47-A8CAC99D9753</string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
 		</array>
 		<key>7AAB23BE-4C64-499D-BC1A-AE68FE6D2E31</key>
 		<array>
@@ -72,75 +60,11 @@
 				<false/>
 			</dict>
 		</array>
-		<key>84546B06-77EC-4DCF-982E-675A599A329B</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>E7791453-3667-45DC-BC79-7E309E81F64B</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>8F76E536-E82E-453C-BB5C-9A9A8A626D4E</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
 				<string>7AAB23BE-4C64-499D-BC1A-AE68FE6D2E31</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>A4762308-6E8B-4F0D-8ADE-BB9DE5272BDB</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>C97914B3-8D41-4854-A8EE-25C94A5ED0BA</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>C97914B3-8D41-4854-A8EE-25C94A5ED0BA</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>84546B06-77EC-4DCF-982E-675A599A329B</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>sourceoutputuid</key>
-				<string>DC591F63-D68C-4FA2-8FAA-74ABBD5B6529</string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>destinationuid</key>
-				<string>2B5CAECF-1300-492E-A7FD-2461B864E0ED</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>D308A25B-10CA-4919-8CB0-CBFC0F46A898</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>A4762308-6E8B-4F0D-8ADE-BB9DE5272BDB</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -375,6 +299,37 @@ fi</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>fixedorder</key>
+				<true/>
+				<key>items</key>
+				<string>[{"title":"Last Week","arg":"last+week","subtitle":"Queries the Last Week"},{"title":"Last Month","arg":"last+month","subtitle":"Queries the Last Month"},{"title":"Last 2 Weeks","arg":"2+week","subtitle":"Queries the Last 2 Weeks"},{"title":"Capture URLs 📷","arg":"capture","subtitle":"Captures ALL URLs in The Active Browser"}]</string>
+				<key>keyword</key>
+				<string>{var:keyword}</string>
+				<key>matchmode</key>
+				<integer>0</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>subtext</key>
+				<string>Opens All Looker Reports for HCs 📊</string>
+				<key>title</key>
+				<string>HC Looker Data</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.listfilter</string>
+			<key>uid</key>
+			<string>7AAB23BE-4C64-499D-BC1A-AE68FE6D2E31</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>conditions</key>
 				<array>
 					<dict>
@@ -419,20 +374,6 @@ fi</string>
 						<key>uid</key>
 						<string>BFC5E240-14BC-41F9-8682-9152983EDB11</string>
 					</dict>
-					<dict>
-						<key>inputstring</key>
-						<string></string>
-						<key>matchcasesensitive</key>
-						<false/>
-						<key>matchmode</key>
-						<integer>0</integer>
-						<key>matchstring</key>
-						<string>capture</string>
-						<key>outputlabel</key>
-						<string>capture</string>
-						<key>uid</key>
-						<string>668BC54C-FDBF-421C-9A47-A8CAC99D9753</string>
-					</dict>
 				</array>
 				<key>elselabel</key>
 				<string>else</string>
@@ -443,192 +384,6 @@ fi</string>
 			<string>alfred.workflow.utility.conditional</string>
 			<key>uid</key>
 			<string>142749E1-4508-48B4-B2B4-FD002B9A4B6D</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttrimmode</key>
-				<integer>0</integer>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>fixedorder</key>
-				<true/>
-				<key>items</key>
-				<string>[{"title":"Last Week","arg":"last+week","subtitle":"Queries the Last Week"},{"title":"Last Month","arg":"last+month","subtitle":"Queries the Last Month"},{"title":"Last 2 Weeks","arg":"2+week","subtitle":"Queries the Last 2 Weeks"},{"title":"Capture URLs 📷","arg":"capture","subtitle":"Captures ALL URLs in The Active Browser"}]</string>
-				<key>keyword</key>
-				<string>{var:keyword}</string>
-				<key>matchmode</key>
-				<integer>0</integer>
-				<key>runningsubtext</key>
-				<string></string>
-				<key>subtext</key>
-				<string>Opens All Looker Reports for HCs 📊</string>
-				<key>title</key>
-				<string>HC Looker Data</string>
-				<key>withspace</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.listfilter</string>
-			<key>uid</key>
-			<string>7AAB23BE-4C64-499D-BC1A-AE68FE6D2E31</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>tell application "Brave Browser"
-    set tabList to tabs of front window
-    set urlList to {}
-    repeat with aTab in tabList
-        set end of urlList to URL of aTab
-    end repeat
-end tell
-
-set {TID, text item delimiters} to {text item delimiters, return}
-set urlList to urlList as text
-set text item delimiters to TID
-
-set the clipboard to urlList</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>6</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>84546B06-77EC-4DCF-982E-675A599A329B</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>lastpathcomponent</key>
-				<false/>
-				<key>onlyshowifquerypopulated</key>
-				<false/>
-				<key>removeextension</key>
-				<false/>
-				<key>text</key>
-				<string>All URLs for active browser tabs have been captured.</string>
-				<key>title</key>
-				<string>URLs Captured to Clipboard! 📷</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.notification</string>
-			<key>uid</key>
-			<string>E7791453-3667-45DC-BC79-7E309E81F64B</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttrimmode</key>
-				<integer>0</integer>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>fixedorder</key>
-				<true/>
-				<key>items</key>
-				<string>[{"title":"Yes","arg":"yes","subtitle":"All URLs for active browser tabs will be captured. 📷"},{"title":"No","arg":"no","subtitle":"All URLs for active browser tabs will NOT be captured. ❎"}]</string>
-				<key>matchmode</key>
-				<integer>0</integer>
-				<key>runningsubtext</key>
-				<string></string>
-				<key>subtext</key>
-				<string></string>
-				<key>title</key>
-				<string>Are you sure you wish to capture all URLs?</string>
-				<key>withspace</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.listfilter</string>
-			<key>uid</key>
-			<string>A4762308-6E8B-4F0D-8ADE-BB9DE5272BDB</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>lastpathcomponent</key>
-				<false/>
-				<key>onlyshowifquerypopulated</key>
-				<false/>
-				<key>removeextension</key>
-				<false/>
-				<key>text</key>
-				<string>No URLs were captured to the clipboard.</string>
-				<key>title</key>
-				<string>Action Cancelled!</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.notification</string>
-			<key>uid</key>
-			<string>2B5CAECF-1300-492E-A7FD-2461B864E0ED</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>conditions</key>
-				<array>
-					<dict>
-						<key>inputstring</key>
-						<string></string>
-						<key>matchcasesensitive</key>
-						<false/>
-						<key>matchmode</key>
-						<integer>0</integer>
-						<key>matchstring</key>
-						<string>yes</string>
-						<key>outputlabel</key>
-						<string></string>
-						<key>uid</key>
-						<string>DC591F63-D68C-4FA2-8FAA-74ABBD5B6529</string>
-					</dict>
-				</array>
-				<key>elselabel</key>
-				<string>else</string>
-				<key>hideelse</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.conditional</string>
-			<key>uid</key>
-			<string>C97914B3-8D41-4854-A8EE-25C94A5ED0BA</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argument</key>
-				<string></string>
-				<key>passthroughargument</key>
-				<false/>
-				<key>variables</key>
-				<dict/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.argument</string>
-			<key>uid</key>
-			<string>D308A25B-10CA-4919-8CB0-CBFC0F46A898</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -648,18 +403,7 @@ README information to follow. In the meantime, enjoy an AI-generated picture of 
 			<key>xpos</key>
 			<real>260</real>
 			<key>ypos</key>
-			<real>270</real>
-		</dict>
-		<key>2B5CAECF-1300-492E-A7FD-2461B864E0ED</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>7</integer>
-			<key>note</key>
-			<string>Action Cancelled</string>
-			<key>xpos</key>
-			<real>890</real>
-			<key>ypos</key>
-			<real>480</real>
+			<real>290</real>
 		</dict>
 		<key>6713B905-EE69-4844-AD1B-70CD4C00BEF9</key>
 		<dict>
@@ -683,17 +427,6 @@ README information to follow. In the meantime, enjoy an AI-generated picture of 
 			<key>ypos</key>
 			<real>285</real>
 		</dict>
-		<key>84546B06-77EC-4DCF-982E-675A599A329B</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>7</integer>
-			<key>note</key>
-			<string>Capture URLs from Active Window</string>
-			<key>xpos</key>
-			<real>720</real>
-			<key>ypos</key>
-			<real>325</real>
-		</dict>
 		<key>8F76E536-E82E-453C-BB5C-9A9A8A626D4E</key>
 		<dict>
 			<key>colorindex</key>
@@ -704,48 +437,6 @@ README information to follow. In the meantime, enjoy an AI-generated picture of 
 			<real>90</real>
 			<key>ypos</key>
 			<real>100</real>
-		</dict>
-		<key>A4762308-6E8B-4F0D-8ADE-BB9DE5272BDB</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>7</integer>
-			<key>note</key>
-			<string>Yes / No</string>
-			<key>xpos</key>
-			<real>415</real>
-			<key>ypos</key>
-			<real>465</real>
-		</dict>
-		<key>C97914B3-8D41-4854-A8EE-25C94A5ED0BA</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>7</integer>
-			<key>note</key>
-			<string>Yes / No</string>
-			<key>xpos</key>
-			<real>620</real>
-			<key>ypos</key>
-			<real>485</real>
-		</dict>
-		<key>D308A25B-10CA-4919-8CB0-CBFC0F46A898</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>7</integer>
-			<key>xpos</key>
-			<real>335</real>
-			<key>ypos</key>
-			<real>495</real>
-		</dict>
-		<key>E7791453-3667-45DC-BC79-7E309E81F64B</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>7</integer>
-			<key>note</key>
-			<string>URLs Captured</string>
-			<key>xpos</key>
-			<real>890</real>
-			<key>ypos</key>
-			<real>325</real>
 		</dict>
 	</dict>
 	<key>userconfigurationconfig</key>
