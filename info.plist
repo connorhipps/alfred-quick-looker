@@ -34,18 +34,6 @@
 				<key>vitoclose</key>
 				<false/>
 			</dict>
-			<dict>
-				<key>destinationuid</key>
-				<string>6713B905-EE69-4844-AD1B-70CD4C00BEF9</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>sourceoutputuid</key>
-				<string>BFC5E240-14BC-41F9-8682-9152983EDB11</string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
 		</array>
 		<key>7AAB23BE-4C64-499D-BC1A-AE68FE6D2E31</key>
 		<array>
@@ -306,7 +294,7 @@ fi</string>
 				<key>fixedorder</key>
 				<true/>
 				<key>items</key>
-				<string>[{"title":"Last Week 1️⃣","arg":"last+week","subtitle":"Queries the Last Week"},{"title":"Last 2 Weeks 2️⃣","arg":"2+week","subtitle":"Queries the Last 2 Weeks"},{"title":"Last Month 📅","arg":"last+month","subtitle":"Queries the Last Month"}]</string>
+				<string>[{"title":"Last Week","arg":"last+week","subtitle":"Queries the Last Week"},{"title":"Last Month 📅","arg":"last+month","subtitle":"Queries the Last Month"}]</string>
 				<key>keyword</key>
 				<string>{var:keyword}</string>
 				<key>matchmode</key>
@@ -360,20 +348,6 @@ fi</string>
 						<key>uid</key>
 						<string>DC591F63-D68C-4FA2-8FAA-74ABBD5B6529</string>
 					</dict>
-					<dict>
-						<key>inputstring</key>
-						<string></string>
-						<key>matchcasesensitive</key>
-						<false/>
-						<key>matchmode</key>
-						<integer>0</integer>
-						<key>matchstring</key>
-						<string>2+week</string>
-						<key>outputlabel</key>
-						<string>2+week</string>
-						<key>uid</key>
-						<string>BFC5E240-14BC-41F9-8682-9152983EDB11</string>
-					</dict>
 				</array>
 				<key>elselabel</key>
 				<string>else</string>
@@ -417,7 +391,7 @@ If you see this message, then you're on Alfred 5! 😊
 			<key>xpos</key>
 			<real>260</real>
 			<key>ypos</key>
-			<real>290</real>
+			<real>305</real>
 		</dict>
 		<key>6713B905-EE69-4844-AD1B-70CD4C00BEF9</key>
 		<dict>
@@ -435,7 +409,7 @@ If you see this message, then you're on Alfred 5! 😊
 			<key>colorindex</key>
 			<integer>6</integer>
 			<key>note</key>
-			<string>Select Keyword under "Configure Workflow..."</string>
+			<string>Select Keyword under Configure Workflow</string>
 			<key>xpos</key>
 			<real>90</real>
 			<key>ypos</key>
@@ -721,8 +695,10 @@ If you see this message, then you're on Alfred 5! 😊
 			<string>hc10</string>
 		</dict>
 	</array>
+	<key>variablesdontexport</key>
+	<array/>
 	<key>version</key>
-	<string>1.0.1</string>
+	<string>1.0.2</string>
 	<key>webaddress</key>
 	<string>https://github.com/connorhipps/alfred-looker-search</string>
 </dict>
