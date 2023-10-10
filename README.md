@@ -13,13 +13,17 @@
 
 ***
 
-![Cat Image](cat.png)
-
-
 ### Requirements
 - [Alfred 5](https://alfredapp.com/)
 
 Alfred 5 is necessary to utilize [Workflow Configuration](https://www.alfredapp.com/help/workflows/workflow-configuration/). 
 
 ### Features
-- 
+- Browser Selection
+- Easily add individuals using the [Workflow Configuration](https://www.alfredapp.com/help/workflows/workflow-configuration/).
+- View Looker reports based on increments of time. 
+
+### Roadmap
+- Looker Dashboard Selection
+- Group vs. Individual Selection
+- Additional increments of time. 
