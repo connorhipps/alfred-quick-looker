@@ -3,7 +3,7 @@
 <a href="https://github.com/connorhipps/alfred-looker-search/releases/latest/">
   <img src="icon.png" width="16%"><br/>
   <img alt="Download Latest Release"
-       src="https://img.shields.io/badge/Download-Alfred%20Workflow-yellow?style=for-the-badge&logo=download"><br/>
+       src="https://img.shields.io/badge/Download-Alfred%20Workflow-purple?style=for-the-badge&logo=download"><br/>
 </a>
   Alfred Quick-Looker 👀
 </h1>
