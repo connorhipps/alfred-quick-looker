@@ -118,6 +118,37 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>fixedorder</key>
+				<true/>
+				<key>items</key>
+				<string>[{"title":"Last Week 1️⃣","arg":"last+week","subtitle":"Queries the Last Week"},{"title":"Last 2 Weeks 2️⃣","arg":"2+week","subtitle":"Queries the Last 2 Weeks"},{"title":"Last Month 📅","arg":"last+month","subtitle":"Queries the Last Month"}]</string>
+				<key>keyword</key>
+				<string>{var:keyword}</string>
+				<key>matchmode</key>
+				<integer>0</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>subtext</key>
+				<string>Opens All Looker Reports for HCs 📊</string>
+				<key>title</key>
+				<string>HC Looker Data</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.listfilter</string>
+			<key>uid</key>
+			<string>7AAB23BE-4C64-499D-BC1A-AE68FE6D2E31</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
@@ -299,37 +330,6 @@ fi</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>argumenttrimmode</key>
-				<integer>0</integer>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>fixedorder</key>
-				<true/>
-				<key>items</key>
-				<string>[{"title":"Last Week","arg":"last+week","subtitle":"Queries the Last Week"},{"title":"Last Month","arg":"last+month","subtitle":"Queries the Last Month"},{"title":"Last 2 Weeks","arg":"2+week","subtitle":"Queries the Last 2 Weeks"},{"title":"Capture URLs 📷","arg":"capture","subtitle":"Captures ALL URLs in The Active Browser"}]</string>
-				<key>keyword</key>
-				<string>{var:keyword}</string>
-				<key>matchmode</key>
-				<integer>0</integer>
-				<key>runningsubtext</key>
-				<string></string>
-				<key>subtext</key>
-				<string>Opens All Looker Reports for HCs 📊</string>
-				<key>title</key>
-				<string>HC Looker Data</string>
-				<key>withspace</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.listfilter</string>
-			<key>uid</key>
-			<string>7AAB23BE-4C64-499D-BC1A-AE68FE6D2E31</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>conditions</key>
 				<array>
 					<dict>
@@ -414,14 +414,14 @@ README information to follow. In the meantime, enjoy an AI-generated picture of 
 			<key>xpos</key>
 			<real>415</real>
 			<key>ypos</key>
-			<real>265</real>
+			<real>285</real>
 		</dict>
 		<key>7AAB23BE-4C64-499D-BC1A-AE68FE6D2E31</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>6</integer>
 			<key>note</key>
-			<string>Start Workflow</string>
+			<string>Select Keyword under "Configure Workflow..."</string>
 			<key>xpos</key>
 			<real>90</real>
 			<key>ypos</key>
@@ -432,11 +432,11 @@ README information to follow. In the meantime, enjoy an AI-generated picture of 
 			<key>colorindex</key>
 			<integer>6</integer>
 			<key>note</key>
-			<string>Hotkey (Optional)</string>
+			<string>Optional Hotkey (Change as needed!)</string>
 			<key>xpos</key>
 			<real>90</real>
 			<key>ypos</key>
-			<real>100</real>
+			<real>55</real>
 		</dict>
 	</dict>
 	<key>userconfigurationconfig</key>
