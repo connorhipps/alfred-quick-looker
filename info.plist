@@ -118,37 +118,6 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>argumenttrimmode</key>
-				<integer>0</integer>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>fixedorder</key>
-				<true/>
-				<key>items</key>
-				<string>[{"title":"Last Week 1️⃣","arg":"last+week","subtitle":"Queries the Last Week"},{"title":"Last 2 Weeks 2️⃣","arg":"2+week","subtitle":"Queries the Last 2 Weeks"},{"title":"Last Month 📅","arg":"last+month","subtitle":"Queries the Last Month"}]</string>
-				<key>keyword</key>
-				<string>{var:keyword}</string>
-				<key>matchmode</key>
-				<integer>0</integer>
-				<key>runningsubtext</key>
-				<string></string>
-				<key>subtext</key>
-				<string>Opens All Looker Reports for HCs 📊</string>
-				<key>title</key>
-				<string>HC Looker Data</string>
-				<key>withspace</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.listfilter</string>
-			<key>uid</key>
-			<string>7AAB23BE-4C64-499D-BC1A-AE68FE6D2E31</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
@@ -330,6 +299,37 @@ fi</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>fixedorder</key>
+				<true/>
+				<key>items</key>
+				<string>[{"title":"Last Week 1️⃣","arg":"last+week","subtitle":"Queries the Last Week"},{"title":"Last 2 Weeks 2️⃣","arg":"2+week","subtitle":"Queries the Last 2 Weeks"},{"title":"Last Month 📅","arg":"last+month","subtitle":"Queries the Last Month"}]</string>
+				<key>keyword</key>
+				<string>{var:keyword}</string>
+				<key>matchmode</key>
+				<integer>0</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>subtext</key>
+				<string>Opens All Looker Reports for HCs 📊</string>
+				<key>title</key>
+				<string>HC Looker Data</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.listfilter</string>
+			<key>uid</key>
+			<string>7AAB23BE-4C64-499D-BC1A-AE68FE6D2E31</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>conditions</key>
 				<array>
 					<dict>
@@ -389,11 +389,25 @@ fi</string>
 		</dict>
 	</array>
 	<key>readme</key>
-	<string># An Alfred Workflow for Quick Access to Individual Looker Data 📊
+	<string># Alfred Quick-Looker 👀
+## An Alfred Workflow for Quick Access to Individual Looker Data 📊
 
-README information to follow. In the meantime, enjoy an AI-generated picture of a kitten. 
+### Requirements
+- [Alfred 5](https://alfredapp.com/)
 
-![Cat Image](cat.png)</string>
+Alfred 5 is necessary to utilize [Workflow Configuration](https://www.alfredapp.com/help/workflows/workflow-configuration/). 
+
+If you see this message, then you're on Alfred 5! 😊
+
+### Features
+- Browser Selection
+- Easily add individuals using the [Workflow Configuration](https://www.alfredapp.com/help/workflows/workflow-configuration/).
+- View Looker reports based on increments of time. 
+
+### Roadmap
+- Looker Dashboard Selection
+- Group vs. Individual Selection
+- Additional increments of time.</string>
 	<key>uidata</key>
 	<dict>
 		<key>142749E1-4508-48B4-B2B4-FD002B9A4B6D</key>
@@ -707,8 +721,6 @@ README information to follow. In the meantime, enjoy an AI-generated picture of 
 			<string>hc10</string>
 		</dict>
 	</array>
-	<key>variablesdontexport</key>
-	<array/>
 	<key>version</key>
 	<string>1.0.1</string>
 	<key>webaddress</key>
