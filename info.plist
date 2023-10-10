@@ -106,6 +106,37 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>fixedorder</key>
+				<true/>
+				<key>items</key>
+				<string>[{"title":"Last Week","arg":"last+week","subtitle":"Queries the Last Week"},{"title":"Last Month 📅","arg":"last+month","subtitle":"Queries the Last Month"}]</string>
+				<key>keyword</key>
+				<string>{var:keyword}</string>
+				<key>matchmode</key>
+				<integer>0</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>subtext</key>
+				<string>Opens All Looker Reports for HCs 📊</string>
+				<key>title</key>
+				<string>HC Looker Data</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.listfilter</string>
+			<key>uid</key>
+			<string>7AAB23BE-4C64-499D-BC1A-AE68FE6D2E31</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
@@ -283,37 +314,6 @@ fi</string>
 			<string>6713B905-EE69-4844-AD1B-70CD4C00BEF9</string>
 			<key>version</key>
 			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttrimmode</key>
-				<integer>0</integer>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>fixedorder</key>
-				<true/>
-				<key>items</key>
-				<string>[{"title":"Last Week","arg":"last+week","subtitle":"Queries the Last Week"},{"title":"Last Month 📅","arg":"last+month","subtitle":"Queries the Last Month"}]</string>
-				<key>keyword</key>
-				<string>{var:keyword}</string>
-				<key>matchmode</key>
-				<integer>0</integer>
-				<key>runningsubtext</key>
-				<string></string>
-				<key>subtext</key>
-				<string>Opens All Looker Reports for HCs 📊</string>
-				<key>title</key>
-				<string>HC Looker Data</string>
-				<key>withspace</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.listfilter</string>
-			<key>uid</key>
-			<string>7AAB23BE-4C64-499D-BC1A-AE68FE6D2E31</string>
-			<key>version</key>
-			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
