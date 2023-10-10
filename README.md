@@ -5,7 +5,7 @@
   <img alt="Download Latest Release"
        src="https://img.shields.io/badge/Download-Alfred%20Workflow-purple?style=for-the-badge&logo=download"><br/>
 </a>
-  Alfred Quick-Looker 👀
+  Alfred Quick-Looker
 </h1>
 <p align="center">
 	An Alfred Workflow for Quick Access to Individual Looker Data 📊
