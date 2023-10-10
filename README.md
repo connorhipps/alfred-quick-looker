@@ -8,7 +8,7 @@
   Alfred Quick-Looker
 </h1>
 <p align="center">
-	An Alfred Workflow for Quick Access to Individual Looker Data 📊
+	An Alfred Workflow for Quick Access to HC Looker Data 📊
 </p>
 
 ***

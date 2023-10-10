@@ -390,7 +390,7 @@ fi</string>
 	</array>
 	<key>readme</key>
 	<string># Alfred Quick-Looker 👀
-## An Alfred Workflow for Quick Access to Individual Looker Data 📊
+## An Alfred Workflow for Quick Access to HC Looker Data 📊
 
 ### Requirements
 - [Alfred 5](https://alfredapp.com/)
